@@ -4,41 +4,41 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="agscv2" name="inema-course"/>
-<title>Responding Isn’t Taking Action | Agent Under Control</title>
+<meta content="agscv2" name="ARCKHÉ-course"/>
+<title>Responding Isnâ€™t Taking Action | Agent Under Control</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
-          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'inema-dark';
+          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark'); else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark') ? 'dark' : 'light'));
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style; var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -60,8 +60,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO em TODA pagina, identico) -->
-<script data-inema-manifest="" type="application/json">
-  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder não é agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10×","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido não é problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Três regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguém conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensões","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"Métrica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
+<script data-ARCKHÉ-manifest="" type="application/json">
+  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nÃ£o Ã© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10Ã—","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nÃ£o Ã© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrÃªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguÃ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensÃµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MÃ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
   </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -151,7 +151,7 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* Alvos de ancora abaixo do nav sticky */
-    [data-inema-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
+    [data-ARCKHÉ-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
 
     /* SVG light mode + animacao */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
@@ -168,21 +168,21 @@
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
   </style>
-<link href="https://inematds.github.io/curso-agente-sob-controle-v2/curso/trilha1/modulo-1-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/curso-agente-sob-controle-v2/en/curso/trilha1/modulo-1-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/curso-agente-sob-controle-v2/es/curso/trilha1/modulo-1-1.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-1-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/modulo-1-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-1-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/modulo-1-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-primary focus:text-black focus:rounded-lg" href="#conteudo">Skip to content</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-3">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">🛡️</span>
+<span class="text-2xl">ðŸ›¡ï¸</span>
 <span class="font-bold text-lg hidden lg:inline">Agent under Control</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 <span class="text-neutral-600">-</span>
-<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://inema.pro" target="_blank">PRO</a>
+<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHÉ.pro" target="_blank">PRO</a>
 </div>
 <div class="flex items-center space-x-1">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html">
@@ -200,40 +200,40 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html">
 <span class="xl:hidden">T5</span><span class="hidden xl:inline">Result</span>
 </a>
-<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-inema-journey-open="" title="My journey" type="button">
-<span aria-hidden="true">◷</span><span class="hidden md:inline">Journey</span>
-<span class="inema-journey-badge" data-count="0" data-inema-journey-badge=""></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-journey-open="" title="My journey" type="button">
+<span aria-hidden="true">â—·</span><span class="hidden md:inline">Journey</span>
+<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <div class="relative">
-<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-inema-appearance-toggle="#aparencia" title="Appearance" type="button">
+<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-appearance-toggle="#aparencia" title="Appearance" type="button">
 <span aria-hidden="true" class="text-sm font-semibold">Aa</span><span class="sr-only">Appearance</span>
 </button>
-<div class="inema-appearance-pop" data-inema-appearance="" id="aparencia">
-<div aria-label="Topic" class="inema-segment">
-<button data-inema-set-theme="inema-dark" type="button">Dark</button>
-<button data-inema-set-theme="claro" type="button">Clear</button>
-<button data-inema-set-theme="sepia" type="button">Sepia</button>
-<button data-inema-set-theme="foco" type="button">Focus</button>
-<button data-inema-set-theme="contraste" type="button">High contrast</button>
+<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" id="aparencia">
+<div aria-label="Topic" class="ARCKHÉ-segment">
+<button data-ARCKHÉ-set-theme="ARCKHÉ-dark" type="button">Dark</button>
+<button data-ARCKHÉ-set-theme="claro" type="button">Clear</button>
+<button data-ARCKHÉ-set-theme="sepia" type="button">Sepia</button>
+<button data-ARCKHÉ-set-theme="foco" type="button">Focus</button>
+<button data-ARCKHÉ-set-theme="contraste" type="button">High contrast</button>
 </div>
-<div aria-label="Source" class="inema-segment">
-<button data-inema-set-font="inter" type="button">Inter</button>
-<button data-inema-set-font="system" type="button">System</button>
-<button data-inema-set-font="leitura" type="button">Reading</button>
+<div aria-label="Source" class="ARCKHÉ-segment">
+<button data-ARCKHÉ-set-font="inter" type="button">Inter</button>
+<button data-ARCKHÉ-set-font="system" type="button">System</button>
+<button data-ARCKHÉ-set-font="leitura" type="button">Reading</button>
 </div>
-<div aria-label="Text length" class="inema-segment">
-<button data-inema-set-fontscale="100" type="button">A</button>
-<button data-inema-set-fontscale="112" type="button">A+</button>
-<button data-inema-set-fontscale="125" type="button">A++</button>
+<div aria-label="Text length" class="ARCKHÉ-segment">
+<button data-ARCKHÉ-set-fontscale="100" type="button">A</button>
+<button data-ARCKHÉ-set-fontscale="112" type="button">A+</button>
+<button data-ARCKHÉ-set-fontscale="125" type="button">A++</button>
 </div>
-<div aria-label="Line width" class="inema-segment">
-<button data-inema-set-linewidth="60" type="button">Narrow</button>
-<button data-inema-set-linewidth="68" type="button">Medium</button>
-<button data-inema-set-linewidth="75" type="button">Wide</button>
+<div aria-label="Line width" class="ARCKHÉ-segment">
+<button data-ARCKHÉ-set-linewidth="60" type="button">Narrow</button>
+<button data-ARCKHÉ-set-linewidth="68" type="button">Medium</button>
+<button data-ARCKHÉ-set-linewidth="75" type="button">Wide</button>
 </div>
-<div aria-label="Subtext" class="inema-segment">
-<button data-inema-set-leading="1.45" type="button">Compact</button>
-<button data-inema-set-leading="1.7" type="button">Comfortable</button>
+<div aria-label="Subtext" class="ARCKHÉ-segment">
+<button data-ARCKHÉ-set-leading="1.45" type="button">Compact</button>
+<button data-ARCKHÉ-set-leading="1.7" type="button">Comfortable</button>
 </div>
 </div>
 </div>
@@ -252,40 +252,40 @@
 <span class="text-emerald-400">Module 1.1</span>
 </div>
 </nav>
-<header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-inema-module="1-1" data-inema-track="1">
+<header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-ARCKHÉ-module="1-1" data-ARCKHÉ-track="1">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MODULE 1.1</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">🤖 Responding isn’t acting</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">The difference between an assistant that writes and an agent that changes things in your business—and why that difference changes the scale of the mistake.</p>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ¤– Responding isnâ€™t acting</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">The difference between an assistant that writes and an agent that changes things in your businessâ€”and why that difference changes the scale of the mistake.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">Topics</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">~30</div><div class="text-xs text-neutral-400">Minutes</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Basis</div><div class="text-xs text-neutral-400">Level</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Foundation</div><div class="text-xs text-neutral-400">Type</div></div>
 </div>
-<div aria-label="Module 1.1 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-inema-meter="modulo:1-1" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-inema-meter-frac="">0 of 6</span><span data-inema-meter-pct="">0%</span></div>
-<div class="inema-bar"><div class="inema-bar__fill" data-inema-meter-fill=""></div></div>
+<div aria-label="Module 1.1 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="modulo:1-1" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 of 6</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
+<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
 </div>
 </div>
 </header>
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[1fr_220px] lg:gap-10">
-<main class="min-w-0" data-inema-module="1-1" data-inema-track="1" id="conteudo">
+<main class="min-w-0" data-ARCKHÉ-module="1-1" data-ARCKHÉ-track="1" id="conteudo">
 <!-- ===================== TOPICO 1 ===================== -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-1" id="topico-1">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold flex-1">See the difference between responding and acting</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m1-1-t1-p1">Until recently, using AI meant having a conversation: you write a question, it returns text. If the text is bad, you delete it and ask again. <strong class="text-emerald-400">Nothing in the world changed.</strong></p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t1-p2">Now the same AI can have "hands": read your email, open the customer spreadsheet, schedule an appointment, send a WhatsApp message. When it does that, it stops being just a <strong>assistant</strong> and becomes a <strong class="text-emerald-400">agent</strong>.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-1-t1-p1">Until recently, using AI meant having a conversation: you write a question, it returns text. If the text is bad, you delete it and ask again. <strong class="text-emerald-400">Nothing in the world changed.</strong></p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t1-p2">Now the same AI can have "hands": read your email, open the customer spreadsheet, schedule an appointment, send a WhatsApp message. When it does that, it stops being just a <strong>assistant</strong> and becomes a <strong class="text-emerald-400">agent</strong>.</p>
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6 mb-6">
-<h3 class="text-base font-semibold text-emerald-400 mb-3 flex items-center"><span class="mr-2">🆕</span> New here? Three words the whole course uses</h3>
+<h3 class="text-base font-semibold text-emerald-400 mb-3 flex items-center"><span class="mr-2">ðŸ†•</span> New here? Three words the whole course uses</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li><strong>Language model</strong> — the “brain” that runs behind an AI chat. It reads text and writes text. That’s all.</li>
-<li><strong>Assistant</strong> — an AI chat that <em>responds</em>. You read the response and decide what to do with it.</li>
-<li><strong>Agent</strong> — an assistant that received <em>tools</em> and can <em>act</em> on its own: send, change, delete, pay.</li>
+<li><strong>Language model</strong> â€” the â€œbrainâ€ that runs behind an AI chat. It reads text and writes text. Thatâ€™s all.</li>
+<li><strong>Assistant</strong> â€” an AI chat that <em>responds</em>. You read the response and decide what to do with it.</li>
+<li><strong>Agent</strong> â€” an assistant that received <em>tools</em> and can <em>act</em> on its own: send, change, delete, pay.</li>
 </ul>
 </div>
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-3 overflow-hidden">
@@ -299,8 +299,8 @@
 </defs>
 <rect fill="url(#m11-grid)" height="260" width="800" x="0" y="0"></rect>
 <line stroke="#374151" stroke-dasharray="4 6" stroke-width="2" x1="400" x2="400" y1="20" y2="240"></line>
-<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="200" y="36">ASSISTANT — responds</text>
-<text fill="#34d399" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="600" y="36">AGENT — acts</text>
+<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="200" y="36">ASSISTANT â€” responds</text>
+<text fill="#34d399" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="600" y="36">AGENT â€” acts</text>
 <rect fill="#1f2937" height="50" rx="12" stroke="#4b5563" stroke-width="2" width="100" x="40" y="100"></rect>
 <text fill="#d1d5db" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="90" y="130">request</text>
 <line marker-end="url(#m11-arrow)" stroke="#9ca3af" stroke-width="2" x1="142" x2="190" y1="125" y2="125"></line>
@@ -309,7 +309,7 @@
 <line marker-end="url(#m11-arrow)" stroke="#9ca3af" stroke-width="2" x1="277" x2="318" y1="125" y2="125"></line>
 <rect fill="#1f2937" height="50" rx="10" stroke="#4b5563" stroke-width="2" width="62" x="322" y="100"></rect>
 <text fill="#d1d5db" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="353" y="130">text</text>
-<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="200" y="200">the result stops on the screen—you decide</text>
+<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="200" y="200">the result stops on the screenâ€”you decide</text>
 <rect fill="#1f2937" height="50" rx="12" stroke="#4b5563" stroke-width="2" width="90" x="425" y="100"></rect>
 <text fill="#d1d5db" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="470" y="130">request</text>
 <line marker-end="url(#m11-arrow)" stroke="#9ca3af" stroke-width="2" x1="517" x2="548" y1="125" y2="125"></line>
@@ -319,84 +319,84 @@
 <g font-family="Inter,sans-serif" font-size="12">
 <line class="wf-flow" marker-end="url(#m11-arrow-c)" stroke="#38bdf8" stroke-width="2" x1="640" x2="690" y1="110" y2="72"></line>
 <rect class="wf-a" fill="#0b1f2e" height="34" rx="9" stroke="#38bdf8" stroke-width="2" width="86" x="693" y="52"></rect>
-<text fill="#bae6fd" text-anchor="middle" x="736" y="74">✉ email</text>
+<text fill="#bae6fd" text-anchor="middle" x="736" y="74">âœ‰ email</text>
 <line class="wf-flow" marker-end="url(#m11-arrow-c)" stroke="#38bdf8" stroke-width="2" x1="640" x2="690" y1="125" y2="125"></line>
 <rect class="wf-a" fill="#0b1f2e" height="34" rx="9" stroke="#38bdf8" stroke-width="2" width="86" x="693" y="108"></rect>
-<text fill="#bae6fd" text-anchor="middle" x="736" y="130">📅 calendar</text>
+<text fill="#bae6fd" text-anchor="middle" x="736" y="130">ðŸ“… calendar</text>
 <line class="wf-flow" marker-end="url(#m11-arrow-c)" stroke="#38bdf8" stroke-width="2" x1="640" x2="690" y1="140" y2="178"></line>
 <rect class="wf-a" fill="#0b1f2e" height="34" rx="9" stroke="#38bdf8" stroke-width="2" width="86" x="693" y="164"></rect>
-<text fill="#bae6fd" text-anchor="middle" x="736" y="186">📊 spreadsheet</text>
+<text fill="#bae6fd" text-anchor="middle" x="736" y="186">ðŸ“Š spreadsheet</text>
 </g>
 <text fill="#34d399" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="600" y="228">the result changes things in the real world</text>
 </svg>
 </div>
-<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">How to read the diagram:</strong> the same request comes in from both sides. On the left, the output is text and stops on the screen. On the right, the blue arrows go from the AI straight to email, the calendar, and the spreadsheet — there’s no one in the middle to check.</p>
+<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">How to read the diagram:</strong> the same request comes in from both sides. On the left, the output is text and stops on the screen. On the right, the blue arrows go from the AI straight to email, the calendar, and the spreadsheet â€” thereâ€™s no one in the middle to check.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">💬</div><div class="text-sm font-semibold text-emerald-400">Assistant</div><p class="text-xs text-neutral-400 mt-1">responds with text</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">🦾</div><div class="text-sm font-semibold text-emerald-400">Agent</div><p class="text-xs text-neutral-400 mt-1">uses tools</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">🧰</div><div class="text-sm font-semibold text-emerald-400">Tool</div><p class="text-xs text-neutral-400 mt-1">what it can use</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">🌍</div><div class="text-sm font-semibold text-emerald-400">Real world</div><p class="text-xs text-neutral-400 mt-1">where the action happens</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ’¬</div><div class="text-sm font-semibold text-emerald-400">Assistant</div><p class="text-xs text-neutral-400 mt-1">responds with text</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ¦¾</div><div class="text-sm font-semibold text-emerald-400">Agent</div><p class="text-xs text-neutral-400 mt-1">uses tools</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ§°</div><div class="text-sm font-semibold text-emerald-400">Tool</div><p class="text-xs text-neutral-400 mt-1">what it can use</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸŒ</div><div class="text-sm font-semibold text-emerald-400">Real world</div><p class="text-xs text-neutral-400 mt-1">where the action happens</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 2 ===================== -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-2" id="topico-2">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">2</span>
-<h2 class="text-2xl font-bold flex-1">Recognize an agent’s tools</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<h2 class="text-2xl font-bold flex-1">Recognize an agentâ€™s tools</h2>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m1-1-t2-p1">A <strong class="text-emerald-400">tool</strong> is anything the agent can use without you pressing a button: an app, a file, an account. Every tool you connect is another door it can open.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t2-p2">To connect a tool, you give the agent a <strong>access</strong>: logs in for you, pastes a key, or clicks "allow." From then on, it acts with the <em>your</em> name.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-1-t2-p1">A <strong class="text-emerald-400">tool</strong> is anything the agent can use without you pressing a button: an app, a file, an account. Every tool you connect is another door it can open.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t2-p2">To connect a tool, you give the agent a <strong>access</strong>: logs in for you, pastes a key, or clicks "allow." From then on, it acts with the <em>your</em> name.</p>
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6 mb-6">
-<h3 class="text-base font-semibold text-emerald-400 mb-2 flex items-center"><span class="mr-2">🆕</span> New here? What are “access” and “connector”?</h3>
-<p class="text-neutral-300 text-sm"><strong>Access</strong> It's authorization to view or change something — like a key to a room. <strong>Connector</strong> (or integration) is the "cable" that connects the agent to an app, such as Gmail, Google Calendar, or WhatsApp Business. When the screen asks, "Allow this app to read and send emails?" you're handing over a key.</p>
+<h3 class="text-base font-semibold text-emerald-400 mb-2 flex items-center"><span class="mr-2">ðŸ†•</span> New here? What are â€œaccessâ€ and â€œconnectorâ€?</h3>
+<p class="text-neutral-300 text-sm"><strong>Access</strong> It's authorization to view or change something â€” like a key to a room. <strong>Connector</strong> (or integration) is the "cable" that connects the agent to an app, such as Gmail, Google Calendar, or WhatsApp Business. When the screen asks, "Allow this app to read and send emails?" you're handing over a key.</p>
 </div>
 <div class="overflow-x-auto mb-6 rounded-xl border border-dark-600">
 <table class="w-full text-sm text-left">
-<thead class="bg-dark-700/60 text-emerald-400"><tr><th class="px-4 py-3 font-semibold">Tool</th><th class="px-4 py-3 font-semibold">Can read</th><th class="px-4 py-3 font-semibold">Can edit or send</th><th class="px-4 py-3 font-semibold">If it makes a mistake…</th></tr></thead>
+<thead class="bg-dark-700/60 text-emerald-400"><tr><th class="px-4 py-3 font-semibold">Tool</th><th class="px-4 py-3 font-semibold">Can read</th><th class="px-4 py-3 font-semibold">Can edit or send</th><th class="px-4 py-3 font-semibold">If it makes a mistakeâ€¦</th></tr></thead>
 <tbody class="divide-y divide-dark-600">
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">✉ Email</td><td class="px-4 py-3 text-neutral-300">all messages</td><td class="px-4 py-3 text-neutral-300">reply, forward, delete</td><td class="px-4 py-3 text-neutral-300">wrong message to the customer</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">📅 Calendar</td><td class="px-4 py-3 text-neutral-300">times and names</td><td class="px-4 py-3 text-neutral-300">schedule, reschedule, cancel</td><td class="px-4 py-3 text-neutral-300">patient without an appointment</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">📊 Spreadsheet</td><td class="px-4 py-3 text-neutral-300">customer data</td><td class="px-4 py-3 text-neutral-300">edit, delete rows</td><td class="px-4 py-3 text-neutral-300">lost sign-up</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">💬 WhatsApp</td><td class="px-4 py-3 text-neutral-300">conversations</td><td class="px-4 py-3 text-neutral-300">send a bulk message</td><td class="px-4 py-3 text-neutral-300">wrong promotion for everyone</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">💳 Payment</td><td class="px-4 py-3 text-neutral-300">balance and statement</td><td class="px-4 py-3 text-neutral-300">charge, issue a refund, pay</td><td class="px-4 py-3 text-neutral-300">money that doesn’t come back</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">âœ‰ Email</td><td class="px-4 py-3 text-neutral-300">all messages</td><td class="px-4 py-3 text-neutral-300">reply, forward, delete</td><td class="px-4 py-3 text-neutral-300">wrong message to the customer</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ðŸ“… Calendar</td><td class="px-4 py-3 text-neutral-300">times and names</td><td class="px-4 py-3 text-neutral-300">schedule, reschedule, cancel</td><td class="px-4 py-3 text-neutral-300">patient without an appointment</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ðŸ“Š Spreadsheet</td><td class="px-4 py-3 text-neutral-300">customer data</td><td class="px-4 py-3 text-neutral-300">edit, delete rows</td><td class="px-4 py-3 text-neutral-300">lost sign-up</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ðŸ’¬ WhatsApp</td><td class="px-4 py-3 text-neutral-300">conversations</td><td class="px-4 py-3 text-neutral-300">send a bulk message</td><td class="px-4 py-3 text-neutral-300">wrong promotion for everyone</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ðŸ’³ Payment</td><td class="px-4 py-3 text-neutral-300">balance and statement</td><td class="px-4 py-3 text-neutral-300">charge, issue a refund, pay</td><td class="px-4 py-3 text-neutral-300">money that doesnâ€™t come back</td></tr>
 </tbody>
 </table>
 </div>
-<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">What to look for in the table:</strong> The "If it goes wrong…" column gets more costly as you go down. That’s why, in module 3.1, payment is the last key you hand over—if you hand it over at all.</p>
+<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">What to look for in the table:</strong> The "If it goes wrongâ€¦" column gets more costly as you go down. Thatâ€™s why, in module 3.1, payment is the last key you hand overâ€”if you hand it over at all.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">💡</span> Practical tip</h3>
-<p class="text-neutral-300 text-sm">Whenever a screen asks you to “allow access,” read what comes after “to”: <em>read <strong>e</strong> send</em>, <em>see <strong>e</strong> delete</em>. The second half is where things can go wrong.</p>
+<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ðŸ’¡</span> Practical tip</h3>
+<p class="text-neutral-300 text-sm">Whenever a screen asks you to â€œallow access,â€ read what comes after â€œtoâ€: <em>read <strong>e</strong> send</em>, <em>see <strong>e</strong> delete</em>. The second half is where things can go wrong.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">🔑</div><div class="text-sm font-semibold text-emerald-400">Access</div><p class="text-xs text-neutral-400 mt-1">a room key</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">🔌</div><div class="text-sm font-semibold text-emerald-400">Connector</div><p class="text-xs text-neutral-400 mt-1">the cable to the app</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">👤</div><div class="text-sm font-semibold text-emerald-400">Your name</div><p class="text-xs text-neutral-400 mt-1">it acts as you</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">📈</div><div class="text-sm font-semibold text-emerald-400">Cost of a mistake</div><p class="text-xs text-neutral-400 mt-1">grows with the tool</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ”‘</div><div class="text-sm font-semibold text-emerald-400">Access</div><p class="text-xs text-neutral-400 mt-1">a room key</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ”Œ</div><div class="text-sm font-semibold text-emerald-400">Connector</div><p class="text-xs text-neutral-400 mt-1">the cable to the app</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ‘¤</div><div class="text-sm font-semibold text-emerald-400">Your name</div><p class="text-xs text-neutral-400 mt-1">it acts as you</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ“ˆ</div><div class="text-sm font-semibold text-emerald-400">Cost of a mistake</div><p class="text-xs text-neutral-400 mt-1">grows with the tool</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 3 ===================== -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-3" id="topico-3">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">3</span>
-<h2 class="text-2xl font-bold flex-1">Track an agent’s cycle</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<h2 class="text-2xl font-bold flex-1">Track an agentâ€™s cycle</h2>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m1-1-t3-p1">An agent doesn't take just one step. It works in <strong class="text-emerald-400">cycle</strong>: receives the request, decides what to do next, uses a tool, checks the result, and decides again—until it thinks it’s done.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t3-p2">Every turn of the cycle is a chance to get it right—and also to make a mistake without anyone seeing. You only find out at the end, if you look.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-1-t3-p1">An agent doesn't take just one step. It works in <strong class="text-emerald-400">cycle</strong>: receives the request, decides what to do next, uses a tool, checks the result, and decides againâ€”until it thinks itâ€™s done.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t3-p2">Every turn of the cycle is a chance to get it rightâ€”and also to make a mistake without anyone seeing. You only find out at the end, if you look.</p>
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6 mb-6">
-<h3 class="text-base font-semibold text-emerald-400 mb-2 flex items-center"><span class="mr-2">🆕</span> New here? What is a “loop”?</h3>
-<p class="text-neutral-300 text-sm"><strong>Loop</strong> is repetition: the agent returns to the beginning of the cycle as many times as it thinks necessary. A good loop finishes the task. A bad loop keeps going—and if each pass costs credits, the bill climbs without you noticing (we’ll return to this in module 4.3).</p>
+<h3 class="text-base font-semibold text-emerald-400 mb-2 flex items-center"><span class="mr-2">ðŸ†•</span> New here? What is a â€œloopâ€?</h3>
+<p class="text-neutral-300 text-sm"><strong>Loop</strong> is repetition: the agent returns to the beginning of the cycle as many times as it thinks necessary. A good loop finishes the task. A bad loop keeps goingâ€”and if each pass costs credits, the bill climbs without you noticing (weâ€™ll return to this in module 4.3).</p>
 </div>
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-3 overflow-hidden">
 <svg aria-label="The agent's cycle in four steps connected in a circle: request, plan, use a tool, see the result, and back to planning. One exit leads to 'I'm done.' A question mark shows that without oversight, no one checks the cycles." class="w-full h-auto" role="img" viewbox="0 0 800 280">
@@ -408,21 +408,21 @@
 </defs>
 <rect fill="url(#m11c-grid)" height="280" width="800" x="0" y="0"></rect>
 <rect fill="#1f2937" height="50" rx="12" stroke="#4b5563" stroke-width="2" width="110" x="30" y="115"></rect>
-<text fill="#d1d5db" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="85" y="145">1 · request</text>
+<text fill="#d1d5db" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="85" y="145">1 Â· request</text>
 <line marker-end="url(#m11c-arrow)" stroke="#34d399" stroke-width="2" x1="142" x2="228" y1="140" y2="140"></line>
 <g filter="url(#m11c-glow)"><rect fill="#0e2018" height="50" rx="12" stroke="#34d399" stroke-width="2" width="140" x="232" y="40"></rect></g>
-<text fill="#34d399" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="302" y="70">2 · plan</text>
+<text fill="#34d399" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="302" y="70">2 Â· plan</text>
 <rect fill="#0b1f2e" height="50" rx="12" stroke="#38bdf8" stroke-width="2" width="160" x="430" y="115"></rect>
-<text fill="#bae6fd" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="510" y="145">3 · use a tool</text>
+<text fill="#bae6fd" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="510" y="145">3 Â· use a tool</text>
 <rect fill="#0e2018" height="50" rx="12" stroke="#34d399" stroke-width="2" width="140" x="232" y="190"></rect>
-<text fill="#a7f3d0" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="302" y="220">4 · see the result</text>
+<text fill="#a7f3d0" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="302" y="220">4 Â· see the result</text>
 <path class="wf-flow" d="M372,70 C 430,70 480,90 505,113" fill="none" marker-end="url(#m11c-arrow-c)" stroke="#38bdf8" stroke-width="2"></path>
 <path class="wf-flow" d="M505,167 C 480,195 430,215 374,215" fill="none" marker-end="url(#m11c-arrow-c)" stroke="#38bdf8" stroke-width="2"></path>
 <path d="M270,190 C 240,160 240,120 270,92" fill="none" marker-end="url(#m11c-arrow)" stroke="#34d399" stroke-width="2"></path>
 <text fill="#6ee7b7" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="210" y="145">back</text>
 <line marker-end="url(#m11c-arrow)" stroke="#34d399" stroke-width="2" x1="592" x2="660" y1="140" y2="140"></line>
 <rect fill="#1f2937" height="50" rx="12" stroke="#34d399" stroke-width="2" width="110" x="664" y="115"></rect>
-<text fill="#34d399" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="719" y="145">I’m done</text>
+<text fill="#34d399" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="719" y="145">Iâ€™m done</text>
 <circle cx="540" cy="215" fill="#3b0d0d" r="16" stroke="#f87171" stroke-width="2"></circle>
 <text fill="#fca5a5" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="540" y="221">?</text>
 <text fill="#fca5a5" font-family="Inter,sans-serif" font-size="11" x="565" y="220">who checks each turn?</text>
@@ -432,126 +432,126 @@
 <div class="space-y-5 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">Renata requests</h4><p class="text-neutral-300 text-sm">“Confirm tomorrow’s appointments.” Renata owns an aesthetics clinic and connected the agent to the calendar and WhatsApp.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">Renata requests</h4><p class="text-neutral-300 text-sm">â€œConfirm tomorrowâ€™s appointments.â€ Renata owns an aesthetics clinic and connected the agent to the calendar and WhatsApp.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">The agent plans</h4><p class="text-neutral-300 text-sm">“I need tomorrow’s list, followed by one message for each patient.”</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">The agent plans</h4><p class="text-neutral-300 text-sm">â€œI need tomorrowâ€™s list, followed by one message for each patient.â€</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">Use the tools</h4><p class="text-neutral-300 text-sm">Reads the schedule (12 patients) and sends 12 messages through the clinic’s WhatsApp.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">Use the tools</h4><p class="text-neutral-300 text-sm">Reads the schedule (12 patients) and sends 12 messages through the clinicâ€™s WhatsApp.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">4</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">See the result and decide</h4><p class="text-neutral-300 text-sm">Two patients ask to reschedule. If it has write access to the calendar, it reschedules on its own—without Renata knowing.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">See the result and decide</h4><p class="text-neutral-300 text-sm">Two patients ask to reschedule. If it has write access to the calendar, it reschedules on its ownâ€”without Renata knowing.</p></div>
 </div>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">🔁</div><div class="text-sm font-semibold text-emerald-400">Cycle</div><p class="text-xs text-neutral-400 mt-1">plans, acts, observes, repeats</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">🌀</div><div class="text-sm font-semibold text-emerald-400">Loop</div><p class="text-xs text-neutral-400 mt-1">can spin too much</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">👀</div><div class="text-sm font-semibold text-emerald-400">Visibility</div><p class="text-xs text-neutral-400 mt-1">you only see the end</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">🧭</div><div class="text-sm font-semibold text-emerald-400">Independent decision</div><p class="text-xs text-neutral-400 mt-1">it chooses the next step</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ”</div><div class="text-sm font-semibold text-emerald-400">Cycle</div><p class="text-xs text-neutral-400 mt-1">plans, acts, observes, repeats</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸŒ€</div><div class="text-sm font-semibold text-emerald-400">Loop</div><p class="text-xs text-neutral-400 mt-1">can spin too much</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ‘€</div><div class="text-sm font-semibold text-emerald-400">Visibility</div><p class="text-xs text-neutral-400 mt-1">you only see the end</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ§­</div><div class="text-sm font-semibold text-emerald-400">Independent decision</div><p class="text-xs text-neutral-400 mt-1">it chooses the next step</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 4 ===================== -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-4" id="topico-4">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold flex-1">Measure the size of the error</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m1-1-t4-p1">The underlying model is the same. It makes mistakes in the same way. What changes is <strong class="text-emerald-400">where the error ends up</strong>.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t4-p2">When an assistant makes a mistake, the error stays on the screen, right in front of you. When an agent makes a mistake, the error has already gone out: it's in the customer's inbox, the spreadsheet, the statement.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-1-t4-p1">The underlying model is the same. It makes mistakes in the same way. What changes is <strong class="text-emerald-400">where the error ends up</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t4-p2">When an assistant makes a mistake, the error stays on the screen, right in front of you. When an agent makes a mistake, the error has already gone out: it's in the customer's inbox, the spreadsheet, the statement.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">💬 Assistant error</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ðŸ’¬ Assistant error</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Incorrectly priced text appears on the screen.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>You read it, notice, and fix it before using it.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Cost: a few minutes.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Incorrectly priced text appears on the screen.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>You read it, notice, and fix it before using it.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Cost: a few minutes.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">🦾 Agent error</h4>
+<h4 class="font-bold text-red-400 mb-4">ðŸ¦¾ Agent error</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>A promotion with the wrong price goes to 300 patients.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>You find out when the clients respond.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Cost: money, reputation, and a day spent apologizing.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>A promotion with the wrong price goes to 300 patients.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>You find out when the clients respond.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Cost: money, reputation, and a day spent apologizing.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl border border-emerald-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-emerald-400 mb-3 flex items-center"><span class="mr-2">🧠</span> The same error, three destinations</h3>
+<h3 class="text-lg font-semibold text-emerald-400 mb-3 flex items-center"><span class="mr-2">ðŸ§ </span> The same error, three destinations</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">•</span><span><strong>Stays on the screen</strong> — assistant. You’re the filter.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">•</span><span><strong>Stays in a draft</strong> — agent with approval. You’re still the filter, just later.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">•</span><span><strong>Take it out into the world</strong> — agent without approval. There’s no filter.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">â€¢</span><span><strong>Stays on the screen</strong> â€” assistant. Youâ€™re the filter.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">â€¢</span><span><strong>Stays in a draft</strong> â€” agent with approval. Youâ€™re still the filter, just later.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">â€¢</span><span><strong>Take it out into the world</strong> â€” agent without approval. Thereâ€™s no filter.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-red-400 mb-2 flex items-center"><span class="mr-2">⚠️</span> Attention</h3>
-<p class="text-neutral-300 text-sm">Some actions can’t be undone: a payment made, a message read, a file deleted without a backup. For those, control needs to come <strong>before</strong> — afterward, all that’s left is to apologize.</p>
+<h3 class="text-lg font-semibold text-red-400 mb-2 flex items-center"><span class="mr-2">âš ï¸</span> Attention</h3>
+<p class="text-neutral-300 text-sm">Some actions canâ€™t be undone: a payment made, a message read, a file deleted without a backup. For those, control needs to come <strong>before</strong> â€” afterward, all thatâ€™s left is to apologize.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 5 ===================== -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-5" id="topico-5">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold flex-1">Take inventory of access</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m1-1-t5-p1">Before turning on any agent, find out what’s already turned on. Many people clicked "allow" in an AI app and forgot about it.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t5-p2">The exercise is simple: for each AI tool you use, list what it can <strong>read</strong>, <strong>change</strong> e <strong>send</strong>. Use any AI chat to organize the list with you.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-1-t5-p1">Before turning on any agent, find out whatâ€™s already turned on. Many people clicked "allow" in an AI app and forgot about it.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t5-p2">The exercise is simple: for each AI tool you use, list what it can <strong>read</strong>, <strong>change</strong> e <strong>send</strong>. Use any AI chat to organize the list with you.</p>
 <div class="bg-dark-800 rounded-xl border border-emerald-500/30 overflow-hidden mb-6">
-<div class="px-5 py-3 bg-emerald-900/20 border-b border-emerald-500/30"><span class="text-emerald-400 font-semibold text-sm">🎯 Goal: leave with a table of your business's access permissions</span></div>
+<div class="px-5 py-3 bg-emerald-900/20 border-b border-emerald-500/30"><span class="text-emerald-400 font-semibold text-sm">ðŸŽ¯ Goal: leave with a table of your business's access permissions</span></div>
 <div class="p-5">
 <p class="text-sm text-neutral-400 mb-3">Paste into the AI chat you already use (ChatGPT, Claude, Gemini). Replace what's inside &lt; &gt;.</p>
-<pre class="font-mono text-sm text-neutral-200 whitespace-pre-wrap bg-dark-900/60 rounded-lg p-4 border border-dark-600">Quero fazer um inventário dos acessos que dei a ferramentas de IA no meu trabalho.
-Meu negócio: &lt;ex.: clínica de estética com 2 funcionárias&gt;.
-Ferramentas de IA que uso ou pretendo usar: &lt;ex.: chat de IA, assistente do e-mail, robô de WhatsApp&gt;.
+<pre class="font-mono text-sm text-neutral-200 whitespace-pre-wrap bg-dark-900/60 rounded-lg p-4 border border-dark-600">Quero fazer um inventÃ¡rio dos acessos que dei a ferramentas de IA no meu trabalho.
+Meu negÃ³cio: &lt;ex.: clÃ­nica de estÃ©tica com 2 funcionÃ¡rias&gt;.
+Ferramentas de IA que uso ou pretendo usar: &lt;ex.: chat de IA, assistente do e-mail, robÃ´ de WhatsApp&gt;.
 
-Me faça uma pergunta por vez sobre cada ferramenta, até descobrir:
+Me faÃ§a uma pergunta por vez sobre cada ferramenta, atÃ© descobrir:
 1. o que ela pode LER (e-mail, agenda, planilha, conversas, arquivos);
 2. o que ela pode MUDAR ou ENVIAR em meu nome;
 3. se alguma delas mexe com dinheiro ou dados de clientes.
 
-No fim, monte uma tabela com as colunas: ferramenta | lê | muda/envia | dinheiro? | dados de clientes?
-Não invente acessos: se eu não souber, escreva "verificar".</pre>
+No fim, monte uma tabela com as colunas: ferramenta | lÃª | muda/envia | dinheiro? | dados de clientes?
+NÃ£o invente acessos: se eu nÃ£o souber, escreva "verificar".</pre>
 </div>
 <div class="px-5 py-3 bg-dark-700/40 border-t border-dark-600 text-neutral-300 text-sm"><strong class="text-emerald-400">How to verify:</strong> the table has one row per tool and no empty cells. Wherever it says "check," open the app settings and look for "connections," "connected apps," or "permissions".</div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">💡</span> Marcos’s example</h3>
-<p class="text-neutral-300 text-sm">Marcos, an accountant, found three things he’d forgotten about: an email assistant that could <em>send</em> (not just suggesting), a browser extension with access to "all sites," and a test WhatsApp bot still connected to the office number. They turned off the latter two that same day.</p>
+<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ðŸ’¡</span> Marcosâ€™s example</h3>
+<p class="text-neutral-300 text-sm">Marcos, an accountant, found three things heâ€™d forgotten about: an email assistant that could <em>send</em> (not just suggesting), a browser extension with access to "all sites," and a test WhatsApp bot still connected to the office number. They turned off the latter two that same day.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 6 ===================== -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-6" id="topico-6">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold flex-1">Keep the rule that runs through the course</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-inema-block="m1-1-t6-p1">If you remember just one sentence, make it this one: <strong class="text-emerald-400">The more the agent can do on its own, the tighter the limits need to be.</strong></p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t6-p2">And you decide what to automate, what it can access, and whether it worked—not the agent, not the app provider.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m1-1-t6-p1">If you remember just one sentence, make it this one: <strong class="text-emerald-400">The more the agent can do on its own, the tighter the limits need to be.</strong></p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t6-p2">And you decide what to automate, what it can access, and whether it workedâ€”not the agent, not the app provider.</p>
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-3 overflow-hidden">
-<svg aria-label="A staircase with the course’s five tracks, rising from left to right: why now, find the pain, control the system, what almost no one tells you, and own the results. At the top, the agent profile is ready." class="w-full h-auto" role="img" viewbox="0 0 800 230">
+<svg aria-label="A staircase with the courseâ€™s five tracks, rising from left to right: why now, find the pain, control the system, what almost no one tells you, and own the results. At the top, the agent profile is ready." class="w-full h-auto" role="img" viewbox="0 0 800 230">
 <defs>
 <pattern height="32" id="m11s-grid" patternunits="userSpaceOnUse" width="32"><circle cx="1.3" cy="1.3" fill="#34d399" opacity="0.10" r="1.3"></circle></pattern>
 <filter height="180%" id="m11s-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -569,59 +569,59 @@ Não invente acessos: se eu não souber, escreva "verificar".</pre>
 <rect fill="#111827" height="44" rx="10" stroke="#2dd4bf" stroke-width="2" width="160" x="620" y="30"></rect>
 <text fill="#2dd4bf" font-weight="600" x="700" y="50">T5</text><text fill="#99f6e4" x="700" y="66">take responsibility for the outcome</text>
 </g>
-<text fill="#38bdf8" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="700" y="110">↳ agent form ready</text>
+<text fill="#38bdf8" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="700" y="110">â†³ agent form ready</text>
 <text fill="#9ca3af" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="90" y="160">you are here</text>
 </svg>
 </div>
 <p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">How to read the diagram:</strong> each level is a track and depends on the one before it. You choose the controls (T3) only after you know which pain you'll address (T2), and you measure the result (T5) only after you set up the safety barriers (T4).</p>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6" data-inema-check="modulo-1-1#q1">
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6" data-ARCKHÉ-check="modulo-1-1#q1">
 <p class="font-medium mb-4">Quick test (optional): which of these situations is an example of <strong>agent</strong>?</p>
 <div class="space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">AI drafts a message template, and you copy it to WhatsApp.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">AI reads the schedule and automatically sends a reminder to each patient.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">AI summarizes a PDF you pasted into the chat.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">AI drafts a message template, and you copy it to WhatsApp.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">AI reads the schedule and automatically sends a reminder to each patient.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">AI summarizes a PDF you pasted into the chat.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">🔒</div><div class="text-sm font-semibold text-emerald-400">Limits</div><p class="text-xs text-neutral-400 mt-1">grow with the capability</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">🙋</div><div class="text-sm font-semibold text-emerald-400">You decide</div><p class="text-xs text-neutral-400 mt-1">what, how much, whether it worked</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">🪜</div><div class="text-sm font-semibold text-emerald-400">5 tracks</div><p class="text-xs text-neutral-400 mt-1">one depends on the other</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">📋</div><div class="text-sm font-semibold text-emerald-400">Profile</div><p class="text-xs text-neutral-400 mt-1">what you take away at the end</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ”’</div><div class="text-sm font-semibold text-emerald-400">Limits</div><p class="text-xs text-neutral-400 mt-1">grow with the capability</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ™‹</div><div class="text-sm font-semibold text-emerald-400">You decide</div><p class="text-xs text-neutral-400 mt-1">what, how much, whether it worked</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸªœ</div><div class="text-sm font-semibold text-emerald-400">5 tracks</div><p class="text-xs text-neutral-400 mt-1">one depends on the other</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ“‹</div><div class="text-sm font-semibold text-emerald-400">Profile</div><p class="text-xs text-neutral-400 mt-1">what you take away at the end</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-read-icon">○</span><span class="inema-read-label">Mark as read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span>
 </button>
 </div>
 </section>
 <!-- ===================== RESUMO ===================== -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-emerald-900/40 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🎓</span> Module summary</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸŽ“</span> Module summary</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-neutral-100">Assistant responds, agent acts</strong><span class="text-neutral-400"> — the difference is the tools.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-neutral-100">Every tool is a door</strong><span class="text-neutral-400"> — and it acts under your name.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-neutral-100">The agent works in a cycle</strong><span class="text-neutral-400"> — you only see the end, if you look.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-neutral-100">The error changes where it happens</strong><span class="text-neutral-400"> — from your screen to the customer’s inbox.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-neutral-100">Inventory first</strong><span class="text-neutral-400"> — know what’s already connected.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-neutral-100">Assistant responds, agent acts</strong><span class="text-neutral-400"> â€” the difference is the tools.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-neutral-100">Every tool is a door</strong><span class="text-neutral-400"> â€” and it acts under your name.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-neutral-100">The agent works in a cycle</strong><span class="text-neutral-400"> â€” you only see the end, if you look.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-neutral-100">The error changes where it happens</strong><span class="text-neutral-400"> â€” from your screen to the customerâ€™s inbox.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-neutral-100">Inventory first</strong><span class="text-neutral-400"> â€” know whatâ€™s already connected.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-emerald-400 mb-2">Next module:</h3>
-<p class="text-neutral-300">1.2 — More capable, more limits</p>
+<p class="text-neutral-300">1.2 â€” More capable, more limits</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Back to the trail</a>
-<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-2.html">Module 1.2 →</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Back to the trail</a>
+<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-2.html">Module 1.2 â†’</a>
 </div>
 </div>
 </section>
 </main>
 <aside class="hidden lg:block">
-<nav aria-label="Page index" class="sticky top-24" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3"><span data-inema-section-counter="">Section 1 of 6</span></p>
+<nav aria-label="Page index" class="sticky top-24" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3"><span data-ARCKHÉ-section-counter="">Section 1 of 6</span></p>
 <ol class="space-y-2 text-sm">
-<li><a class="text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Respond × act</a></li>
+<li><a class="text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Respond Ã— act</a></li>
 <li><a class="text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Tools</a></li>
 <li><a class="text-neutral-400 hover:text-emerald-400" href="#topico-3">3. The cycle</a></li>
 <li><a class="text-neutral-400 hover:text-emerald-400" href="#topico-4">4. Size of the error</a></li>
@@ -633,7 +633,7 @@ Não invente acessos: se eu não souber, escreva "verificar".</pre>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Agent under Control · 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://inema.pro" target="_blank">PRO</a></p>
+<p>Agent under Control Â· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHÉ.pro" target="_blank">PRO</a></p>
 </div>
 </footer>
 <script>
@@ -644,7 +644,7 @@ Não invente acessos: se eu não souber, escreva "verificar".</pre>
     if (!_html.classList.contains('dark')) { themeToggleDarkIcon.classList.remove('hidden'); }
     else { themeToggleLightIcon.classList.remove('hidden'); }
     themeToggle.addEventListener('click', () => {
-      if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'inema-dark'); }
+      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHÉ-dark'); }
       else { _html.classList.toggle('dark'); }
       themeToggleDarkIcon.classList.toggle('hidden', _html.classList.contains('dark'));
       themeToggleLightIcon.classList.toggle('hidden', !_html.classList.contains('dark'));
@@ -665,15 +665,15 @@ Não invente acessos: se eu não souber, escreva "verificar".</pre>
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') { window.INEMA.init(); }
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
   </script>
 <script>
     window.addEventListener('DOMContentLoaded', function () {
-      if (window.INEMA && INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-1-1#q1', { answer: 1, explain: {
-          '0': 'Aqui quem age é você: a IA só escreveu, você copiou e enviou. É um assistente.',
-          '1': 'Isso. A IA leu a agenda e enviou mensagens sozinha, usando ferramentas. É um agente.',
-          '2': 'Resumir é responder com texto. Nada no mundo mudou. É um assistente.'
+      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-1-1#q1', { answer: 1, explain: {
+          '0': 'Aqui quem age Ã© vocÃª: a IA sÃ³ escreveu, vocÃª copiou e enviou. Ã‰ um assistente.',
+          '1': 'Isso. A IA leu a agenda e enviou mensagens sozinha, usando ferramentas. Ã‰ um agente.',
+          '2': 'Resumir Ã© responder com texto. Nada no mundo mudou. Ã‰ um assistente.'
         } });
       }
     });

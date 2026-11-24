@@ -4,41 +4,41 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="agscv2" name="inema-course"/>
-<title>Track 4 · What almost no one tells you | Agent Under Control</title>
+<meta content="agscv2" name="ARCKHÉ-course"/>
+<title>Track 4 Â· What almost no one tells you | Agent Under Control</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
-          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'inema-dark';
+          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark'); else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark') ? 'dark' : 'light'));
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style; var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -60,8 +60,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO em TODA pagina, identico) -->
-<script data-inema-manifest="" type="application/json">
-  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder não é agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10×","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido não é problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"Três regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguém conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensões","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"Métrica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
+<script data-ARCKHÉ-manifest="" type="application/json">
+  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nÃ£o Ã© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10Ã—","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nÃ£o Ã© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrÃªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguÃ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensÃµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MÃ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
   </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -151,7 +151,7 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* Alvos de ancora abaixo do nav sticky */
-    [data-inema-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
+    [data-ARCKHÉ-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
 
     /* SVG light mode + animacao */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
@@ -168,21 +168,21 @@
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
   </style>
-<link href="https://inematds.github.io/curso-agente-sob-controle-v2/curso/trilha4/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/curso-agente-sob-controle-v2/en/curso/trilha4/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/curso-agente-sob-controle-v2/es/curso/trilha4/" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha4/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha4/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha4/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha4/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-primary focus:text-black focus:rounded-lg" href="#conteudo">Skip to content</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-3">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">🛡️</span>
+<span class="text-2xl">ðŸ›¡ï¸</span>
 <span class="font-bold text-lg hidden lg:inline">Agent under Control</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 <span class="text-neutral-600">-</span>
-<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://inema.pro" target="_blank">PRO</a>
+<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHÉ.pro" target="_blank">PRO</a>
 </div>
 <div class="flex items-center space-x-1">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -200,40 +200,40 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html">
 <span class="xl:hidden">T5</span><span class="hidden xl:inline">Result</span>
 </a>
-<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-inema-journey-open="" title="My journey" type="button">
-<span aria-hidden="true">◷</span><span class="hidden md:inline">Journey</span>
-<span class="inema-journey-badge" data-count="0" data-inema-journey-badge=""></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-journey-open="" title="My journey" type="button">
+<span aria-hidden="true">â—·</span><span class="hidden md:inline">Journey</span>
+<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <div class="relative">
-<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-inema-appearance-toggle="#aparencia" title="Appearance" type="button">
+<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-appearance-toggle="#aparencia" title="Appearance" type="button">
 <span aria-hidden="true" class="text-sm font-semibold">Aa</span><span class="sr-only">Appearance</span>
 </button>
-<div class="inema-appearance-pop" data-inema-appearance="" id="aparencia">
-<div aria-label="Topic" class="inema-segment">
-<button data-inema-set-theme="inema-dark" type="button">Dark</button>
-<button data-inema-set-theme="claro" type="button">Clear</button>
-<button data-inema-set-theme="sepia" type="button">Sepia</button>
-<button data-inema-set-theme="foco" type="button">Focus</button>
-<button data-inema-set-theme="contraste" type="button">High contrast</button>
+<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" id="aparencia">
+<div aria-label="Topic" class="ARCKHÉ-segment">
+<button data-ARCKHÉ-set-theme="ARCKHÉ-dark" type="button">Dark</button>
+<button data-ARCKHÉ-set-theme="claro" type="button">Clear</button>
+<button data-ARCKHÉ-set-theme="sepia" type="button">Sepia</button>
+<button data-ARCKHÉ-set-theme="foco" type="button">Focus</button>
+<button data-ARCKHÉ-set-theme="contraste" type="button">High contrast</button>
 </div>
-<div aria-label="Source" class="inema-segment">
-<button data-inema-set-font="inter" type="button">Inter</button>
-<button data-inema-set-font="system" type="button">System</button>
-<button data-inema-set-font="leitura" type="button">Reading</button>
+<div aria-label="Source" class="ARCKHÉ-segment">
+<button data-ARCKHÉ-set-font="inter" type="button">Inter</button>
+<button data-ARCKHÉ-set-font="system" type="button">System</button>
+<button data-ARCKHÉ-set-font="leitura" type="button">Reading</button>
 </div>
-<div aria-label="Text length" class="inema-segment">
-<button data-inema-set-fontscale="100" type="button">A</button>
-<button data-inema-set-fontscale="112" type="button">A+</button>
-<button data-inema-set-fontscale="125" type="button">A++</button>
+<div aria-label="Text length" class="ARCKHÉ-segment">
+<button data-ARCKHÉ-set-fontscale="100" type="button">A</button>
+<button data-ARCKHÉ-set-fontscale="112" type="button">A+</button>
+<button data-ARCKHÉ-set-fontscale="125" type="button">A++</button>
 </div>
-<div aria-label="Line width" class="inema-segment">
-<button data-inema-set-linewidth="60" type="button">Narrow</button>
-<button data-inema-set-linewidth="68" type="button">Medium</button>
-<button data-inema-set-linewidth="75" type="button">Wide</button>
+<div aria-label="Line width" class="ARCKHÉ-segment">
+<button data-ARCKHÉ-set-linewidth="60" type="button">Narrow</button>
+<button data-ARCKHÉ-set-linewidth="68" type="button">Medium</button>
+<button data-ARCKHÉ-set-linewidth="75" type="button">Wide</button>
 </div>
-<div aria-label="Subtext" class="inema-segment">
-<button data-inema-set-leading="1.45" type="button">Compact</button>
-<button data-inema-set-leading="1.7" type="button">Comfortable</button>
+<div aria-label="Subtext" class="ARCKHÉ-segment">
+<button data-ARCKHÉ-set-leading="1.45" type="button">Compact</button>
+<button data-ARCKHÉ-set-leading="1.7" type="button">Comfortable</button>
 </div>
 </div>
 </div>
@@ -245,21 +245,21 @@
 </div>
 </div>
 </nav>
-<header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-inema-track="4">
+<header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-ARCKHÉ-track="4">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-[1fr_380px] lg:gap-10 lg:items-center">
 <div>
 <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">TRACK 4</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">🕳️ What almost no one tells you</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Hidden instructions in emails and PDFs, passwords in the wrong place, extensions that inherit your permissions, spending with no cap, and too much customer data. The risks below the surface—and how to close each door.</p>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ•³ï¸ What almost no one tells you</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Hidden instructions in emails and PDFs, passwords in the wrong place, extensions that inherit your permissions, spending with no cap, and too much customer data. The risks below the surfaceâ€”and how to close each door.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">3</div><div class="text-xs text-neutral-400">Modules</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">18</div><div class="text-xs text-neutral-400">Topics</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">~1h40</div><div class="text-xs text-neutral-400">Duration</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">Practical</div><div class="text-xs text-neutral-400">Level</div></div>
 </div>
-<div aria-label="Track 4 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-inema-meter="trilha:4" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-inema-meter-frac="">0 of 18</span><span data-inema-meter-pct="">0%</span></div>
-<div class="inema-bar"><div class="inema-bar__fill" data-inema-meter-fill=""></div></div>
+<div aria-label="Track 4 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="trilha:4" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 of 18</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
+<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
 </div>
 </div>
 <div class="mt-8 lg:mt-0 rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 overflow-hidden">
@@ -275,11 +275,11 @@
 <text fill="#d1d5db" font-family="Inter,sans-serif" font-size="10" text-anchor="middle" x="190" y="62">responds</text>
 <g filter="url(#t4h-glow)"><path d="M160,70 L222,70 L300,120 L270,205 L110,215 L70,130 Z" fill="#2a1d06" stroke="#fbbf24" stroke-width="2"></path></g>
 <g font-family="Inter,sans-serif" font-size="11" text-anchor="middle">
-<text class="wf-a" fill="#fbbf24" font-weight="600" x="190" y="96">🧪 hidden instructions</text>
-<text class="wf-a" fill="#fde68a" x="190" y="120">🗝️ secrets</text>
-<text class="wf-a" fill="#fde68a" x="190" y="144">🧩 extensions</text>
-<text class="wf-a" fill="#fde68a" x="190" y="168">💸 spending without a limit</text>
-<text class="wf-a" fill="#fde68a" x="190" y="192">👥 customer data</text>
+<text class="wf-a" fill="#fbbf24" font-weight="600" x="190" y="96">ðŸ§ª hidden instructions</text>
+<text class="wf-a" fill="#fde68a" x="190" y="120">ðŸ—ï¸ secrets</text>
+<text class="wf-a" fill="#fde68a" x="190" y="144">ðŸ§© extensions</text>
+<text class="wf-a" fill="#fde68a" x="190" y="168">ðŸ’¸ spending without a limit</text>
+<text class="wf-a" fill="#fde68a" x="190" y="192">ðŸ‘¥ customer data</text>
 </g>
 <text fill="#9ca3af" font-family="Inter,sans-serif" font-size="10" text-anchor="middle" x="330" y="60">what you can see</text>
 <text fill="#bae6fd" font-family="Inter,sans-serif" font-size="10" text-anchor="middle" x="336" y="228">what sinks</text>
@@ -287,50 +287,50 @@
 </div>
 </div>
 </header>
-<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-inema-track="4" id="conteudo">
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-ARCKHÉ-track="4" id="conteudo">
 <section class="mb-12">
 <h2 class="text-2xl font-bold mb-6">Trail map</h2>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-5 transition-all" href="#modulo-4-1">
 <div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold text-sm">4.1</span><span class="text-xs text-neutral-500">~35 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-amber-400 transition-colors">🧪 Hidden instructions</h3>
+<h3 class="font-semibold mb-1 group-hover:text-amber-400 transition-colors">ðŸ§ª Hidden instructions</h3>
 <p class="text-xs text-neutral-400">Text that gives orders</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-5 transition-all" href="#modulo-4-2">
 <div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold text-sm">4.2</span><span class="text-xs text-neutral-500">~30 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-amber-400 transition-colors">🗝️ Passwords and extensions</h3>
+<h3 class="font-semibold mb-1 group-hover:text-amber-400 transition-colors">ðŸ—ï¸ Passwords and extensions</h3>
 <p class="text-xs text-neutral-400">The key never appears</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-5 transition-all" href="#modulo-4-3">
 <div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold text-sm">4.3</span><span class="text-xs text-neutral-500">~35 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-amber-400 transition-colors">💸 Spending, isolation, and LGPD</h3>
+<h3 class="font-semibold mb-1 group-hover:text-amber-400 transition-colors">ðŸ’¸ Spending, isolation, and LGPD</h3>
 <p class="text-xs text-neutral-400">Limit, sandbox, and data</p>
 </a>
 </div>
 </section>
 <h2 class="text-2xl font-bold mb-6">Detailed content</h2>
 <!-- ===== MODULO 4.1 ===== -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="4-1" data-inema-track="4" id="modulo-4-1">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="4-1" data-ARCKHÉ-track="4" id="modulo-4-1">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold">4.1</span><span class="text-xs text-neutral-500">~35 min</span></div>
-<h3 class="text-2xl font-bold mb-2">🧪 Hidden instructions</h3>
+<h3 class="text-2xl font-bold mb-2">ðŸ§ª Hidden instructions</h3>
 <p class="text-neutral-400 text-sm">How outside text gives the agent instructions, the rhyme test to see this safely, and the safeguards that hold it back.</p>
-<div aria-label="Module 4.1 progress" aria-valuemax="100" aria-valuemin="0" class="mt-4" data-inema-meter="modulo:4-1" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-inema-meter-frac="">0 of 6</span><span data-inema-meter-pct="">0%</span></div>
-<div class="inema-bar"><div class="inema-bar__fill" data-inema-meter-fill=""></div></div>
+<div aria-label="Module 4.1 progress" aria-valuemax="100" aria-valuemin="0" class="mt-4" data-ARCKHÉ-meter="modulo:4-1" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 of 6</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
+<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
 </div>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-controls="t4-1-1" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">🕳️</span>
+<span class="text-lg">ðŸ•³ï¸</span>
 <div><span class="font-medium">Understand what a hidden instruction is</span><span class="text-neutral-500 text-sm ml-2">- a sentence written for the AI</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-1-1">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">An instruction placed inside an email, PDF, or website that the agent reads and follows. Technical name: prompt injection.</p></div>
-<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Whoever writes the text ends up controlling the agent—without breaking into anything, just by sending an email.</p></div>
+<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Whoever writes the text ends up controlling the agentâ€”without breaking into anything, just by sending an email.</p></div>
 <div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Hidden instructions, outside content, invisible text, change of ownership.</p></div>
 </div>
 </div>
@@ -338,27 +338,27 @@
 <div class="topic-item">
 <button aria-controls="t4-1-2" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">🚪</span>
+<span class="text-lg">ðŸšª</span>
 <div><span class="font-medium">See how it gets in</span><span class="text-neutral-500 text-sm ml-2">- every text doorway</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-1-2">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Email, PDF, web page, spreadsheet comment, résumé, and invoice: everything the agent reads as part of its work.</p></div>
-<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">You can’t stop it from reading; you can control what it can do after it reads.</p></div>
-<div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Front door, attachment, navigation, sources × tools.</p></div>
+<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Email, PDF, web page, spreadsheet comment, rÃ©sumÃ©, and invoice: everything the agent reads as part of its work.</p></div>
+<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">You canâ€™t stop it from reading; you can control what it can do after it reads.</p></div>
+<div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Front door, attachment, navigation, sources Ã— tools.</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t4-1-3" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">🎵</span>
+<span class="text-lg">ðŸŽµ</span>
 <div><span class="font-medium">Do the rhyme test</span><span class="text-neutral-500 text-sm ml-2">- harmless, with your own text</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-1-3">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">A one-line message from you with a hidden line asking it to "reply in rhyme," tested in two rounds: without a rule and with a rule.</p></div>
-<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Seeing the chat itself obey is more convincing than any explanation—and there's no risk.</p></div>
+<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Seeing the chat itself obey is more convincing than any explanationâ€”and there's no risk.</p></div>
 <div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Rhyme test, new conversation, no connectors, two rounds.</p></div>
 </div>
 </div>
@@ -366,13 +366,13 @@
 <div class="topic-item">
 <button aria-controls="t4-1-4" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">🧵</span>
+<span class="text-lg">ðŸ§µ</span>
 <div><span class="font-medium">Understand why the agent obeys</span><span class="text-neutral-500 text-sm ml-2">- data and instruction, the same text</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-1-4">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">To the model, your instructions and the email from outside arrive as one continuous stream of text, with no label showing who owns what.</p></div>
-<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Explains why no written rule eliminates risk—and why approval is still necessary.</p></div>
+<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Explains why no written rule eliminates riskâ€”and why approval is still necessary.</p></div>
 <div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Single queue, no labels, trained to obey, reduces but does not eliminate risk.</p></div>
 </div>
 </div>
@@ -380,27 +380,27 @@
 <div class="topic-item">
 <button aria-controls="t4-1-5" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">🧱</span>
+<span class="text-lg">ðŸ§±</span>
 <div><span class="font-medium">Build defenses that work</span><span class="text-neutral-500 text-sm ml-2">- stacked barriers</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-1-5">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Read ≠ act, few tools enabled, be wary of urgency from outside and get approval before sending.</p></div>
+<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Read â‰  act, few tools enabled, be wary of urgency from outside and get approval before sending.</p></div>
 <div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">No single safeguard solves everything. Layered together, the last one catches what the others let through.</p></div>
-<div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Read ≠ act, fewer tools, urgency becomes a question, approval.</p></div>
+<div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Read â‰  act, fewer tools, urgency becomes a question, approval.</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t4-1-6" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">📌</span>
-<div><span class="font-medium">Write the rule “external text is data”</span><span class="text-neutral-500 text-sm ml-2">- the rule helps; approval ensures it</span></div>
+<span class="text-lg">ðŸ“Œ</span>
+<div><span class="font-medium">Write the rule â€œexternal text is dataâ€</span><span class="text-neutral-500 text-sm ml-2">- the rule helps; approval ensures it</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-1-6">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">A ready-to-use block for the agent's fixed instructions: outside content is information; only you can give instructions.</p></div>
-<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">It's the first and cheapest barrier — as long as you know its honest limits.</p></div>
+<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">It's the first and cheapest barrier â€” as long as you know its honest limits.</p></div>
 <div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Fixed instructions, warn instead of obeying, honest limits.</p></div>
 </div>
 </div>
@@ -412,26 +412,26 @@
 </div>
 </div>
 <!-- ===== MODULO 4.2 ===== -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="4-2" data-inema-track="4" id="modulo-4-2">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="4-2" data-ARCKHÉ-track="4" id="modulo-4-2">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold">4.2</span><span class="text-xs text-neutral-500">~30 min</span></div>
-<h3 class="text-2xl font-bold mb-2">🗝️ Passwords and extensions</h3>
+<h3 class="text-2xl font-bold mb-2">ðŸ—ï¸ Passwords and extensions</h3>
 <p class="text-neutral-400 text-sm">Secrets, the key file the agent can see, extensions that inherit your permissions, and the leak checklist.</p>
-<div aria-label="Module 4.2 progress" aria-valuemax="100" aria-valuemin="0" class="mt-4" data-inema-meter="modulo:4-2" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-inema-meter-frac="">0 of 6</span><span data-inema-meter-pct="">0%</span></div>
-<div class="inema-bar"><div class="inema-bar__fill" data-inema-meter-fill=""></div></div>
+<div aria-label="Module 4.2 progress" aria-valuemax="100" aria-valuemin="0" class="mt-4" data-ARCKHÉ-meter="modulo:4-2" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 of 6</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
+<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
 </div>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-controls="t4-2-1" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">🔑</span>
+<span class="text-lg">ðŸ”‘</span>
 <div><span class="font-medium">Understand what a secret is</span><span class="text-neutral-500 text-sm ml-2">- password, key, token</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-2-1">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Everything that proves to a system that "it's me." This includes the API key — the password to the door between programs.</p></div>
+<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Everything that proves to a system that "it's me." This includes the API key â€” the password to the door between programs.</p></div>
 <div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Whoever has the secret gets in as you. The system doesn't verify the person, only the key.</p></div>
 <div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Secret, API, API key, token.</p></div>
 </div>
@@ -440,13 +440,13 @@
 <div class="topic-item">
 <button aria-controls="t4-2-2" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">⚙️</span>
+<span class="text-lg">âš™ï¸</span>
 <div><span class="font-medium">Know that the agent can see configuration files</span><span class="text-neutral-500 text-sm ml-2">- the .env file</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-2-2">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">The keys are usually stored in a configuration file, such as .env, in the folder the agent can access.</p></div>
-<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Folder access means access to everything inside it—including keys, if nobody separates them.</p></div>
+<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Folder access means access to everything inside itâ€”including keys, if nobody separates them.</p></div>
 <div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">.env, folder access, vault, printing = data leak.</p></div>
 </div>
 </div>
@@ -454,41 +454,41 @@
 <div class="topic-item">
 <button aria-controls="t4-2-3" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">🙅</span>
-<div><span class="font-medium">Follow the rule: the key is never printed or pasted into chat</span><span class="text-neutral-500 text-sm ml-2">- not even “just to check”</span></div>
+<span class="text-lg">ðŸ™…</span>
+<div><span class="font-medium">Follow the rule: the key is never printed or pasted into chat</span><span class="text-neutral-500 text-sm ml-2">- not even â€œjust to checkâ€</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-2-3">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">You don’t paste secrets into the chat, and the agent doesn’t show secrets on screen. Ready-to-use rule for the instructions.</p></div>
+<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">You donâ€™t paste secrets into the chat, and the agent doesnâ€™t show secrets on screen. Ready-to-use rule for the instructions.</p></div>
 <div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">The history stores everything that goes in. A secret pasted into the chat ends up living in the chat.</p></div>
-<div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">History, don’t paste, don’t print, [SECRET HIDDEN].</p></div>
+<div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">History, donâ€™t paste, donâ€™t print, [SECRET HIDDEN].</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t4-2-4" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">🧩</span>
-<div><span class="font-medium">Be wary of third-party extensions, plugins, and “skills”</span><span class="text-neutral-500 text-sm ml-2">- run with your permissions</span></div>
+<span class="text-lg">ðŸ§©</span>
+<div><span class="font-medium">Be wary of third-party extensions, plugins, and â€œskillsâ€</span><span class="text-neutral-500 text-sm ml-2">- run with your permissions</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-2-4">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Other people’s programs that install in the browser, chat, or agent and inherit whatever permissions it has.</p></div>
+<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Other peopleâ€™s programs that install in the browser, chat, or agent and inherit whatever permissions it has.</p></div>
 <div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Installing it is like hiring a stranger to work inside your office.</p></div>
-<div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Extension, its permissions, asks × promises, update.</p></div>
+<div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Extension, its permissions, asks Ã— promises, update.</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t4-2-5" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">✅</span>
+<span class="text-lg">âœ…</span>
 <div><span class="font-medium">Check before installing</span><span class="text-neutral-500 text-sm ml-2">- who, what, needs?</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-2-5">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Three questions in two minutes: who published it, what it asks for, and whether you really need it.</p></div>
-<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">It prevents most problems—and many extensions do what the chat can already do without installing anything.</p></div>
+<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">It prevents most problemsâ€”and many extensions do what the chat can already do without installing anything.</p></div>
 <div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Who published it, list of permissions, do I really need this, test profile.</p></div>
 </div>
 </div>
@@ -496,13 +496,13 @@
 <div class="topic-item">
 <button aria-controls="t4-2-6" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">🚨</span>
+<span class="text-lg">ðŸš¨</span>
 <div><span class="font-medium">Know what to do if a key is leaked</span><span class="text-neutral-500 text-sm ml-2">- revoke first</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-2-6">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Revoke, create a new one, replace it wherever it was used, and check spending—with a checklist ready to fill out today.</p></div>
-<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Deleting the message doesn’t solve it. On the day of a leak, you don’t want to be searching for where the button is.</p></div>
+<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Revoke, create a new one, replace it wherever it was used, and check spendingâ€”with a checklist ready to fill out today.</p></div>
+<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Deleting the message doesnâ€™t solve it. On the day of a leak, you donâ€™t want to be searching for where the button is.</p></div>
 <div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Revoke, create a new key, replace it, check spending.</p></div>
 </div>
 </div>
@@ -514,21 +514,21 @@
 </div>
 </div>
 <!-- ===== MODULO 4.3 ===== -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="4-3" data-inema-track="4" id="modulo-4-3">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="4-3" data-ARCKHÉ-track="4" id="modulo-4-3">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold">4.3</span><span class="text-xs text-neutral-500">~35 min</span></div>
-<h3 class="text-2xl font-bold mb-2">💸 Spending, isolation, and LGPD</h3>
+<h3 class="text-2xl font-bold mb-2">ðŸ’¸ Spending, isolation, and LGPD</h3>
 <p class="text-neutral-400 text-sm">Spending and effort limits, a sandbox for the agent, LGPD on one page, and the four-gate checklist.</p>
-<div aria-label="Module 4.3 progress" aria-valuemax="100" aria-valuemin="0" class="mt-4" data-inema-meter="modulo:4-3" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-inema-meter-frac="">0 of 6</span><span data-inema-meter-pct="">0%</span></div>
-<div class="inema-bar"><div class="inema-bar__fill" data-inema-meter-fill=""></div></div>
+<div aria-label="Module 4.3 progress" aria-valuemax="100" aria-valuemin="0" class="mt-4" data-ARCKHÉ-meter="modulo:4-3" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 of 6</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
+<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
 </div>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-controls="t4-3-1" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">🧢</span>
+<span class="text-lg">ðŸ§¢</span>
 <div><span class="font-medium">Set a spending cap</span><span class="text-neutral-500 text-sm ml-2">- the worst case, first</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-3-1">
@@ -542,12 +542,12 @@
 <div class="topic-item">
 <button aria-controls="t4-3-2" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">🌀</span>
+<span class="text-lg">ðŸŒ€</span>
 <div><span class="font-medium">Set a resource cap and stop the loop</span><span class="text-neutral-500 text-sm ml-2">- time, attempts, submissions</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-3-2">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Time, attempt, message, and machine limits—and what the agent does when it hits them.</p></div>
+<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Time, attempt, message, and machine limitsâ€”and what the agent does when it hits them.</p></div>
 <div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">A loop without a cap uses money, time, and computing resources all at once. The fix is usually one line.</p></div>
 <div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Loop, maximum time, attempts, stop and notify.</p></div>
 </div>
@@ -556,13 +556,13 @@
 <div class="topic-item">
 <button aria-controls="t4-3-3" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">🏖️</span>
+<span class="text-lg">ðŸ–ï¸</span>
 <div><span class="font-medium">Isolate the agent</span><span class="text-neutral-500 text-sm ml-2">- errors stay inside the fence</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-3-3">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Restricted folder, separate account, or sandbox (sandbox/container): an enclosed space for the agent to work in.</p></div>
-<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">If it makes a mistake or gets tricked, the damage stays inside—away from your bank account and your keys.</p></div>
+<div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">If it makes a mistake or gets tricked, the damage stays insideâ€”away from your bank account and your keys.</p></div>
 <div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Sandbox, container, restricted folder, copy.</p></div>
 </div>
 </div>
@@ -570,12 +570,12 @@
 <div class="topic-item">
 <button aria-controls="t4-3-4" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">📜</span>
+<span class="text-lg">ðŸ“œ</span>
 <div><span class="font-medium">Understand the LGPD in one page</span><span class="text-neutral-500 text-sm ml-2">- no legalese</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-3-4">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Personal data, sensitive data, legal basis, purpose, necessity, and data subject rights — applied to the agent.</p></div>
+<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Personal data, sensitive data, legal basis, purpose, necessity, and data subject rights â€” applied to the agent.</p></div>
 <div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">The law applies just the same when an AI reads the spreadsheet. You remain responsible.</p></div>
 <div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Personal data, sensitive data, legal basis, purpose.</p></div>
 </div>
@@ -584,12 +584,12 @@
 <div class="topic-item">
 <button aria-controls="t4-3-5" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">✂️</span>
+<span class="text-lg">âœ‚ï¸</span>
 <div><span class="font-medium">Show the agent only what it needs</span><span class="text-neutral-500 text-sm ml-2">- minimize and anonymize</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-3-5">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Remove columns the task doesn’t use and replace names with codes before the data reaches the agent.</p></div>
+<div><span class="text-amber-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Remove columns the task doesnâ€™t use and replace names with codes before the data reaches the agent.</p></div>
 <div><span class="text-amber-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">The agent works the same way, and anything that leaks is worth much less.</p></div>
 <div><span class="text-amber-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Minimize, anonymize, key table, before and not after.</p></div>
 </div>
@@ -598,7 +598,7 @@
 <div class="topic-item">
 <button aria-controls="t4-3-6" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">🚪</span>
+<span class="text-lg">ðŸšª</span>
 <div><span class="font-medium">Close the four doors</span><span class="text-neutral-500 text-sm ml-2">- secrets, extensions, spending, data</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t4-3-6">
@@ -616,8 +616,8 @@
 </div>
 </div>
 <div class="flex flex-col sm:flex-row gap-4 mt-12">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../trilha3/index.html">← Previous trail: Control the system</a>
-<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="../trilha5/index.html">Next track: Own the outcome →</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../trilha3/index.html">â† Previous trail: Control the system</a>
+<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="../trilha5/index.html">Next track: Own the outcome â†’</a>
 </div>
 </main>
 <!-- MODAIS (iframe carrega a pagina do modulo) -->
@@ -625,7 +625,7 @@
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
 <div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
 <div class="flex items-center space-x-3"><span class="text-amber-400 font-bold">4.1</span><span class="font-semibold" id="modal-4-1-title">Hidden instructions</span></div>
-<button aria-label="Close" class="text-neutral-400 hover:text-neutral-100 text-2xl leading-none" onclick="closeModal()">×</button>
+<button aria-label="Close" class="text-neutral-400 hover:text-neutral-100 text-2xl leading-none" onclick="closeModal()">Ã—</button>
 </div>
 <iframe class="flex-1 w-full rounded-b-xl" loading="lazy" src="modulo-4-1.html" title="Module 4.1"></iframe>
 </div>
@@ -634,7 +634,7 @@
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
 <div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
 <div class="flex items-center space-x-3"><span class="text-amber-400 font-bold">4.2</span><span class="font-semibold" id="modal-4-2-title">Passwords and extensions</span></div>
-<button aria-label="Close" class="text-neutral-400 hover:text-neutral-100 text-2xl leading-none" onclick="closeModal()">×</button>
+<button aria-label="Close" class="text-neutral-400 hover:text-neutral-100 text-2xl leading-none" onclick="closeModal()">Ã—</button>
 </div>
 <iframe class="flex-1 w-full rounded-b-xl" loading="lazy" src="modulo-4-2.html" title="Module 4.2"></iframe>
 </div>
@@ -643,14 +643,14 @@
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
 <div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
 <div class="flex items-center space-x-3"><span class="text-amber-400 font-bold">4.3</span><span class="font-semibold" id="modal-4-3-title">Spending, isolation, and LGPD</span></div>
-<button aria-label="Close" class="text-neutral-400 hover:text-neutral-100 text-2xl leading-none" onclick="closeModal()">×</button>
+<button aria-label="Close" class="text-neutral-400 hover:text-neutral-100 text-2xl leading-none" onclick="closeModal()">Ã—</button>
 </div>
 <iframe class="flex-1 w-full rounded-b-xl" loading="lazy" src="modulo-4-3.html" title="Module 4.3"></iframe>
 </div>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Agent under Control · 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://inema.pro" target="_blank">PRO</a></p>
+<p>Agent under Control Â· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHÉ.pro" target="_blank">PRO</a></p>
 </div>
 </footer>
 <script>
@@ -661,7 +661,7 @@
     if (!_html.classList.contains('dark')) { themeToggleDarkIcon.classList.remove('hidden'); }
     else { themeToggleLightIcon.classList.remove('hidden'); }
     themeToggle.addEventListener('click', () => {
-      if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'inema-dark'); }
+      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHÉ-dark'); }
       else { _html.classList.toggle('dark'); }
       themeToggleDarkIcon.classList.toggle('hidden', _html.classList.contains('dark'));
       themeToggleLightIcon.classList.toggle('hidden', !_html.classList.contains('dark'));
@@ -682,7 +682,7 @@
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') { window.INEMA.init(); }
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
   </script>
 </body>
 </html>

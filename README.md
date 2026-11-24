@@ -1,4 +1,4 @@
-﻿# Agente sob Controle (v2) â€” Use agentes de IA sem se queimar
+# Agente sob Controle (v2) â€” Use agentes de IA sem se queimar
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -6,11 +6,11 @@
 </div>
 
 
-Curso gratuito do INEMA.CLUB, formato `formato-curso-v2` (dark Ã¢mbar, trilhas e mÃ³dulos, camada de aprendizagem: marcar lido, dÃºvidas, grifos, "minha jornada", export/import, temas).
+Curso gratuito do ARCKHÉ AI, formato `formato-curso-v2` (dark Ã¢mbar, trilhas e mÃ³dulos, camada de aprendizagem: marcar lido, dÃºvidas, grifos, "minha jornada", export/import, temas).
 
 Para quem tem um pequeno negÃ³cio e comeÃ§a a usar agentes de IA: escolher o problema certo, limitar o que o agente pode tocar, fechar as portas de seguranÃ§a que quase ninguÃ©m vÃª e medir se deu certo.
 
-**Curso:** https://inematds.github.io/curso-agente-sob-controle-v2/
+**Curso:** https://linnoff88-dev.github.io/
 
 ## Estrutura
 
@@ -25,21 +25,21 @@ Para quem tem um pequeno negÃ³cio e comeÃ§a a usar agentes de IA: escolher o
 11 mÃ³dulos Ã— 6 tÃ³picos = 66 tÃ³picos. HTML estÃ¡tico (Tailwind via CDN + `assets/learn.css`/`learn.js`), abre direto no navegador.
 
 - EspecificaÃ§Ã£o e mapa de conteÃºdo: [`context/SPEC.md`](context/SPEC.md)
-- Outra versÃ£o do mesmo curso (formato v6, aulas de 15 min): https://inematds.github.io/curso-agente-sob-controle/
+- Outra versÃ£o do mesmo curso (formato v6, aulas de 15 min): https://linnoff88-dev.github.io/
 
-## Mais no INEMA.CLUB
+## Mais no ARCKHÉ AI
 
-- [Ficha deste curso](https://www.inema.club/cursos/305-agente-sob-controle-v2-use-agentes-de-ia-sem-se-queimar/)
-- [Guia: como aprender inteligÃªncia artificial](https://www.inema.club/aprender-inteligencia-artificial/)
-- [Todos os cursos](https://www.inema.club/cursos/)
+- [Ficha deste curso](https://www.ARCKHÉ AI/cursos/305-agente-sob-controle-v2-use-agentes-de-ia-sem-se-queimar/)
+- [Guia: como aprender inteligÃªncia artificial](https://www.ARCKHÉ AI/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.ARCKHÉ AI/cursos/)
 
-<!-- inema-backlink:v1 -->
-## Mais no INEMA.CLUB
+<!-- ARCKHÉ-backlink:v1 -->
+## Mais no ARCKHÉ AI
 
-- [Ficha completa deste curso](https://www.inema.club/cursos/305-agente-sob-controle-v2-use-agentes-de-ia-sem-se-queimar/)
-- [Guia: como aprender inteligÃªncia artificial](https://www.inema.club/aprender-inteligencia-artificial/)
-- [Todos os cursos](https://www.inema.club/cursos/)
-<!-- /inema-backlink:v1 -->
+- [Ficha completa deste curso](https://www.ARCKHÉ AI/cursos/305-agente-sob-controle-v2-use-agentes-de-ia-sem-se-queimar/)
+- [Guia: como aprender inteligÃªncia artificial](https://www.ARCKHÉ AI/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.ARCKHÉ AI/cursos/)
+<!-- /ARCKHÉ-backlink:v1 -->
 
 ---
 
