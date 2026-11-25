@@ -4,41 +4,41 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="agscv2" name="ARCKHÉ-course"/>
+<meta content="agscv2" name="ARCKHê-course"/>
 <title>Las cinco claves | Agente bajo control</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
-          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark'); else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark') ? 'dark' : 'light'));
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style; var scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -60,8 +60,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO em TODA pagina, identico) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
-  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nÃ£o Ã© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10Ã—","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nÃ£o Ã© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrÃªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguÃ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensÃµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MÃ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
+<script data-ARCKHê-manifest="" type="application/json">
+  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nêÂ£o êÂ© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10êâ","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nêÂ£o êÂ© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrêÂªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguêÂ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensêÂµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MêÂ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
   </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -151,7 +151,7 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* Alvos de ancora abaixo do nav sticky */
-    [data-ARCKHÉ-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
+    [data-ARCKHê-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
 
     /* SVG light mode + animacao */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
@@ -169,24 +169,24 @@
     .topic-explanation.active { display: block; }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha3/modulo-3-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha3/modulo-3-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-3-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha3/modulo-3-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha3/modulo-3-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-3-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-primary focus:text-black focus:rounded-lg" href="#conteudo">Saltar al contenido</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-3">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">ðŸ›¡ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ¡ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden lg:inline">Agente bajo Control</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 <span class="text-neutral-600">-</span>
-<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHÉ.pro" target="_blank">PRO</a>
+<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHê.pro" target="_blank">PRO</a>
 </div>
 <div class="flex items-center space-x-1">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
-<span class="xl:hidden">T1</span><span class="hidden xl:inline">Por quÃ© ahora</span>
+<span class="xl:hidden">T1</span><span class="hidden xl:inline">Por quêÂ© ahora</span>
 </a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html">
 <span class="xl:hidden">T2</span><span class="hidden xl:inline">Identifica el problema</span>
@@ -200,40 +200,40 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html">
 <span class="xl:hidden">T5</span><span class="hidden xl:inline">Resultado</span>
 </a>
-<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-journey-open="" title="Mi recorrido" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden md:inline">Recorrido</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHê-journey-open="" title="Mi recorrido" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden md:inline">Recorrido</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <div class="relative">
-<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-appearance-toggle="#aparencia" title="Apariencia" type="button">
+<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHê-appearance-toggle="#aparencia" title="Apariencia" type="button">
 <span aria-hidden="true" class="text-sm font-semibold">Aa</span><span class="sr-only">Apariencia</span>
 </button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" id="aparencia">
-<div aria-label="Tema" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-theme="ARCKHÉ-dark" type="button">Oscuro</button>
-<button data-ARCKHÉ-set-theme="claro" type="button">Claro</button>
-<button data-ARCKHÉ-set-theme="sepia" type="button">Sepia</button>
-<button data-ARCKHÉ-set-theme="foco" type="button">Enfoque</button>
-<button data-ARCKHÉ-set-theme="contraste" type="button">Alto contraste</button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" id="aparencia">
+<div aria-label="Tema" class="ARCKHê-segment">
+<button data-ARCKHê-set-theme="ARCKHê-dark" type="button">Oscuro</button>
+<button data-ARCKHê-set-theme="claro" type="button">Claro</button>
+<button data-ARCKHê-set-theme="sepia" type="button">Sepia</button>
+<button data-ARCKHê-set-theme="foco" type="button">Enfoque</button>
+<button data-ARCKHê-set-theme="contraste" type="button">Alto contraste</button>
 </div>
-<div aria-label="Fuente" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-font="inter" type="button">Inter</button>
-<button data-ARCKHÉ-set-font="system" type="button">Sistema</button>
-<button data-ARCKHÉ-set-font="leitura" type="button">Lectura</button>
+<div aria-label="Fuente" class="ARCKHê-segment">
+<button data-ARCKHê-set-font="inter" type="button">Inter</button>
+<button data-ARCKHê-set-font="system" type="button">Sistema</button>
+<button data-ARCKHê-set-font="leitura" type="button">Lectura</button>
 </div>
-<div aria-label="TamaÃ±o del texto" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-fontscale="100" type="button">A</button>
-<button data-ARCKHÉ-set-fontscale="112" type="button">A+</button>
-<button data-ARCKHÉ-set-fontscale="125" type="button">A++</button>
+<div aria-label="TamaêÂ±o del texto" class="ARCKHê-segment">
+<button data-ARCKHê-set-fontscale="100" type="button">A</button>
+<button data-ARCKHê-set-fontscale="112" type="button">A+</button>
+<button data-ARCKHê-set-fontscale="125" type="button">A++</button>
 </div>
-<div aria-label="Ancho de lÃ­nea" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-linewidth="60" type="button">Estrecho</button>
-<button data-ARCKHÉ-set-linewidth="68" type="button">Medio</button>
-<button data-ARCKHÉ-set-linewidth="75" type="button">Ancho</button>
+<div aria-label="Ancho de lêÂ­nea" class="ARCKHê-segment">
+<button data-ARCKHê-set-linewidth="60" type="button">Estrecho</button>
+<button data-ARCKHê-set-linewidth="68" type="button">Medio</button>
+<button data-ARCKHê-set-linewidth="75" type="button">Ancho</button>
 </div>
-<div aria-label="Entre lÃ­neas" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-leading="1.45" type="button">Compacto</button>
-<button data-ARCKHÉ-set-leading="1.7" type="button">CÃ³modo</button>
+<div aria-label="Entre lêÂ­neas" class="ARCKHê-segment">
+<button data-ARCKHê-set-leading="1.45" type="button">Compacto</button>
+<button data-ARCKHê-set-leading="1.7" type="button">CêÂ³modo</button>
 </div>
 </div>
 </div>
@@ -245,44 +245,44 @@
 </div>
 </div>
 </nav>
-<nav aria-label="Ruta de navegaciÃ³n" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Ruta de navegaciêÂ³n" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
 <a class="hover:text-purple-400" href="../../index.html">Inicio</a><span>/</span>
 <a class="hover:text-purple-400" href="index.html">Ruta 3</a><span>/</span>
-<span class="text-purple-400">MÃ³dulo 3.1</span>
+<span class="text-purple-400">MêÂ³dulo 3.1</span>
 </div>
 </nav>
-<header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-ARCKHÉ-module="3-1" data-ARCKHÉ-track="3">
+<header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-ARCKHê-module="3-1" data-ARCKHê-track="3">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 3.1</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ”‘ Las cinco claves</h1>
+<span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MêâDULO 3.1</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸ââ Las cinco claves</h1>
 <p class="text-lg text-neutral-400 max-w-3xl">Leer, cambiar, aprobar, registrar y apagar. Cinco decisiones que caben en una hoja y definen el alcance del agente antes de que exista.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">6</div><div class="text-xs text-neutral-400">Temas</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">~35</div><div class="text-xs text-neutral-400">Minutos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">PrÃ¡ctico</div><div class="text-xs text-neutral-400">Nivel</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">PrêÂ¡ctico</div><div class="text-xs text-neutral-400">Nivel</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">Ficha</div><div class="text-xs text-neutral-400">Entrega</div></div>
 </div>
-<div aria-label="Progreso del mÃ³dulo 3.1" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="modulo:3-1" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 de 6</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
-<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
+<div aria-label="Progreso del mêÂ³dulo 3.1" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHê-meter="modulo:3-1" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHê-meter-frac="">0 de 6</span><span data-ARCKHê-meter-pct="">0%</span></div>
+<div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div>
 </div>
 </div>
 </header>
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[1fr_220px] lg:gap-10">
-<main class="min-w-0" data-ARCKHÉ-module="3-1" data-ARCKHÉ-track="3" id="conteudo">
+<main class="min-w-0" data-ARCKHê-module="3-1" data-ARCKHê-track="3" id="conteudo">
 <!-- ===================== TOPICO 1 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHê-topic="modulo-3-1#topico-1" id="topico-1">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold flex-1">Trata al agente como a un empleado nuevo</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m3-1-t1-p1">Nadie contrata a alguien el lunes y le entrega la contraseÃ±a del banco ese mismo dÃ­a. La persona empieza con lo bÃ¡sico y obtiene acceso a medida que demuestra que puede hacerlo.</p>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m3-1-t1-p2">Con un agente es igual. <strong class="text-purple-400">El acceso no es todo o nada:</strong> tÃº eliges pieza por pieza, y puedes dar mÃ¡s despuÃ©s.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t1-p3">Renata iba a conectar el agente de recordatorios a WhatsApp, a la agenda, a la hoja de cÃ¡lculo de pacientes y a la terminal de pago. Se detuvo antes y volviÃ³ a hacer la lista.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m3-1-t1-p1">Nadie contrata a alguien el lunes y le entrega la contraseêÂ±a del banco ese mismo dêÂ­a. La persona empieza con lo bêÂ¡sico y obtiene acceso a medida que demuestra que puede hacerlo.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m3-1-t1-p2">Con un agente es igual. <strong class="text-purple-400">El acceso no es todo o nada:</strong> têÂº eliges pieza por pieza, y puedes dar mêÂ¡s despuêÂ©s.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-1-t1-p3">Renata iba a conectar el agente de recordatorios a WhatsApp, a la agenda, a la hoja de cêÂ¡lculo de pacientes y a la terminal de pago. Se detuvo antes y volviêÂ³ a hacer la lista.</p>
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-3 overflow-hidden">
-<svg aria-label="Dos versiones del agente de recordatorios de Renata. A la izquierda, el agente conectado a cuatro herramientas: WhatsApp, agenda, hoja de cÃ¡lculo de pacientes y terminal de pago, con la terminal marcada en rojo. A la derecha, el mismo agente conectado solo a la agenda, para leer, y a WhatsApp, para enviar recordatorios; las otras dos quedan fuera de su alcance." class="w-full h-auto" role="img" viewbox="0 0 800 270">
+<svg aria-label="Dos versiones del agente de recordatorios de Renata. A la izquierda, el agente conectado a cuatro herramientas: WhatsApp, agenda, hoja de cêÂ¡lculo de pacientes y terminal de pago, con la terminal marcada en rojo. A la derecha, el mismo agente conectado solo a la agenda, para leer, y a WhatsApp, para enviar recordatorios; las otras dos quedan fuera de su alcance." class="w-full h-auto" role="img" viewbox="0 0 800 270">
 <defs>
 <pattern height="32" id="m31-grid" patternunits="userSpaceOnUse" width="32"><circle cx="1.3" cy="1.3" fill="#c084fc" opacity="0.10" r="1.3"></circle></pattern>
 <filter height="180%" id="m31-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -291,8 +291,8 @@
 </defs>
 <rect fill="url(#m31-grid)" height="270" width="800" x="0" y="0"></rect>
 <line stroke="#374151" stroke-dasharray="4 6" stroke-width="2" x1="400" x2="400" y1="20" y2="250"></line>
-<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="200" y="34">ANTES â€” todo de una vez</text>
-<text fill="#c084fc" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="600" y="34">DESPUÃ‰S â€” solo lo que pide la tarea</text>
+<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="200" y="34">ANTES ê¢â¬â todo de una vez</text>
+<text fill="#c084fc" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="600" y="34">DESPUêâ°S ê¢â¬â solo lo que pide la tarea</text>
 <g font-family="Inter,sans-serif" font-size="12">
 <rect fill="#1f2937" height="56" rx="12" stroke="#6b7280" stroke-width="2" width="100" x="30" y="112"></rect>
 <text fill="#e5e7eb" font-weight="600" text-anchor="middle" x="80" y="137">agente</text>
@@ -301,106 +301,106 @@
 <line stroke="#9ca3af" stroke-width="2" x1="132" x2="228" y1="135" y2="118"></line>
 <line stroke="#9ca3af" stroke-width="2" x1="132" x2="228" y1="148" y2="168"></line>
 <line marker-end="url(#m31-arrow-r)" stroke="#f87171" stroke-width="2" x1="132" x2="228" y1="158" y2="218"></line>
-<rect fill="#1f2937" height="34" rx="9" stroke="#4b5563" stroke-width="2" width="140" x="232" y="50"></rect><text fill="#d1d5db" text-anchor="middle" x="302" y="72">ðŸ’¬ WhatsApp</text>
-<rect fill="#1f2937" height="34" rx="9" stroke="#4b5563" stroke-width="2" width="140" x="232" y="100"></rect><text fill="#d1d5db" text-anchor="middle" x="302" y="122">ðŸ“… agenda</text>
-<rect fill="#1f2937" height="34" rx="9" stroke="#4b5563" stroke-width="2" width="140" x="232" y="150"></rect><text fill="#d1d5db" text-anchor="middle" x="302" y="172">ðŸ“Š hoja de cÃ¡lculo de pacientes</text>
-<rect fill="#3b0d0d" height="34" rx="9" stroke="#f87171" stroke-width="2" width="140" x="232" y="200"></rect><text fill="#fca5a5" text-anchor="middle" x="302" y="222">ðŸ’³ terminal de pago</text>
+<rect fill="#1f2937" height="34" rx="9" stroke="#4b5563" stroke-width="2" width="140" x="232" y="50"></rect><text fill="#d1d5db" text-anchor="middle" x="302" y="72">ê°Å¸âÂ¬ WhatsApp</text>
+<rect fill="#1f2937" height="34" rx="9" stroke="#4b5563" stroke-width="2" width="140" x="232" y="100"></rect><text fill="#d1d5db" text-anchor="middle" x="302" y="122">ê°Å¸ââ¦ agenda</text>
+<rect fill="#1f2937" height="34" rx="9" stroke="#4b5563" stroke-width="2" width="140" x="232" y="150"></rect><text fill="#d1d5db" text-anchor="middle" x="302" y="172">ê°Å¸âÅ  hoja de cêÂ¡lculo de pacientes</text>
+<rect fill="#3b0d0d" height="34" rx="9" stroke="#f87171" stroke-width="2" width="140" x="232" y="200"></rect><text fill="#fca5a5" text-anchor="middle" x="302" y="222">ê°Å¸âÂ³ terminal de pago</text>
 <g filter="url(#m31-glow)"><rect fill="#1e1233" height="56" rx="12" stroke="#c084fc" stroke-width="2" width="100" x="430" y="112"></rect></g>
 <text fill="#c084fc" font-weight="600" text-anchor="middle" x="480" y="137">agente</text>
 <text fill="#e9d5ff" font-size="11" text-anchor="middle" x="480" y="154">recordatorios</text>
 <line class="wf-flow" marker-end="url(#m31-arrow-c)" stroke="#38bdf8" stroke-width="2" x1="532" x2="628" y1="128" y2="72"></line>
 <line class="wf-flow" marker-end="url(#m31-arrow-c)" stroke="#38bdf8" stroke-width="2" x1="532" x2="628" y1="140" y2="120"></line>
-<rect fill="#0b1f2e" height="34" rx="9" stroke="#38bdf8" stroke-width="2" width="150" x="632" y="50"></rect><text fill="#bae6fd" text-anchor="middle" x="707" y="72">ðŸ’¬ WhatsApp Â· enviar</text>
-<rect fill="#0b1f2e" height="34" rx="9" stroke="#38bdf8" stroke-width="2" width="150" x="632" y="100"></rect><text fill="#bae6fd" text-anchor="middle" x="707" y="122">ðŸ“… agenda Â· solo lectura</text>
-<rect fill="#111827" height="34" rx="9" stroke="#374151" stroke-dasharray="4 4" stroke-width="2" width="150" x="632" y="150"></rect><text fill="#6b7280" text-anchor="middle" x="707" y="172">ðŸ“Š fuera de alcance</text>
-<rect fill="#111827" height="34" rx="9" stroke="#374151" stroke-dasharray="4 4" stroke-width="2" width="150" x="632" y="200"></rect><text fill="#6b7280" text-anchor="middle" x="707" y="222">ðŸ’³ fuera de alcance</text>
+<rect fill="#0b1f2e" height="34" rx="9" stroke="#38bdf8" stroke-width="2" width="150" x="632" y="50"></rect><text fill="#bae6fd" text-anchor="middle" x="707" y="72">ê°Å¸âÂ¬ WhatsApp êÂ· enviar</text>
+<rect fill="#0b1f2e" height="34" rx="9" stroke="#38bdf8" stroke-width="2" width="150" x="632" y="100"></rect><text fill="#bae6fd" text-anchor="middle" x="707" y="122">ê°Å¸ââ¦ agenda êÂ· solo lectura</text>
+<rect fill="#111827" height="34" rx="9" stroke="#374151" stroke-dasharray="4 4" stroke-width="2" width="150" x="632" y="150"></rect><text fill="#6b7280" text-anchor="middle" x="707" y="172">ê°Å¸âÅ  fuera de alcance</text>
+<rect fill="#111827" height="34" rx="9" stroke="#374151" stroke-dasharray="4 4" stroke-width="2" width="150" x="632" y="200"></rect><text fill="#6b7280" text-anchor="middle" x="707" y="222">ê°Å¸âÂ³ fuera de alcance</text>
 </g>
 <text fill="#fca5a5" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="200" y="262">un error puede llegar hasta el dinero</text>
 <text fill="#e9d5ff" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="600" y="262">el recordatorio funciona igual, con la mitad de los accesos</text>
 </svg>
 </div>
-<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">CÃ³mo leer el dibujo:</strong> cuenta las lÃ­neas que salen de cada agente. A la izquierda son cuatro, y la Ãºltima termina en rojo, con el dinero. A la derecha son dos, y cada una indica lo que puede hacer ("solo leer", "enviar"). Los recuadros punteados son herramientas que existen, pero a las que el agente no puede acceder.</p>
+<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">CêÂ³mo leer el dibujo:</strong> cuenta las lêÂ­neas que salen de cada agente. A la izquierda son cuatro, y la êÂºltima termina en rojo, con el dinero. A la derecha son dos, y cada una indica lo que puede hacer ("solo leer", "enviar"). Los recuadros punteados son herramientas que existen, pero a las que el agente no puede acceder.</p>
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6 mb-6">
-<h3 class="text-base font-semibold text-purple-400 mb-2 flex items-center"><span class="mr-2">ðŸ†•</span> Â¿Eres nuevo aquÃ­? Â«Menor acceso posibleÂ»</h3>
-<p class="text-neutral-300 text-sm">Es la regla de darle al agente <strong>solo el acceso que requiere la tarea</strong> â€” ni una herramienta mÃ¡s. Si el recordatorio funciona sin la hoja de cÃ¡lculo, la hoja queda fuera. Si tienes dudas sobre un acceso, la respuesta es Â«no, por ahoraÂ».</p>
+<h3 class="text-base font-semibold text-purple-400 mb-2 flex items-center"><span class="mr-2">ê°Å¸â â¢</span> êÂ¿Eres nuevo aquêÂ­? êÂ«Menor acceso posibleêÂ»</h3>
+<p class="text-neutral-300 text-sm">Es la regla de darle al agente <strong>solo el acceso que requiere la tarea</strong> ê¢â¬â ni una herramienta mêÂ¡s. Si el recordatorio funciona sin la hoja de cêÂ¡lculo, la hoja queda fuera. Si tienes dudas sobre un acceso, la respuesta es êÂ«no, por ahoraêÂ».</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
-<h4 class="font-bold text-purple-400 mb-4">âœ“ Nuevo empleado bien recibido</h4>
+<h4 class="font-bold text-purple-400 mb-4">ê¢Åâ Nuevo empleado bien recibido</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>Empieza con una sola tarea.</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>Recibe la clave de las salas que va a usar.</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>Obtiene mÃ¡s acceso despuÃ©s de demostrar su capacidad.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>Empieza con una sola tarea.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>Recibe la clave de las salas que va a usar.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>Obtiene mêÂ¡s acceso despuêÂ©s de demostrar su capacidad.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Agente conectado a todo el primer dÃ­a</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Agente conectado a todo el primer dêÂ­a</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Tres tareas mezcladas en una sola solicitud.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Acceso a todas las cuentas Â«por si acasoÂ».</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Nadie sabe decir quÃ© puede hacer y quÃ© no.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Tres tareas mezcladas en una sola solicitud.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Acceso a todas las cuentas êÂ«por si acasoêÂ».</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Nadie sabe decir quêÂ© puede hacer y quêÂ© no.</span></li>
 </ul>
 </div>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸªª</div><div class="text-sm font-semibold text-purple-400">Primer dÃ­a</div><p class="text-xs text-neutral-400 mt-1">acceso gradual</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ§©</div><div class="text-sm font-semibold text-purple-400">Pieza por pieza</div><p class="text-xs text-neutral-400 mt-1">no es todo o nada</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">âœ‚ï¸</div><div class="text-sm font-semibold text-purple-400">Menor acceso</div><p class="text-xs text-neutral-400 mt-1">solo lo que pide la tarea</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ“ˆ</div><div class="text-sm font-semibold text-purple-400">Confianza</div><p class="text-xs text-neutral-400 mt-1">si mejora con el tiempo</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ÂªÂª</div><div class="text-sm font-semibold text-purple-400">Primer dêÂ­a</div><p class="text-xs text-neutral-400 mt-1">acceso gradual</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸Â§Â©</div><div class="text-sm font-semibold text-purple-400">Pieza por pieza</div><p class="text-xs text-neutral-400 mt-1">no es todo o nada</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê¢Åâê¯Â¸Â</div><div class="text-sm font-semibold text-purple-400">Menor acceso</div><p class="text-xs text-neutral-400 mt-1">solo lo que pide la tarea</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âË</div><div class="text-sm font-semibold text-purple-400">Confianza</div><p class="text-xs text-neutral-400 mt-1">si mejora con el tiempo</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 2 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHê-topic="modulo-3-1#topico-2" id="topico-2">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">2</span>
-<h2 class="text-2xl font-bold flex-1">Decide quÃ© puede leer</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<h2 class="text-2xl font-bold flex-1">Decide quêÂ© puede leer</h2>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m3-1-t2-p1">La primera clave es la mÃ¡s dÃ©bil y la que mÃ¡s gente entrega sin pensarlo. <strong class="text-purple-400">Leer</strong> parece inofensivo: solo mira, no hace cambios.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t2-p2">Pero lo que lee puede contener datos de clientes y texto externo que da instrucciones (esto corresponde a la ruta 4). Por eso la pregunta es: <em>para hacer esta tarea, Â¿quÃ© necesita ver â€”y solo eso?</em></p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m3-1-t2-p1">La primera clave es la mêÂ¡s dêÂ©bil y la que mêÂ¡s gente entrega sin pensarlo. <strong class="text-purple-400">Leer</strong> parece inofensivo: solo mira, no hace cambios.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-1-t2-p2">Pero lo que lee puede contener datos de clientes y texto externo que da instrucciones (esto corresponde a la ruta 4). Por eso la pregunta es: <em>para hacer esta tarea, êÂ¿quêÂ© necesita ver ê¢â¬ây solo eso?</em></p>
 <div class="overflow-x-auto mb-6 rounded-xl border border-dark-600">
 <table class="w-full text-sm text-left">
 <thead class="bg-dark-700/60 text-purple-400"><tr><th class="px-4 py-3 font-semibold">Tarea</th><th class="px-4 py-3 font-semibold">Necesitas leer</th><th class="px-4 py-3 font-semibold">No hace falta leer</th></tr></thead>
 <tbody class="divide-y divide-dark-600">
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Recordatorio de consulta (Renata)</td><td class="px-4 py-3 text-neutral-300">agenda del dÃ­a siguiente: nombre, horario, telÃ©fono</td><td class="px-4 py-3 text-neutral-300">historial clÃ­nico, historial de pagos, fotos</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Recordatorio de consulta (Renata)</td><td class="px-4 py-3 text-neutral-300">agenda del dêÂ­a siguiente: nombre, horario, telêÂ©fono</td><td class="px-4 py-3 text-neutral-300">historial clêÂ­nico, historial de pagos, fotos</td></tr>
 <tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Revisar documentos (Marcos)</td><td class="px-4 py-3 text-neutral-300">archivos que llegan al WhatsApp de la oficina</td><td class="px-4 py-3 text-neutral-300">correo personal, extractos de todos los clientes</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Responder dudas sobre horarios (tienda)</td><td class="px-4 py-3 text-neutral-300">horario de atenciÃ³n, direcciÃ³n</td><td class="px-4 py-3 text-neutral-300">lista de clientes, inventario, facturas</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Responder dudas sobre horarios (tienda)</td><td class="px-4 py-3 text-neutral-300">horario de atenciêÂ³n, direcciêÂ³n</td><td class="px-4 py-3 text-neutral-300">lista de clientes, inventario, facturas</td></tr>
 </tbody>
 </table>
 </div>
-<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">QuÃ© observar en la tabla:</strong> La columna del medio siempre es corta. Cuando la lista de "necesita leer" se alargue, desconfÃ­a: probablemente juntaste dos tareas en un solo agente.</p>
+<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">QuêÂ© observar en la tabla:</strong> La columna del medio siempre es corta. Cuando la lista de "necesita leer" se alargue, desconfêÂ­a: probablemente juntaste dos tareas en un solo agente.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ðŸ’¡</span> Consejo prÃ¡ctico</h3>
-<p class="text-neutral-300 text-sm">Prefiere dar una <strong>carpeta</strong> a dar el <strong>disco entero</strong>; una <strong>pestaÃ±a</strong> de la hoja de cÃ¡lculo a entregar toda la hoja de cÃ¡lculo; una <strong>agenda</strong> separada de tu agenda personal. Casi todas las aplicaciones permiten recortarla asÃ­ â€” busca "compartir solo esta carpeta" o "elegir agenda".</p>
+<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Consejo prêÂ¡ctico</h3>
+<p class="text-neutral-300 text-sm">Prefiere dar una <strong>carpeta</strong> a dar el <strong>disco entero</strong>; una <strong>pestaêÂ±a</strong> de la hoja de cêÂ¡lculo a entregar toda la hoja de cêÂ¡lculo; una <strong>agenda</strong> separada de tu agenda personal. Casi todas las aplicaciones permiten recortarla asêÂ­ ê¢â¬â busca "compartir solo esta carpeta" o "elegir agenda".</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ‘ï¸</div><div class="text-sm font-semibold text-purple-400">Leer</div><p class="text-xs text-neutral-400 mt-1">la llave mÃ¡s dÃ©bil</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ—‚ï¸</div><div class="text-sm font-semibold text-purple-400">Recorte</div><p class="text-xs text-neutral-400 mt-1">carpeta, pestaÃ±a, agenda</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ§‘â€ðŸ¤â€ðŸ§‘</div><div class="text-sm font-semibold text-purple-400">Datos de clientes</div><p class="text-xs text-neutral-400 mt-1">leer tambiÃ©n es tocar</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ“¨</div><div class="text-sm font-semibold text-purple-400">Texto externo</div><p class="text-xs text-neutral-400 mt-1">puede traer Ã³rdenes</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂê¯Â¸Â</div><div class="text-sm font-semibold text-purple-400">Leer</div><p class="text-xs text-neutral-400 mt-1">la llave mêÂ¡s dêÂ©bil</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ââê¯Â¸Â</div><div class="text-sm font-semibold text-purple-400">Recorte</div><p class="text-xs text-neutral-400 mt-1">carpeta, pestaêÂ±a, agenda</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸Â§âê¢â¬Âê°Å¸Â¤Âê¢â¬Âê°Å¸Â§â</div><div class="text-sm font-semibold text-purple-400">Datos de clientes</div><p class="text-xs text-neutral-400 mt-1">leer tambiêÂ©n es tocar</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ¨</div><div class="text-sm font-semibold text-purple-400">Texto externo</div><p class="text-xs text-neutral-400 mt-1">puede traer êÂ³rdenes</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 3 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHê-topic="modulo-3-1#topico-3" id="topico-3">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">3</span>
-<h2 class="text-2xl font-bold flex-1">Decide quÃ© puede cambiar y enviar</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<h2 class="text-2xl font-bold flex-1">Decide quêÂ© puede cambiar y enviar</h2>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m3-1-t3-p1">La segunda llave es donde el agente deja de mirar y empieza a actuar. <strong class="text-purple-400">Cambiar</strong> es cambiar algo tuyo: una fila de la hoja de cÃ¡lculo, un horario de la agenda. <strong class="text-purple-400">Enviar</strong> es enviar algo al exterior: mensaje, correo electrÃ³nico, archivo.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t3-p2">No son el mismo nivel. Un cambio dentro de casa se puede deshacer. Un mensaje que le llegÃ³ al cliente, no.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m3-1-t3-p1">La segunda llave es donde el agente deja de mirar y empieza a actuar. <strong class="text-purple-400">Cambiar</strong> es cambiar algo tuyo: una fila de la hoja de cêÂ¡lculo, un horario de la agenda. <strong class="text-purple-400">Enviar</strong> es enviar algo al exterior: mensaje, correo electrêÂ³nico, archivo.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-1-t3-p2">No son el mismo nivel. Un cambio dentro de casa se puede deshacer. Un mensaje que le llegêÂ³ al cliente, no.</p>
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-3 overflow-hidden">
-<svg aria-label="Escalera del poder del agente con cinco peldaÃ±os, del mÃ¡s seguro al mÃ¡s arriesgado: leer, preparar un borrador, cambiar algo interno, enviar al exterior y mover dinero o borrar. Los dos primeros peldaÃ±os estÃ¡n en morado, los dos del medio en azul y el Ãºltimo en rojo, con la indicaciÃ³n de que necesita aprobaciÃ³n." class="w-full h-auto" role="img" viewbox="0 0 800 260">
+<svg aria-label="Escalera del poder del agente con cinco peldaêÂ±os, del mêÂ¡s seguro al mêÂ¡s arriesgado: leer, preparar un borrador, cambiar algo interno, enviar al exterior y mover dinero o borrar. Los dos primeros peldaêÂ±os estêÂ¡n en morado, los dos del medio en azul y el êÂºltimo en rojo, con la indicaciêÂ³n de que necesita aprobaciêÂ³n." class="w-full h-auto" role="img" viewbox="0 0 800 260">
 <defs>
 <pattern height="32" id="m31e-grid" patternunits="userSpaceOnUse" width="32"><circle cx="1.3" cy="1.3" fill="#c084fc" opacity="0.10" r="1.3"></circle></pattern>
 <filter height="180%" id="m31e-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -409,63 +409,63 @@
 <rect fill="url(#m31e-grid)" height="260" width="800" x="0" y="0"></rect>
 <g font-family="Inter,sans-serif" font-size="12" text-anchor="middle">
 <g filter="url(#m31e-glow)"><rect fill="#1e1233" height="48" rx="10" stroke="#c084fc" stroke-width="2" width="140" x="20" y="190"></rect></g>
-<text fill="#c084fc" font-weight="600" x="90" y="210">1 Â· leer</text><text fill="#e9d5ff" font-size="11" x="90" y="226">solo mira</text>
+<text fill="#c084fc" font-weight="600" x="90" y="210">1 êÂ· leer</text><text fill="#e9d5ff" font-size="11" x="90" y="226">solo mira</text>
 <rect fill="#1e1233" height="48" rx="10" stroke="#c084fc" stroke-width="2" width="140" x="170" y="150"></rect>
-<text fill="#c084fc" font-weight="600" x="240" y="170">2 Â· redactar un borrador</text><text fill="#e9d5ff" font-size="11" x="240" y="186">prepara, no envÃ­a</text>
+<text fill="#c084fc" font-weight="600" x="240" y="170">2 êÂ· redactar un borrador</text><text fill="#e9d5ff" font-size="11" x="240" y="186">prepara, no envêÂ­a</text>
 <rect fill="#0b1f2e" height="48" rx="10" stroke="#38bdf8" stroke-width="2" width="140" x="320" y="110"></rect>
-<text fill="#38bdf8" font-weight="600" x="390" y="130">3 Â· cambiar</text><text fill="#bae6fd" font-size="11" x="390" y="146">dentro de casa</text>
+<text fill="#38bdf8" font-weight="600" x="390" y="130">3 êÂ· cambiar</text><text fill="#bae6fd" font-size="11" x="390" y="146">dentro de casa</text>
 <rect fill="#0b1f2e" height="48" rx="10" stroke="#38bdf8" stroke-width="2" width="140" x="470" y="70"></rect>
-<text fill="#38bdf8" font-weight="600" x="540" y="90">4 Â· enviar</text><text fill="#bae6fd" font-size="11" x="540" y="106">sale al mundo</text>
+<text fill="#38bdf8" font-weight="600" x="540" y="90">4 êÂ· enviar</text><text fill="#bae6fd" font-size="11" x="540" y="106">sale al mundo</text>
 <rect fill="#3b0d0d" height="48" rx="10" stroke="#f87171" stroke-width="2" width="160" x="620" y="30"></rect>
-<text fill="#fca5a5" font-weight="600" x="700" y="50">5 Â· pagar / borrar</text><text fill="#fecaca" font-size="11" x="700" y="66">no hay vuelta atrÃ¡s</text>
+<text fill="#fca5a5" font-weight="600" x="700" y="50">5 êÂ· pagar / borrar</text><text fill="#fecaca" font-size="11" x="700" y="66">no hay vuelta atrêÂ¡s</text>
 </g>
 <line marker-end="url(#m31e-arrow)" stroke="#9ca3af" stroke-dasharray="4 6" stroke-width="2" x1="40" x2="560" y1="120" y2="30"></line>
-<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="11" transform="rotate(-10 210 80)" x="210" y="80">mÃ¡s poder = mÃ¡s daÃ±o posible</text>
-<text fill="#f87171" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="700" y="102">âœ‹ siempre con aprobaciÃ³n</text>
+<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="11" transform="rotate(-10 210 80)" x="210" y="80">mêÂ¡s poder = mêÂ¡s daêÂ±o posible</text>
+<text fill="#f87171" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="700" y="102">ê¢Åâ¹ siempre con aprobaciêÂ³n</text>
 </svg>
 </div>
-<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">CÃ³mo leer el dibujo:</strong> cada nivel le da mÃ¡s poder al agente y aumenta el daÃ±o que puede causar un error. Los niveles morados (leer y redactar) casi no hacen daÃ±o. Los azules ya tocan cosas reales. El rojo no se puede deshacer. Para cada tarea, pregunta: <em>Â¿hasta quÃ© nivel tiene que subir?</em></p>
+<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">CêÂ³mo leer el dibujo:</strong> cada nivel le da mêÂ¡s poder al agente y aumenta el daêÂ±o que puede causar un error. Los niveles morados (leer y redactar) casi no hacen daêÂ±o. Los azules ya tocan cosas reales. El rojo no se puede deshacer. Para cada tarea, pregunta: <em>êÂ¿hasta quêÂ© nivel tiene que subir?</em></p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
-<h4 class="font-bold text-purple-400 mb-4">âœ“ Cambiar y enviar, bien redactado</h4>
+<h4 class="font-bold text-purple-400 mb-4">ê¢Åâ Cambiar y enviar, bien redactado</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>"Puede escribir solo en la pestaÃ±a Conferencia."</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>"Puede enviar solo recordatorios, con la plantilla aprobada."</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>"Puede enviar solo a quienes tienen consulta maÃ±ana."</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>"Puede escribir solo en la pestaêÂ±a Conferencia."</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>"Puede enviar solo recordatorios, con la plantilla aprobada."</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>"Puede enviar solo a quienes tienen consulta maêÂ±ana."</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Cambiar y enviar sin supervisiÃ³n</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Cambiar y enviar sin supervisiêÂ³n</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>"Puede organizar la hoja de cÃ¡lculo como le parezca mejor."</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>"Puede responder a los clientes."</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>"Puede enviar mensajes a la lista."</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>"Puede organizar la hoja de cêÂ¡lculo como le parezca mejor."</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>"Puede responder a los clientes."</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>"Puede enviar mensajes a la lista."</span></li>
 </ul>
 </div>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">âœï¸</div><div class="text-sm font-semibold text-purple-400">Cambiar</div><p class="text-xs text-neutral-400 mt-1">modifica algo tuyo</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ“¤</div><div class="text-sm font-semibold text-purple-400">Enviar</div><p class="text-xs text-neutral-400 mt-1">sale al exterior</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸªœ</div><div class="text-sm font-semibold text-purple-400">PeldaÃ±o</div><p class="text-xs text-neutral-400 mt-1">hasta dÃ³nde sube</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸŽ¯</div><div class="text-sm font-semibold text-purple-400">Escrito estrecho</div><p class="text-xs text-neutral-400 mt-1">"solo", "Ãºnicamente", "nunca"</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê¢ÅÂê¯Â¸Â</div><div class="text-sm font-semibold text-purple-400">Cambiar</div><p class="text-xs text-neutral-400 mt-1">modifica algo tuyo</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ¤</div><div class="text-sm font-semibold text-purple-400">Enviar</div><p class="text-xs text-neutral-400 mt-1">sale al exterior</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ÂªÅ</div><div class="text-sm font-semibold text-purple-400">PeldaêÂ±o</div><p class="text-xs text-neutral-400 mt-1">hasta dêÂ³nde sube</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸Å½Â¯</div><div class="text-sm font-semibold text-purple-400">Escrito estrecho</div><p class="text-xs text-neutral-400 mt-1">"solo", "êÂºnicamente", "nunca"</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 4 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHê-topic="modulo-3-1#topico-4" id="topico-4">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">4</span>
-<h2 class="text-2xl font-bold flex-1">Decide quÃ© necesita tu aprobaciÃ³n</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<h2 class="text-2xl font-bold flex-1">Decide quêÂ© necesita tu aprobaciêÂ³n</h2>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m3-1-t4-p1">La tercera llave la tienes tÃº. <strong class="text-purple-400">AprobaciÃ³n</strong> es el momento en que el agente se detiene, muestra lo que va a hacer y espera un Â«sÃ­Â» de una persona.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t4-p2">No necesitas aprobarlo todo; asÃ­ el agente se convierte en mÃ¡s trabajo. Pero tres cosas siempre pasan por una persona, sin excepciÃ³n: <strong>dinero, eliminaciÃ³n y publicaciÃ³n</strong>.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m3-1-t4-p1">La tercera llave la tienes têÂº. <strong class="text-purple-400">AprobaciêÂ³n</strong> es el momento en que el agente se detiene, muestra lo que va a hacer y espera un êÂ«sêÂ­êÂ» de una persona.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-1-t4-p2">No necesitas aprobarlo todo; asêÂ­ el agente se convierte en mêÂ¡s trabajo. Pero tres cosas siempre pasan por una persona, sin excepciêÂ³n: <strong>dinero, eliminaciêÂ³n y publicaciêÂ³n</strong>.</p>
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-3 overflow-hidden">
-<svg aria-label="Flujo con una puerta de aprobaciÃ³n. El agente prepara la acciÃ³n y la entrega en una caja de borradores. Una persona en la puerta decide: sÃ­, y la acciÃ³n sigue al mundo; no, y vuelve al agente para que la corrija. Abajo, las tres cosas que siempre pasan por la puerta: dinero, eliminaciÃ³n y publicaciÃ³n." class="w-full h-auto" role="img" viewbox="0 0 800 240">
+<svg aria-label="Flujo con una puerta de aprobaciêÂ³n. El agente prepara la acciêÂ³n y la entrega en una caja de borradores. Una persona en la puerta decide: sêÂ­, y la acciêÂ³n sigue al mundo; no, y vuelve al agente para que la corrija. Abajo, las tres cosas que siempre pasan por la puerta: dinero, eliminaciêÂ³n y publicaciêÂ³n." class="w-full h-auto" role="img" viewbox="0 0 800 240">
 <defs>
 <pattern height="32" id="m31a-grid" patternunits="userSpaceOnUse" width="32"><circle cx="1.3" cy="1.3" fill="#c084fc" opacity="0.10" r="1.3"></circle></pattern>
 <filter height="180%" id="m31a-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -480,193 +480,193 @@
 <line marker-end="url(#m31a-arrow)" stroke="#c084fc" stroke-width="2" x1="152" x2="208" y1="87" y2="87"></line>
 <rect fill="#1e1233" height="54" rx="12" stroke="#c084fc" stroke-width="2" width="130" x="212" y="60"></rect>
 <text fill="#c084fc" font-weight="600" x="277" y="84">borrador</text>
-<text fill="#e9d5ff" font-size="11" x="277" y="102">"Â¿puedo enviar?"</text>
+<text fill="#e9d5ff" font-size="11" x="277" y="102">"êÂ¿puedo enviar?"</text>
 <line marker-end="url(#m31a-arrow)" stroke="#c084fc" stroke-width="2" x1="344" x2="400" y1="87" y2="87"></line>
 <g filter="url(#m31a-glow)"><rect fill="#1e1233" height="78" rx="14" stroke="#c084fc" stroke-width="2.5" width="130" x="404" y="48"></rect></g>
-<text fill="#c084fc" font-weight="600" x="469" y="80">ðŸ™‹ tÃº</text>
+<text fill="#c084fc" font-weight="600" x="469" y="80">ê°Å¸â¢â¹ têÂº</text>
 <text fill="#e9d5ff" font-size="11" x="469" y="100">aprueba o no</text>
 <line class="wf-flow" marker-end="url(#m31a-arrow-c)" stroke="#38bdf8" stroke-width="2" x1="536" x2="620" y1="75" y2="75"></line>
-<text fill="#bae6fd" font-size="11" x="578" y="66">sÃ­</text>
+<text fill="#bae6fd" font-size="11" x="578" y="66">sêÂ­</text>
 <rect fill="#0b1f2e" height="46" rx="12" stroke="#38bdf8" stroke-width="2" width="146" x="624" y="52"></rect>
-<text fill="#bae6fd" x="697" y="80">ðŸŒ mundo real</text>
+<text fill="#bae6fd" x="697" y="80">ê°Å¸ÅÂ mundo real</text>
 <path d="M469,128 C 469,160 90,160 90,118" fill="none" marker-end="url(#m31a-arrow-r)" stroke="#f87171" stroke-width="2"></path>
 <text fill="#fca5a5" font-size="11" x="280" y="152">no: vuelve para corregir</text>
 </g>
 <g font-family="Inter,sans-serif" font-size="12" text-anchor="middle">
-<rect class="wf-a" fill="#3b0d0d" height="36" rx="9" stroke="#f87171" stroke-width="2" width="150" x="150" y="182"></rect><text fill="#fca5a5" x="225" y="205">ðŸ’³ dinero</text>
-<rect class="wf-a" fill="#3b0d0d" height="36" rx="9" stroke="#f87171" stroke-width="2" width="150" x="325" y="182"></rect><text fill="#fca5a5" x="400" y="205">ðŸ—‘ï¸ eliminaciÃ³n</text>
-<rect class="wf-a" fill="#3b0d0d" height="36" rx="9" stroke="#f87171" stroke-width="2" width="150" x="500" y="182"></rect><text fill="#fca5a5" x="575" y="205">ðŸ“¢ publicaciÃ³n</text>
+<rect class="wf-a" fill="#3b0d0d" height="36" rx="9" stroke="#f87171" stroke-width="2" width="150" x="150" y="182"></rect><text fill="#fca5a5" x="225" y="205">ê°Å¸âÂ³ dinero</text>
+<rect class="wf-a" fill="#3b0d0d" height="36" rx="9" stroke="#f87171" stroke-width="2" width="150" x="325" y="182"></rect><text fill="#fca5a5" x="400" y="205">ê°Å¸ââê¯Â¸Â eliminaciêÂ³n</text>
+<rect class="wf-a" fill="#3b0d0d" height="36" rx="9" stroke="#f87171" stroke-width="2" width="150" x="500" y="182"></rect><text fill="#fca5a5" x="575" y="205">ê°Å¸âÂ¢ publicaciêÂ³n</text>
 </g>
 </svg>
 </div>
-<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">CÃ³mo leer el dibujo:</strong> la puerta brillante eres tÃº. Nada llega a la caja azul (el mundo real) sin pasar por ella. Si la respuesta es "no", la flecha roja devuelve el trabajo al agente: el error muere ahÃ­, antes de salir. Las tres cajas de abajo son las acciones que <em>siempre</em> pasan por el acceso.</p>
+<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">CêÂ³mo leer el dibujo:</strong> la puerta brillante eres têÂº. Nada llega a la caja azul (el mundo real) sin pasar por ella. Si la respuesta es "no", la flecha roja devuelve el trabajo al agente: el error muere ahêÂ­, antes de salir. Las tres cajas de abajo son las acciones que <em>siempre</em> pasan por el acceso.</p>
 <div class="overflow-x-auto mb-6 rounded-xl border border-dark-600">
 <table class="w-full text-sm text-left">
-<thead class="bg-dark-700/60 text-purple-400"><tr><th class="px-4 py-3 font-semibold">Siempre con aprobaciÃ³n</th><th class="px-4 py-3 font-semibold">Ejemplo en la clÃ­nica</th><th class="px-4 py-3 font-semibold">Por quÃ©</th></tr></thead>
+<thead class="bg-dark-700/60 text-purple-400"><tr><th class="px-4 py-3 font-semibold">Siempre con aprobaciêÂ³n</th><th class="px-4 py-3 font-semibold">Ejemplo en la clêÂ­nica</th><th class="px-4 py-3 font-semibold">Por quêÂ©</th></tr></thead>
 <tbody class="divide-y divide-dark-600">
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ðŸ’³ Dinero</td><td class="px-4 py-3 text-neutral-300">cobrar un anticipo, hacer un reembolso, emitir un boleto</td><td class="px-4 py-3 text-neutral-300">el dinero que saliÃ³ rara vez vuelve por sÃ­ solo</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ðŸ—‘ï¸ EliminaciÃ³n</td><td class="px-4 py-3 text-neutral-300">borrar al paciente Â«duplicadoÂ», limpiar la agenda</td><td class="px-4 py-3 text-neutral-300">sin copia, no hay forma de recuperar</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ðŸ“¢ PublicaciÃ³n</td><td class="px-4 py-3 text-neutral-300">publicaciÃ³n en Instagram, promociÃ³n para la lista</td><td class="px-4 py-3 text-neutral-300">mucha gente lo ve antes de que lo borres</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ê°Å¸âÂ³ Dinero</td><td class="px-4 py-3 text-neutral-300">cobrar un anticipo, hacer un reembolso, emitir un boleto</td><td class="px-4 py-3 text-neutral-300">el dinero que saliêÂ³ rara vez vuelve por sêÂ­ solo</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ê°Å¸ââê¯Â¸Â EliminaciêÂ³n</td><td class="px-4 py-3 text-neutral-300">borrar al paciente êÂ«duplicadoêÂ», limpiar la agenda</td><td class="px-4 py-3 text-neutral-300">sin copia, no hay forma de recuperar</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ê°Å¸âÂ¢ PublicaciêÂ³n</td><td class="px-4 py-3 text-neutral-300">publicaciêÂ³n en Instagram, promociêÂ³n para la lista</td><td class="px-4 py-3 text-neutral-300">mucha gente lo ve antes de que lo borres</td></tr>
 </tbody>
 </table>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-red-400 mb-2 flex items-center"><span class="mr-2">âš ï¸</span> AtenciÃ³n</h3>
-<p class="text-neutral-300 text-sm">"Aprobar todo con un clic sin leer" no es aprobar. Si te descubres presionando "sÃ­" en automÃ¡tico, el agente estÃ¡ pidiendo demasiadas aprobaciones o estÃ¡s en el nivel equivocado. Reduce lo que pasa por el filtro, pero lee lo que pase.</p>
+<h3 class="text-lg font-semibold text-red-400 mb-2 flex items-center"><span class="mr-2">ê¢Å¡Â ê¯Â¸Â</span> AtenciêÂ³n</h3>
+<p class="text-neutral-300 text-sm">"Aprobar todo con un clic sin leer" no es aprobar. Si te descubres presionando "sêÂ­" en automêÂ¡tico, el agente estêÂ¡ pidiendo demasiadas aprobaciones o estêÂ¡s en el nivel equivocado. Reduce lo que pasa por el filtro, pero lee lo que pase.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">âœ‹</div><div class="text-sm font-semibold text-purple-400">AprobaciÃ³n</div><p class="text-xs text-neutral-400 mt-1">espera tu aprobaciÃ³n</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ’³</div><div class="text-sm font-semibold text-purple-400">Dinero</div><p class="text-xs text-neutral-400 mt-1">siempre</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ—‘ï¸</div><div class="text-sm font-semibold text-purple-400">EliminaciÃ³n</div><p class="text-xs text-neutral-400 mt-1">siempre</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ“¢</div><div class="text-sm font-semibold text-purple-400">PublicaciÃ³n</div><p class="text-xs text-neutral-400 mt-1">siempre</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê¢Åâ¹</div><div class="text-sm font-semibold text-purple-400">AprobaciêÂ³n</div><p class="text-xs text-neutral-400 mt-1">espera tu aprobaciêÂ³n</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ³</div><div class="text-sm font-semibold text-purple-400">Dinero</div><p class="text-xs text-neutral-400 mt-1">siempre</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ââê¯Â¸Â</div><div class="text-sm font-semibold text-purple-400">EliminaciêÂ³n</div><p class="text-xs text-neutral-400 mt-1">siempre</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ¢</div><div class="text-sm font-semibold text-purple-400">PublicaciêÂ³n</div><p class="text-xs text-neutral-400 mt-1">siempre</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 5 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHê-topic="modulo-3-1#topico-5" id="topico-5">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">5</span>
-<h2 class="text-2xl font-bold flex-1">Asegura el registro y un botÃ³n para apagarlo</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<h2 class="text-2xl font-bold flex-1">Asegura el registro y un botêÂ³n para apagarlo</h2>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m3-1-t5-p1">Las dos Ãºltimas claves sirven para cuando algo ya saliÃ³ mal. El <strong class="text-purple-400">registro</strong> dice lo que hizo el agente. El <strong class="text-purple-400">botÃ³n de apagado</strong> hace que se detenga.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t5-p2">Sin registro, nadie sabe quÃ© corregir. Sin botÃ³n para apagarlo â€”o con un botÃ³n que solo una persona sabe dÃ³nde estÃ¡â€” el error continÃºa mientras ustedes buscan.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m3-1-t5-p1">Las dos êÂºltimas claves sirven para cuando algo ya saliêÂ³ mal. El <strong class="text-purple-400">registro</strong> dice lo que hizo el agente. El <strong class="text-purple-400">botêÂ³n de apagado</strong> hace que se detenga.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-1-t5-p2">Sin registro, nadie sabe quêÂ© corregir. Sin botêÂ³n para apagarlo ê¢â¬âo con un botêÂ³n que solo una persona sabe dêÂ³nde estêÂ¡ê¢â¬â el error continêÂºa mientras ustedes buscan.</p>
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6 mb-6">
-<h3 class="text-base font-semibold text-purple-400 mb-3 flex items-center"><span class="mr-2">ðŸ†•</span> Â¿Eres nuevo aquÃ­? Registro y botÃ³n para apagar</h3>
+<h3 class="text-base font-semibold text-purple-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸â â¢</span> êÂ¿Eres nuevo aquêÂ­? Registro y botêÂ³n para apagar</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li><strong>Registro</strong> (o historial, log): la lista de lo que hizo el agente, con dÃ­a y hora: "10h02 enviÃ³ un recordatorio a Ana", "10h03 leyÃ³ la agenda". Muchas aplicaciones ya guardan esto; busca "actividad" o "historial" en la configuraciÃ³n.</li>
-<li><strong>BotÃ³n de apagado</strong> â€” la forma mÃ¡s rÃ¡pida de detener al agente: pausar la automatizaciÃ³n, desconectar WhatsApp, quitar el acceso al correo. Tiene que funcionar en un minuto, sin que tengas que intervenir.</li>
+<li><strong>Registro</strong> (o historial, log): la lista de lo que hizo el agente, con dêÂ­a y hora: "10h02 enviêÂ³ un recordatorio a Ana", "10h03 leyêÂ³ la agenda". Muchas aplicaciones ya guardan esto; busca "actividad" o "historial" en la configuraciêÂ³n.</li>
+<li><strong>BotêÂ³n de apagado</strong> ê¢â¬â la forma mêÂ¡s rêÂ¡pida de detener al agente: pausar la automatizaciêÂ³n, desconectar WhatsApp, quitar el acceso al correo. Tiene que funcionar en un minuto, sin que tengas que intervenir.</li>
 </ul>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m3-1-t5-p3">Marcos lo probÃ³ antes de necesitarlo. Mira lo que pasÃ³ la semana que se fue de vacaciones:</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m3-1-t5-p3">Marcos lo probêÂ³ antes de necesitarlo. Mira lo que pasêÂ³ la semana que se fue de vacaciones:</p>
 <div class="space-y-5 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">Antes de las vacaciones</h4><p class="text-neutral-300 text-sm">Marcos le mostrÃ³ a la asistente JÃºlia dÃ³nde estÃ¡ el registro y cÃ³mo desconectar el correo electrÃ³nico en la configuraciÃ³n del agente. Ella repitiÃ³ los pasos por su cuenta.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">Antes de las vacaciones</h4><p class="text-neutral-300 text-sm">Marcos le mostrêÂ³ a la asistente JêÂºlia dêÂ³nde estêÂ¡ el registro y cêÂ³mo desconectar el correo electrêÂ³nico en la configuraciêÂ³n del agente. Ella repitiêÂ³ los pasos por su cuenta.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">Martes, 9h40</h4><p class="text-neutral-300 text-sm">Un cliente llama: recibiÃ³ dos cobros por un documento pendiente, aunque ya habÃ­a entregado el documento.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">Martes, 9h40</h4><p class="text-neutral-300 text-sm">Un cliente llama: recibiêÂ³ dos cobros por un documento pendiente, aunque ya habêÂ­a entregado el documento.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">9h41 â€” botÃ³n de apagar</h4><p class="text-neutral-300 text-sm">JÃºlia desconecta el correo del agente. Le tomÃ³ menos de un minuto. No se envÃ­an mensajes nuevos.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">9h41 ê¢â¬â botêÂ³n de apagar</h4><p class="text-neutral-300 text-sm">JêÂºlia desconecta el correo del agente. Le tomêÂ³ menos de un minuto. No se envêÂ­an mensajes nuevos.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">4</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">9h50 â€” registro</h4><p class="text-neutral-300 text-sm">SegÃºn el historial, encuentra a los 4 clientes que recibieron el cobro duplicado y llama a cada uno. Marcos se entera al volver, cuando ya estÃ¡ todo resuelto.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">9h50 ê¢â¬â registro</h4><p class="text-neutral-300 text-sm">SegêÂºn el historial, encuentra a los 4 clientes que recibieron el cobro duplicado y llama a cada uno. Marcos se entera al volver, cuando ya estêÂ¡ todo resuelto.</p></div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ðŸ’¡</span> Prueba del minuto</h3>
-<p class="text-neutral-300 text-sm">PÃ­dele a la persona que va a apagar el agente que lo haga ahora, con el reloj en la mano y sin tu ayuda. Si tarda mÃ¡s de un minuto o necesita llamarte, el botÃ³n para apagarlo todavÃ­a no existe: solo existe en tu cabeza.</p>
+<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Prueba del minuto</h3>
+<p class="text-neutral-300 text-sm">PêÂ­dele a la persona que va a apagar el agente que lo haga ahora, con el reloj en la mano y sin tu ayuda. Si tarda mêÂ¡s de un minuto o necesita llamarte, el botêÂ³n para apagarlo todavêÂ­a no existe: solo existe en tu cabeza.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ“œ</div><div class="text-sm font-semibold text-purple-400">Registro</div><p class="text-xs text-neutral-400 mt-1">quÃ© hizo, dÃ­a y hora</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">â»</div><div class="text-sm font-semibold text-purple-400">Apagar</div><p class="text-xs text-neutral-400 mt-1">en un minuto</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ‘¥</div><div class="text-sm font-semibold text-purple-400">Segunda persona</div><p class="text-xs text-neutral-400 mt-1">no depende de ti</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">â±ï¸</div><div class="text-sm font-semibold text-purple-400">Prueba del minuto</div><p class="text-xs text-neutral-400 mt-1">ensayar antes</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÅ</div><div class="text-sm font-semibold text-purple-400">Registro</div><p class="text-xs text-neutral-400 mt-1">quêÂ© hizo, dêÂ­a y hora</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê¢ÂÂ»</div><div class="text-sm font-semibold text-purple-400">Apagar</div><p class="text-xs text-neutral-400 mt-1">en un minuto</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ¥</div><div class="text-sm font-semibold text-purple-400">Segunda persona</div><p class="text-xs text-neutral-400 mt-1">no depende de ti</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê¢ÂÂ±ê¯Â¸Â</div><div class="text-sm font-semibold text-purple-400">Prueba del minuto</div><p class="text-xs text-neutral-400 mt-1">ensayar antes</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 6 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHê-topic="modulo-3-1#topico-6" id="topico-6">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold flex-1">Completa la ficha de los cinco controles</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m3-1-t6-p1">Ahora reÃºne las cinco claves en una hoja. Es solo planificaciÃ³n: todavÃ­a no cambia nada en tu aplicaciÃ³n. Te tomarÃ¡ unos diez minutos.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t6-p2">Usa el agente que elegiste en el mÃ³dulo 1.2 y el proceso que definiste en la ruta 2. Â¿Te saltaste ambos? Piensa en cualquier tarea que te gustarÃ­a delegar a un agente.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m3-1-t6-p1">Ahora reêÂºne las cinco claves en una hoja. Es solo planificaciêÂ³n: todavêÂ­a no cambia nada en tu aplicaciêÂ³n. Te tomarêÂ¡ unos diez minutos.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-1-t6-p2">Usa el agente que elegiste en el mêÂ³dulo 1.2 y el proceso que definiste en la ruta 2. êÂ¿Te saltaste ambos? Piensa en cualquier tarea que te gustarêÂ­a delegar a un agente.</p>
 <div class="bg-dark-800 rounded-xl border border-purple-500/30 overflow-hidden mb-6">
-<div class="px-5 py-3 bg-purple-900/20 border-b border-purple-500/30"><span class="text-purple-400 font-semibold text-sm">ðŸŽ¯ Objetivo: salir con la FICHA DEL AGENTE completada, con un nombre en "apagar"</span></div>
+<div class="px-5 py-3 bg-purple-900/20 border-b border-purple-500/30"><span class="text-purple-400 font-semibold text-sm">ê°Å¸Å½Â¯ Objetivo: salir con la FICHA DEL AGENTE completada, con un nombre en "apagar"</span></div>
 <div class="p-5">
-<p class="text-sm text-neutral-400 mb-3">Copia en las Notas del celular o en un papel. Cambia lo que estÃ¡ entre &lt; &gt;. Si quieres ayuda, pÃ©galo en el chat de IA que usas y pide: "hazme una pregunta a la vez hasta completar esta ficha".</p>
+<p class="text-sm text-neutral-400 mb-3">Copia en las Notas del celular o en un papel. Cambia lo que estêÂ¡ entre &lt; &gt;. Si quieres ayuda, pêÂ©galo en el chat de IA que usas y pide: "hazme una pregunta a la vez hasta completar esta ficha".</p>
 <pre class="font-mono text-sm text-neutral-200 whitespace-pre-wrap bg-dark-900/60 rounded-lg p-4 border border-dark-600">FICHA DO AGENTE: &lt;nome da tarefa, ex.: lembrete de consultas&gt;
 Dono (quem responde por ele): &lt;nome&gt;
 
-1. LER: &lt;o que ele pode ver â€” e sÃ³ isso&gt;
+1. LER: &lt;o que ele pode ver ê¢â¬â e sêÂ³ isso&gt;
 2. MUDAR E ENVIAR: &lt;o que ele pode alterar ou mandar, e para quem&gt;
-3. APROVAÃ‡ÃƒO: &lt;o que espera o meu sim antes de acontecer&gt;
+3. APROVAêâ¡êÆO: &lt;o que espera o meu sim antes de acontecer&gt;
 4. REGISTRO: &lt;onde confiro o que ele fez, com dia e hora&gt;
-5. DESLIGAR: &lt;quem desliga, e como, em atÃ© 1 minuto&gt;
-   Substituto na minha ausÃªncia: &lt;nome&gt;
+5. DESLIGAR: &lt;quem desliga, e como, em atêÂ© 1 minuto&gt;
+   Substituto na minha ausêÂªncia: &lt;nome&gt;
 
-Sempre com aprovaÃ§Ã£o: dinheiro, exclusÃ£o, publicaÃ§Ã£o.
-Fora de alcance (de propÃ³sito): &lt;ferramentas que ele NÃƒO recebe&gt;</pre>
+Sempre com aprovaêÂ§êÂ£o: dinheiro, exclusêÂ£o, publicaêÂ§êÂ£o.
+Fora de alcance (de propêÂ³sito): &lt;ferramentas que ele NêÆO recebe&gt;</pre>
 </div>
-<div class="px-5 py-3 bg-dark-700/40 border-t border-dark-600 text-neutral-300 text-sm"><strong class="text-purple-400">CÃ³mo verificar:</strong> las cinco lÃ­neas tienen respuesta, ninguna dice "todo", y el "apagar" tiene un nombre que no es solo el tuyo. MuÃ©strale la ficha a esa persona y haz la prueba del minuto.</div>
+<div class="px-5 py-3 bg-dark-700/40 border-t border-dark-600 text-neutral-300 text-sm"><strong class="text-purple-400">CêÂ³mo verificar:</strong> las cinco lêÂ­neas tienen respuesta, ninguna dice "todo", y el "apagar" tiene un nombre que no es solo el tuyo. MuêÂ©strale la ficha a esa persona y haz la prueba del minuto.</div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ðŸ’¡</span> Ejemplo: el expediente de Renata</h3>
+<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Ejemplo: el expediente de Renata</h3>
 <ul class="space-y-1 text-neutral-300 text-sm">
-<li><strong>Leer:</strong> agenda del dÃ­a siguiente (nombre, horario, telÃ©fono).</li>
-<li><strong>Cambiar y enviar:</strong> solo recordatorios por el WhatsApp de la clÃ­nica. No cambia ni cancela citas.</li>
-<li><strong>AprobaciÃ³n:</strong> el modelo del recordatorio; el agente solo cambia el nombre y la hora. Cualquier otro mensaje espera a Renata.</li>
-<li><strong>Registro:</strong> historial de mensajes de WhatsApp de la clÃ­nica.</li>
-<li><strong>Apagar:</strong> Renata desconecta WhatsApp en la configuraciÃ³n del agente, o la recepcionista lo hace si ella no estÃ¡.</li>
-<li><strong>Fuera de alcance:</strong> hoja de cÃ¡lculo de pacientes y terminal de pago.</li>
+<li><strong>Leer:</strong> agenda del dêÂ­a siguiente (nombre, horario, telêÂ©fono).</li>
+<li><strong>Cambiar y enviar:</strong> solo recordatorios por el WhatsApp de la clêÂ­nica. No cambia ni cancela citas.</li>
+<li><strong>AprobaciêÂ³n:</strong> el modelo del recordatorio; el agente solo cambia el nombre y la hora. Cualquier otro mensaje espera a Renata.</li>
+<li><strong>Registro:</strong> historial de mensajes de WhatsApp de la clêÂ­nica.</li>
+<li><strong>Apagar:</strong> Renata desconecta WhatsApp en la configuraciêÂ³n del agente, o la recepcionista lo hace si ella no estêÂ¡.</li>
+<li><strong>Fuera de alcance:</strong> hoja de cêÂ¡lculo de pacientes y terminal de pago.</li>
 </ul>
 </div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6" data-ARCKHÉ-check="modulo-3-1#q1">
-<p class="font-medium mb-4">Prueba rÃ¡pida (opcional): un agente de ventas va a emitir facturas de pago para clientes. Â¿QuÃ© control <strong>no puede faltar</strong>?</p>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6" data-ARCKHê-check="modulo-3-1#q1">
+<p class="font-medium mb-4">Prueba rêÂ¡pida (opcional): un agente de ventas va a emitir facturas de pago para clientes. êÂ¿QuêÂ© control <strong>no puede faltar</strong>?</p>
 <div class="space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">AprobaciÃ³n de una persona antes de emitir cada factura de pago.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Un tono mÃ¡s cordial en el mensaje que acompaÃ±a la factura.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Acceso a toda la hoja de cÃ¡lculo para que lo emita mÃ¡s rÃ¡pido.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="0" type="button">AprobaciêÂ³n de una persona antes de emitir cada factura de pago.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="1" type="button">Un tono mêÂ¡s cordial en el mensaje que acompaêÂ±a la factura.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="2" type="button">Acceso a toda la hoja de cêÂ¡lculo para que lo emita mêÂ¡s rêÂ¡pido.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHê-check-feedback="" role="status"></div>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ“‹</div><div class="text-sm font-semibold text-purple-400">Ficha</div><p class="text-xs text-neutral-400 mt-1">cinco lÃ­neas, una hoja</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ™‹</div><div class="text-sm font-semibold text-purple-400">Responsable</div><p class="text-xs text-neutral-400 mt-1">quiÃ©n responde por Ã©l</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸš«</div><div class="text-sm font-semibold text-purple-400">Fuera de alcance</div><p class="text-xs text-neutral-400 mt-1">escrito a propÃ³sito</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ”</div><div class="text-sm font-semibold text-purple-400">RevisiÃ³n</div><p class="text-xs text-neutral-400 mt-1">la ficha cambia con el tiempo</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ââ¹</div><div class="text-sm font-semibold text-purple-400">Ficha</div><p class="text-xs text-neutral-400 mt-1">cinco lêÂ­neas, una hoja</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸â¢â¹</div><div class="text-sm font-semibold text-purple-400">Responsable</div><p class="text-xs text-neutral-400 mt-1">quiêÂ©n responde por êÂ©l</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸Å¡Â«</div><div class="text-sm font-semibold text-purple-400">Fuera de alcance</div><p class="text-xs text-neutral-400 mt-1">escrito a propêÂ³sito</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ</div><div class="text-sm font-semibold text-purple-400">RevisiêÂ³n</div><p class="text-xs text-neutral-400 mt-1">la ficha cambia con el tiempo</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como leÃ­do</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como leêÂ­do</span>
 </button>
 </div>
 </section>
 <!-- ===================== RESUMO ===================== -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-purple-900/40 via-dark-800 to-dark-800 rounded-xl border border-purple-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸŽ“</span> Resumen del mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸Å½â</span> Resumen del mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-neutral-100">Empleado nuevo</strong><span class="text-neutral-400"> â€” acceso gradual, solo a lo que pide la tarea.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-neutral-100">Leer tambiÃ©n es tocar</strong><span class="text-neutral-400"> â€” limita la carpeta, la pestaÃ±a, la agenda.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-neutral-100">Cambiar y enviar, por escrito y con alcance limitado</strong><span class="text-neutral-400"> â€” hasta quÃ© escalÃ³n sube.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-neutral-100">Dinero, eliminaciÃ³n y publicaciÃ³n</strong><span class="text-neutral-400"> â€” siempre pasan por una persona.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-neutral-100">Registro y apagado probados</strong><span class="text-neutral-400"> â€” por alguien mÃ¡s, ademÃ¡s de ti, en un minuto.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong class="text-neutral-100">Empleado nuevo</strong><span class="text-neutral-400"> ê¢â¬â acceso gradual, solo a lo que pide la tarea.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong class="text-neutral-100">Leer tambiêÂ©n es tocar</strong><span class="text-neutral-400"> ê¢â¬â limita la carpeta, la pestaêÂ±a, la agenda.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong class="text-neutral-100">Cambiar y enviar, por escrito y con alcance limitado</strong><span class="text-neutral-400"> ê¢â¬â hasta quêÂ© escalêÂ³n sube.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong class="text-neutral-100">Dinero, eliminaciêÂ³n y publicaciêÂ³n</strong><span class="text-neutral-400"> ê¢â¬â siempre pasan por una persona.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong class="text-neutral-100">Registro y apagado probados</strong><span class="text-neutral-400"> ê¢â¬â por alguien mêÂ¡s, ademêÂ¡s de ti, en un minuto.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-purple-400 mb-2">Siguiente mÃ³dulo:</h3>
-<p class="text-neutral-300">3.2 â€” Tres reglas y casos reales</p>
+<h3 class="font-semibold text-purple-400 mb-2">Siguiente mêÂ³dulo:</h3>
+<p class="text-neutral-300">3.2 ê¢â¬â Tres reglas y casos reales</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Volver a la ruta</a>
-<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="modulo-3-2.html">MÃ³dulo 3.2 â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Volver a la ruta</a>
+<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="modulo-3-2.html">MêÂ³dulo 3.2 ê¢â â</a>
 </div>
 </div>
 </section>
 </main>
 <aside class="hidden lg:block">
-<nav aria-label="Ãndice de la pÃ¡gina" class="sticky top-24" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-3"><span data-ARCKHÉ-section-counter="">SecciÃ³n 1 de 6</span></p>
+<nav aria-label="êÂndice de la pêÂ¡gina" class="sticky top-24" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-3"><span data-ARCKHê-section-counter="">SecciêÂ³n 1 de 6</span></p>
 <ol class="space-y-2 text-sm">
 <li><a class="text-neutral-400 hover:text-purple-400" href="#topico-1">1. Empleado nuevo</a></li>
 <li><a class="text-neutral-400 hover:text-purple-400" href="#topico-2">2. Leer</a></li>
 <li><a class="text-neutral-400 hover:text-purple-400" href="#topico-3">3. Cambiar y enviar</a></li>
-<li><a class="text-neutral-400 hover:text-purple-400" href="#topico-4">4. AprobaciÃ³n</a></li>
+<li><a class="text-neutral-400 hover:text-purple-400" href="#topico-4">4. AprobaciêÂ³n</a></li>
 <li><a class="text-neutral-400 hover:text-purple-400" href="#topico-5">5. Registro y apagar</a></li>
 <li><a class="text-neutral-400 hover:text-purple-400" href="#topico-6">6. La ficha</a></li>
 </ol>
@@ -675,7 +675,7 @@ Fora de alcance (de propÃ³sito): &lt;ferramentas que ele NÃƒO recebe&gt;</pr
 </div>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Agente bajo Control Â· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHÉ.pro" target="_blank">PRO</a></p>
+<p>Agente bajo Control êÂ· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHê.pro" target="_blank">PRO</a></p>
 </div>
 </footer>
 <script>
@@ -686,7 +686,7 @@ Fora de alcance (de propÃ³sito): &lt;ferramentas que ele NÃƒO recebe&gt;</pr
     if (!_html.classList.contains('dark')) { themeToggleDarkIcon.classList.remove('hidden'); }
     else { themeToggleLightIcon.classList.remove('hidden'); }
     themeToggle.addEventListener('click', () => {
-      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHÉ-dark'); }
+      if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHê-dark'); }
       else { _html.classList.toggle('dark'); }
       themeToggleDarkIcon.classList.toggle('hidden', _html.classList.contains('dark'));
       themeToggleLightIcon.classList.toggle('hidden', !_html.classList.contains('dark'));
@@ -707,15 +707,15 @@ Fora de alcance (de propÃ³sito): &lt;ferramentas que ele NÃƒO recebe&gt;</pr
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
   </script>
 <script>
     window.addEventListener('DOMContentLoaded', function () {
-      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
-        ARCKHÉ.registerCheck('modulo-3-1#q1', { answer: 0, explain: {
-          '0': 'Isso. Boleto Ã© dinheiro, e dinheiro sempre espera o sim de uma pessoa antes de sair.',
-          '1': 'Tom cordial Ã© bom, mas nÃ£o segura nada. Um boleto com valor errado e mensagem simpÃ¡tica continua sendo um erro com dinheiro.',
-          '2': 'Ao contrÃ¡rio: mais acesso Ã© mais estrago possÃ­vel. Velocidade nÃ£o Ã© controle â€” a aprovaÃ§Ã£o Ã©.'
+      if (window.ARCKHê && ARCKHê.registerCheck) {
+        ARCKHê.registerCheck('modulo-3-1#q1', { answer: 0, explain: {
+          '0': 'Isso. Boleto êÂ© dinheiro, e dinheiro sempre espera o sim de uma pessoa antes de sair.',
+          '1': 'Tom cordial êÂ© bom, mas nêÂ£o segura nada. Um boleto com valor errado e mensagem simpêÂ¡tica continua sendo um erro com dinheiro.',
+          '2': 'Ao contrêÂ¡rio: mais acesso êÂ© mais estrago possêÂ­vel. Velocidade nêÂ£o êÂ© controle ê¢â¬â a aprovaêÂ§êÂ£o êÂ©.'
         } });
       }
     });

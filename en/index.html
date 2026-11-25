@@ -4,42 +4,42 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Free course from ARCKHÉ AI: use AI agents in your business without getting burned. Find the right pain point, limit what the agent can access, close security gaps, and measure the results." name="description"/>
-<meta content="agscv2" name="ARCKHÉ-course"/>
-<title>Agent Under Control Â· Use AI agents without getting burned | ARCKHÉ AI</title>
+<meta content="Free course from ARCKHê AI: use AI agents in your business without getting burned. Find the right pain point, limit what the agent can access, close security gaps, and measure the results." name="description"/>
+<meta content="agscv2" name="ARCKHê-course"/>
+<title>Agent Under Control êÂ· Use AI agents without getting burned | ARCKHê AI</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
-          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark'); else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark') ? 'dark' : 'light'));
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style; var scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -61,8 +61,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../assets/learn.css" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO em TODA pagina, identico) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
-  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nÃ£o Ã© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10Ã—","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nÃ£o Ã© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrÃªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguÃ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensÃµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MÃ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
+<script data-ARCKHê-manifest="" type="application/json">
+  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nêÂ£o êÂ© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10êâ","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nêÂ£o êÂ© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrêÂªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguêÂ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensêÂµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MêÂ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
   </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -152,7 +152,7 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* Alvos de ancora abaixo do nav sticky */
-    [data-ARCKHÉ-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
+    [data-ARCKHê-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
 
     /* SVG light mode + animacao */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
@@ -169,20 +169,20 @@
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
   </style>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-primary focus:text-black focus:rounded-lg" href="#conteudo">Skip to content</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-3">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="index.html">
-<span class="text-2xl">ðŸ›¡ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ¡ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden lg:inline">Agent under Control</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 <span class="text-neutral-600">-</span>
-<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHÉ.pro" target="_blank">PRO</a>
+<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHê.pro" target="_blank">PRO</a>
 </div>
 <div class="flex items-center space-x-1">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="curso/trilha1/index.html">
@@ -200,40 +200,40 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="curso/trilha5/index.html">
 <span class="xl:hidden">T5</span><span class="hidden xl:inline">Result</span>
 </a>
-<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-journey-open="" title="My journey" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden md:inline">Journey</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHê-journey-open="" title="My journey" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden md:inline">Journey</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <div class="relative">
-<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-appearance-toggle="#aparencia" title="Appearance" type="button">
+<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHê-appearance-toggle="#aparencia" title="Appearance" type="button">
 <span aria-hidden="true" class="text-sm font-semibold">Aa</span><span class="sr-only">Appearance</span>
 </button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" id="aparencia">
-<div aria-label="Topic" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-theme="ARCKHÉ-dark" type="button">Dark</button>
-<button data-ARCKHÉ-set-theme="claro" type="button">Clear</button>
-<button data-ARCKHÉ-set-theme="sepia" type="button">Sepia</button>
-<button data-ARCKHÉ-set-theme="foco" type="button">Focus</button>
-<button data-ARCKHÉ-set-theme="contraste" type="button">High contrast</button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" id="aparencia">
+<div aria-label="Topic" class="ARCKHê-segment">
+<button data-ARCKHê-set-theme="ARCKHê-dark" type="button">Dark</button>
+<button data-ARCKHê-set-theme="claro" type="button">Clear</button>
+<button data-ARCKHê-set-theme="sepia" type="button">Sepia</button>
+<button data-ARCKHê-set-theme="foco" type="button">Focus</button>
+<button data-ARCKHê-set-theme="contraste" type="button">High contrast</button>
 </div>
-<div aria-label="Source" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-font="inter" type="button">Inter</button>
-<button data-ARCKHÉ-set-font="system" type="button">System</button>
-<button data-ARCKHÉ-set-font="leitura" type="button">Reading</button>
+<div aria-label="Source" class="ARCKHê-segment">
+<button data-ARCKHê-set-font="inter" type="button">Inter</button>
+<button data-ARCKHê-set-font="system" type="button">System</button>
+<button data-ARCKHê-set-font="leitura" type="button">Reading</button>
 </div>
-<div aria-label="Text length" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-fontscale="100" type="button">A</button>
-<button data-ARCKHÉ-set-fontscale="112" type="button">A+</button>
-<button data-ARCKHÉ-set-fontscale="125" type="button">A++</button>
+<div aria-label="Text length" class="ARCKHê-segment">
+<button data-ARCKHê-set-fontscale="100" type="button">A</button>
+<button data-ARCKHê-set-fontscale="112" type="button">A+</button>
+<button data-ARCKHê-set-fontscale="125" type="button">A++</button>
 </div>
-<div aria-label="Line width" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-linewidth="60" type="button">Narrow</button>
-<button data-ARCKHÉ-set-linewidth="68" type="button">Medium</button>
-<button data-ARCKHÉ-set-linewidth="75" type="button">Wide</button>
+<div aria-label="Line width" class="ARCKHê-segment">
+<button data-ARCKHê-set-linewidth="60" type="button">Narrow</button>
+<button data-ARCKHê-set-linewidth="68" type="button">Medium</button>
+<button data-ARCKHê-set-linewidth="75" type="button">Wide</button>
 </div>
-<div aria-label="Subtext" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-leading="1.45" type="button">Compact</button>
-<button data-ARCKHÉ-set-leading="1.7" type="button">Comfortable</button>
+<div aria-label="Subtext" class="ARCKHê-segment">
+<button data-ARCKHê-set-leading="1.45" type="button">Compact</button>
+<button data-ARCKHê-set-leading="1.7" type="button">Comfortable</button>
 </div>
 </div>
 </div>
@@ -249,17 +249,17 @@
 <header class="bg-gradient-to-br from-emerald-900/20 via-dark-800 to-dark-900 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:grid lg:grid-cols-[1.1fr_1fr] lg:gap-12 lg:items-center">
 <div>
-<span class="inline-block px-3 py-1 bg-primary/10 text-primary border border-primary/30 text-xs font-semibold rounded-full mb-5">FREE COURSE Â· 5 LEARNING PATHS Â· 11 MODULES</span>
+<span class="inline-block px-3 py-1 bg-primary/10 text-primary border border-primary/30 text-xs font-semibold rounded-full mb-5">FREE COURSE êÂ· 5 LEARNING PATHS êÂ· 11 MODULES</span>
 <h1 class="text-4xl sm:text-5xl font-bold mb-5 leading-tight">AI agent,<br/>but <span class="text-primary">under control</span></h1>
-<p class="text-lg text-neutral-300 max-w-xl mb-8">Choose the right problem, decide what the agent can access, close the doors almost no one sees, and measure whether it worked. Youâ€™ll leave with the agent profile ready for your business.</p>
+<p class="text-lg text-neutral-300 max-w-xl mb-8">Choose the right problem, decide what the agent can access, close the doors almost no one sees, and measure whether it worked. Youê¢â¬â¢ll leave with the agent profile ready for your business.</p>
 <div class="flex flex-col sm:flex-row justify-start gap-3">
-<a class="inline-flex items-center justify-start px-6 py-3 bg-primary text-black rounded-lg font-semibold hover:bg-yellow-300 transition-colors" href="curso/trilha1/index.html">Start with Track 1 â†’</a>
-<a class="hidden items-center justify-start px-6 py-3 bg-dark-700 text-neutral-100 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="#" id="continuar">â†» Continue where I left off</a>
-<button class="inline-flex items-center justify-start px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" data-ARCKHÉ-journey-open="" type="button">â—· My journey</button>
+<a class="inline-flex items-center justify-start px-6 py-3 bg-primary text-black rounded-lg font-semibold hover:bg-yellow-300 transition-colors" href="curso/trilha1/index.html">Start with Track 1 ê¢â â</a>
+<a class="hidden items-center justify-start px-6 py-3 bg-dark-700 text-neutral-100 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="#" id="continuar">ê¢â Â» Continue where I left off</a>
+<button class="inline-flex items-center justify-start px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" data-ARCKHê-journey-open="" type="button">ê¢âÂ· My journey</button>
 </div>
-<div aria-label="Course progress" aria-valuemax="100" aria-valuemin="0" class="mt-8 max-w-md" data-ARCKHÉ-meter="curso" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 of 66</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
-<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
+<div aria-label="Course progress" aria-valuemax="100" aria-valuemin="0" class="mt-8 max-w-md" data-ARCKHê-meter="curso" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHê-meter-frac="">0 of 66</span><span data-ARCKHê-meter-pct="">0%</span></div>
+<div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div>
 </div>
 </div>
 <div class="mt-10 lg:mt-0 rounded-2xl border border-primary/30 bg-dark-900/40 p-3 overflow-hidden">
@@ -275,19 +275,19 @@
 <text fill="#fde68a" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="230" y="186">under control</text>
 <g font-family="Inter,sans-serif" font-size="11" text-anchor="middle">
 <line class="wf-flow" stroke="#38bdf8" stroke-width="2" x1="230" x2="230" y1="135" y2="88"></line>
-<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="80" x="190" y="62"></rect><text fill="#bae6fd" x="230" y="79">âœ‰ email</text>
+<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="80" x="190" y="62"></rect><text fill="#bae6fd" x="230" y="79">ê¢Åâ° email</text>
 <line class="wf-flow" stroke="#38bdf8" stroke-width="2" x1="280" x2="318" y1="155" y2="130"></line>
-<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="80" x="300" y="106"></rect><text fill="#bae6fd" x="340" y="123">ðŸ“… calendar</text>
+<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="80" x="300" y="106"></rect><text fill="#bae6fd" x="340" y="123">ê°Å¸ââ¦ calendar</text>
 <line class="wf-flow" stroke="#38bdf8" stroke-width="2" x1="280" x2="318" y1="190" y2="222"></line>
-<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="80" x="300" y="212"></rect><text fill="#bae6fd" x="340" y="229">ðŸ“Š spreadsheet</text>
+<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="80" x="300" y="212"></rect><text fill="#bae6fd" x="340" y="229">ê°Å¸âÅ  spreadsheet</text>
 <line class="wf-flow" stroke="#38bdf8" stroke-width="2" x1="180" x2="142" y1="190" y2="222"></line>
-<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="84" x="80" y="212"></rect><text fill="#bae6fd" x="122" y="229">ðŸ’¬ WhatsApp</text>
+<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="84" x="80" y="212"></rect><text fill="#bae6fd" x="122" y="229">ê°Å¸âÂ¬ WhatsApp</text>
 <line stroke="#f87171" stroke-dasharray="4 4" stroke-width="2" x1="180" x2="100" y1="155" y2="110"></line>
-<rect fill="#2a0f0f" height="26" rx="8" stroke="#f87171" stroke-width="1.8" width="96" x="26" y="86"></rect><text fill="#fca5a5" x="74" y="103">ðŸ’³ payment</text>
-<circle cx="142" cy="132" fill="#111827" r="11" stroke="#f87171" stroke-width="1.8"></circle><text font-size="10" x="142" y="136">ðŸ”’</text>
+<rect fill="#2a0f0f" height="26" rx="8" stroke="#f87171" stroke-width="1.8" width="96" x="26" y="86"></rect><text fill="#fca5a5" x="74" y="103">ê°Å¸âÂ³ payment</text>
+<circle cx="142" cy="132" fill="#111827" r="11" stroke="#f87171" stroke-width="1.8"></circle><text font-size="10" x="142" y="136">ê°Å¸ââ</text>
 </g>
 <g fill="#fde68a" font-family="Inter,sans-serif" font-size="11" text-anchor="middle">
-<text x="230" y="40">read Â· change Â· approve Â· log Â· turn off</text>
+<text x="230" y="40">read êÂ· change êÂ· approve êÂ· log êÂ· turn off</text>
 </g>
 <text fill="#9ca3af" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="230" y="312">the ring is the five controls; anything that affects money stays outside</text>
 </svg>
@@ -300,13 +300,13 @@
 <h2 class="text-2xl font-bold mb-6">Who it's for</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<div class="text-3xl mb-3">ðŸ’†â€â™€ï¸</div>
-<h3 class="font-semibold text-lg mb-2">Renata, 44 â€” owner of an aesthetic clinic</h3>
-<p class="text-neutral-300 text-sm">You want an agent that confirms appointments over WhatsApp. Youâ€™re afraid it might send the patients the wrong message or change something it shouldnâ€™t.</p>
+<div class="text-3xl mb-3">ê°Å¸ââ ê¢â¬Âê¢â¢â¬ê¯Â¸Â</div>
+<h3 class="font-semibold text-lg mb-2">Renata, 44 ê¢â¬â owner of an aesthetic clinic</h3>
+<p class="text-neutral-300 text-sm">You want an agent that confirms appointments over WhatsApp. Youê¢â¬â¢re afraid it might send the patients the wrong message or change something it shouldnê¢â¬â¢t.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<div class="text-3xl mb-3">ðŸ§¾</div>
-<h3 class="font-semibold text-lg mb-2">Marcos, 52 â€” accountant with a small firm</h3>
+<div class="text-3xl mb-3">ê°Å¸Â§Â¾</div>
+<h3 class="font-semibold text-lg mb-2">Marcos, 52 ê¢â¬â accountant with a small firm</h3>
 <p class="text-neutral-300 text-sm">You want an agent that checks the documents customers send. It handles sensitive data and can't make mistakes with the tax authority.</p>
 </div>
 </div>
@@ -317,39 +317,39 @@
 <h2 class="text-2xl font-bold mb-6">The 5 tracks</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-6 transition-all" href="curso/trilha1/index.html">
-<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full">TRACK 1</span><span class="text-xs text-neutral-500">2 modules Â· ~1h</span></div>
-<h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400 transition-colors">ðŸš¦ Why now</h3>
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full">TRACK 1</span><span class="text-xs text-neutral-500">2 modules êÂ· ~1h</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400 transition-colors">ê°Å¸Å¡Â¦ Why now</h3>
 <p class="text-neutral-400 text-sm mb-4">The assistant that answered has become an agent that acts. The scale of the error changes.</p>
-<div aria-label="Track 1 progress" aria-valuemax="100" aria-valuemin="0" data-ARCKHÉ-meter="trilha:1" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHÉ-meter-frac="">0 of 12</span><span data-ARCKHÉ-meter-pct="">0%</span></div><div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div></div>
+<div aria-label="Track 1 progress" aria-valuemax="100" aria-valuemin="0" data-ARCKHê-meter="trilha:1" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHê-meter-frac="">0 of 12</span><span data-ARCKHê-meter-pct="">0%</span></div><div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div></div>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-6 transition-all" href="curso/trilha2/index.html">
-<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full">TRACK 2</span><span class="text-xs text-neutral-500">2 modules Â· ~1h</span></div>
-<h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">ðŸ”Ž Find the pain point</h3>
-<p class="text-neutral-400 text-sm mb-4">The 10Ã— question and the clinic case: automate what actually costs money.</p>
-<div aria-label="Track 2 progress" aria-valuemax="100" aria-valuemin="0" data-ARCKHÉ-meter="trilha:2" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHÉ-meter-frac="">0 of 12</span><span data-ARCKHÉ-meter-pct="">0%</span></div><div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div></div>
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full">TRACK 2</span><span class="text-xs text-neutral-500">2 modules êÂ· ~1h</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">ê°Å¸âÅ½ Find the pain point</h3>
+<p class="text-neutral-400 text-sm mb-4">The 10êâ question and the clinic case: automate what actually costs money.</p>
+<div aria-label="Track 2 progress" aria-valuemax="100" aria-valuemin="0" data-ARCKHê-meter="trilha:2" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHê-meter-frac="">0 of 12</span><span data-ARCKHê-meter-pct="">0%</span></div><div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div></div>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-6 transition-all" href="curso/trilha3/index.html">
-<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full">TRACK 3</span><span class="text-xs text-neutral-500">2 modules Â· ~1h10</span></div>
-<h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">ðŸ” Control the system</h3>
-<p class="text-neutral-400 text-sm mb-4">The five keys â€” read, change, approve, log, turn off â€” and real cases of what happened when they were missing.</p>
-<div aria-label="Track 3 progress" aria-valuemax="100" aria-valuemin="0" data-ARCKHÉ-meter="trilha:3" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHÉ-meter-frac="">0 of 12</span><span data-ARCKHÉ-meter-pct="">0%</span></div><div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div></div>
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full">TRACK 3</span><span class="text-xs text-neutral-500">2 modules êÂ· ~1h10</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">ê°Å¸âÂ Control the system</h3>
+<p class="text-neutral-400 text-sm mb-4">The five keys ê¢â¬â read, change, approve, log, turn off ê¢â¬â and real cases of what happened when they were missing.</p>
+<div aria-label="Track 3 progress" aria-valuemax="100" aria-valuemin="0" data-ARCKHê-meter="trilha:3" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHê-meter-frac="">0 of 12</span><span data-ARCKHê-meter-pct="">0%</span></div><div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div></div>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-6 transition-all" href="curso/trilha4/index.html">
-<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full">TRACK 4</span><span class="text-xs text-neutral-500">3 modules Â· ~1h40</span></div>
-<h3 class="text-xl font-bold mb-2 group-hover:text-amber-400 transition-colors">ðŸ•³ï¸ What almost no one tells you</h3>
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full">TRACK 4</span><span class="text-xs text-neutral-500">3 modules êÂ· ~1h40</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-amber-400 transition-colors">ê°Å¸â¢Â³ê¯Â¸Â What almost no one tells you</h3>
 <p class="text-neutral-400 text-sm mb-4">Hidden instructions, passwords, third-party extensions, spending with no cap, and customer data.</p>
-<div aria-label="Track 4 progress" aria-valuemax="100" aria-valuemin="0" data-ARCKHÉ-meter="trilha:4" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHÉ-meter-frac="">0 of 18</span><span data-ARCKHÉ-meter-pct="">0%</span></div><div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div></div>
+<div aria-label="Track 4 progress" aria-valuemax="100" aria-valuemin="0" data-ARCKHê-meter="trilha:4" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHê-meter-frac="">0 of 18</span><span data-ARCKHê-meter-pct="">0%</span></div><div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div></div>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-6 transition-all" href="curso/trilha5/index.html">
-<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-teal-500/20 text-teal-400 text-xs font-semibold rounded-full">TRACK 5</span><span class="text-xs text-neutral-500">2 modules Â· ~1h10</span></div>
-<h3 class="text-xl font-bold mb-2 group-hover:text-teal-400 transition-colors">ðŸ“Š Assume the result</h3>
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-teal-500/20 text-teal-400 text-xs font-semibold rounded-full">TRACK 5</span><span class="text-xs text-neutral-500">2 modules êÂ· ~1h10</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-teal-400 transition-colors">ê°Å¸âÅ  Assume the result</h3>
 <p class="text-neutral-400 text-sm mb-4">Metric, owner, and the spreadsheet in 4 blocks: did it work? Was it under control?</p>
-<div aria-label="Track 5 progress" aria-valuemax="100" aria-valuemin="0" data-ARCKHÉ-meter="trilha:5" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHÉ-meter-frac="">0 of 12</span><span data-ARCKHÉ-meter-pct="">0%</span></div><div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div></div>
+<div aria-label="Track 5 progress" aria-valuemax="100" aria-valuemin="0" data-ARCKHê-meter="trilha:5" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHê-meter-frac="">0 of 12</span><span data-ARCKHê-meter-pct="">0%</span></div><div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div></div>
 </a>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6">
-<div class="text-3xl mb-3">ðŸ“‹</div>
+<div class="text-3xl mb-3">ê°Å¸ââ¹</div>
 <h3 class="text-xl font-bold mb-2 text-primary">What you take away</h3>
-<p class="text-neutral-300 text-sm">The â€œAgent under controlâ€ spreadsheet, filled out for a real agent in your business: the right pain point, the five controls, security precautions, and a metric with an owner.</p>
+<p class="text-neutral-300 text-sm">The ê¢â¬ÅAgent under controlê¢â¬Â spreadsheet, filled out for a real agent in your business: the right pain point, the five controls, security precautions, and a metric with an owner.</p>
 </div>
 </div>
 </section>
@@ -358,27 +358,27 @@
 <div class="bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
 <h2 class="text-2xl font-bold mb-4">The rule that runs through the course</h2>
 <p class="text-xl text-neutral-100 mb-4">The more the agent can do on its own, <strong class="text-emerald-400">the tighter the limits need to be.</strong></p>
-<p class="text-neutral-300">You decide what to automate, what it can handle, and whether it workedâ€”not the agent, not the app provider.</p>
+<p class="text-neutral-300">You decide what to automate, what it can handle, and whether it workedê¢â¬ânot the agent, not the app provider.</p>
 </div>
 </section>
 <!-- COMO ESTUDAR -->
 <section class="mb-16">
 <h2 class="text-2xl font-bold mb-6">How to study here</h2>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">â—</div><div class="font-semibold mb-1">Mark as read</div><p class="text-xs text-neutral-400">Each topic has a button. Your progress appears here, on the learning path, and in the module.</p></div>
-<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">?</div><div class="font-semibold mb-1">Mark questions</div><p class="text-xs text-neutral-400">â€œI have a questionâ€ saves the topic for you to review later.</p></div>
-<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">ðŸ–ï¸</div><div class="font-semibold mb-1">Highlight and take notes</div><p class="text-xs text-neutral-400">Select a passage to highlight or add a note.</p></div>
-<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">â—·</div><div class="font-semibold mb-1">My journey</div><p class="text-xs text-neutral-400">Progress, questions, and notes in one place. Export to a file so you donâ€™t lose them.</p></div>
+<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">ê¢âÂ</div><div class="font-semibold mb-1">Mark as read</div><p class="text-xs text-neutral-400">Each topic has a button. Your progress appears here, on the learning path, and in the module.</p></div>
+<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">?</div><div class="font-semibold mb-1">Mark questions</div><p class="text-xs text-neutral-400">ê¢â¬ÅI have a questionê¢â¬Â saves the topic for you to review later.</p></div>
+<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">ê°Å¸âÂê¯Â¸Â</div><div class="font-semibold mb-1">Highlight and take notes</div><p class="text-xs text-neutral-400">Select a passage to highlight or add a note.</p></div>
+<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">ê¢âÂ·</div><div class="font-semibold mb-1">My journey</div><p class="text-xs text-neutral-400">Progress, questions, and notes in one place. Export to a file so you donê¢â¬â¢t lose them.</p></div>
 </div>
 <p class="text-neutral-500 text-xs mt-4">Everything is saved only in your browser. Nothing is sent to any server.</p>
 </section>
 </main>
 <footer class="border-t border-dark-600 py-10 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm space-y-3">
-<p>Agent under Control Â· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHÉ.pro" target="_blank">PRO</a></p>
-<!-- ARCKHÉ-backlink:v1 -->
-<p style="display:block;width:100%;text-align:center;font-size:.85rem;margin:.75rem 0 0;opacity:.85"><a href="https://www.ARCKHÉ AI/cursos/305-agente-sob-controle-v2-use-agentes-de-ia-sem-se-queimar/" style="color:inherit;text-decoration:underline">Complete profile for this course on ARCKHÉ AI</a> Â· <a href="https://www.ARCKHÉ AI/aprender-inteligencia-artificial/" style="color:inherit;text-decoration:underline">Guide: how to learn about artificial intelligence</a> Â· <a href="https://www.ARCKHÉ AI/cursos/" style="color:inherit;text-decoration:underline">All courses</a></p>
-<!-- /ARCKHÉ-backlink:v1 -->
+<p>Agent under Control êÂ· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHê.pro" target="_blank">PRO</a></p>
+<!-- ARCKHê-backlink:v1 -->
+<p style="display:block;width:100%;text-align:center;font-size:.85rem;margin:.75rem 0 0;opacity:.85"><a href="https://www.ARCKHê AI/cursos/305-agente-sob-controle-v2-use-agentes-de-ia-sem-se-queimar/" style="color:inherit;text-decoration:underline">Complete profile for this course on ARCKHê AI</a> êÂ· <a href="https://www.ARCKHê AI/aprender-inteligencia-artificial/" style="color:inherit;text-decoration:underline">Guide: how to learn about artificial intelligence</a> êÂ· <a href="https://www.ARCKHê AI/cursos/" style="color:inherit;text-decoration:underline">All courses</a></p>
+<!-- /ARCKHê-backlink:v1 -->
 </div>
 </footer>
 <script>
@@ -389,7 +389,7 @@
     if (!_html.classList.contains('dark')) { themeToggleDarkIcon.classList.remove('hidden'); }
     else { themeToggleLightIcon.classList.remove('hidden'); }
     themeToggle.addEventListener('click', () => {
-      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHÉ-dark'); }
+      if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHê-dark'); }
       else { _html.classList.toggle('dark'); }
       themeToggleDarkIcon.classList.toggle('hidden', _html.classList.contains('dark'));
       themeToggleLightIcon.classList.toggle('hidden', !_html.classList.contains('dark'));
@@ -401,7 +401,7 @@
     // "Continuar de onde parei": le o ultimo modulo visitado (gravado pelo learn.js) e aponta para o topico
     (function () {
       try {
-        var meta = JSON.parse(localStorage.getItem('ARCKHÉ.agscv2.meta') || '{}');
+        var meta = JSON.parse(localStorage.getItem('ARCKHê.agscv2.meta') || '{}');
         var href = meta && meta.lastModuleHref;
         if (!href || !/modulo-\d+-\d+\.html/.test(href)) return;
         var m = href.match(/curso\/trilha\d+\/modulo-\d+-\d+\.html/);
@@ -415,7 +415,7 @@
   </script>
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
   </script>
 </body>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head></html>

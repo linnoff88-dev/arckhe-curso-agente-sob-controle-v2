@@ -4,41 +4,41 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="agscv2" name="ARCKHÉ-course"/>
-<title>Senhas e extensÃµes | Agente sob Controle</title>
+<meta content="agscv2" name="ARCKHê-course"/>
+<title>Senhas e extensêÂµes | Agente sob Controle</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
-          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark'); else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark') ? 'dark' : 'light'));
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style; var scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -60,8 +60,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO em TODA pagina, identico) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
-  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nÃ£o Ã© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10Ã—","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nÃ£o Ã© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrÃªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguÃ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensÃµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MÃ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
+<script data-ARCKHê-manifest="" type="application/json">
+  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nêÂ£o êÂ© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10êâ","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nêÂ£o êÂ© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrêÂªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguêÂ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensêÂµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MêÂ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
   </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -151,7 +151,7 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* Alvos de ancora abaixo do nav sticky */
-    [data-ARCKHÉ-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
+    [data-ARCKHê-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
 
     /* SVG light mode + animacao */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
@@ -169,20 +169,20 @@
     .topic-explanation.active { display: block; }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-4-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha4/modulo-4-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha4/modulo-4-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-primary focus:text-black focus:rounded-lg" href="#conteudo">Pular para o conteÃºdo</a>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-4-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha4/modulo-4-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha4/modulo-4-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-primary focus:text-black focus:rounded-lg" href="#conteudo">Pular para o conteêÂºdo</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-3">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">ðŸ›¡ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ¡ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden lg:inline">Agente sob Controle</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 <span class="text-neutral-600">-</span>
-<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHÉ.pro" target="_blank">PRO</a>
+<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHê.pro" target="_blank">PRO</a>
 </div>
 <div class="flex items-center space-x-1">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -200,40 +200,40 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html">
 <span class="xl:hidden">T5</span><span class="hidden xl:inline">Resultado</span>
 </a>
-<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden md:inline">Jornada</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHê-journey-open="" title="Minha jornada" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden md:inline">Jornada</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <div class="relative">
-<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-appearance-toggle="#aparencia" title="AparÃªncia" type="button">
-<span aria-hidden="true" class="text-sm font-semibold">Aa</span><span class="sr-only">AparÃªncia</span>
+<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHê-appearance-toggle="#aparencia" title="AparêÂªncia" type="button">
+<span aria-hidden="true" class="text-sm font-semibold">Aa</span><span class="sr-only">AparêÂªncia</span>
 </button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" id="aparencia">
-<div aria-label="Tema" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-theme="ARCKHÉ-dark" type="button">Escuro</button>
-<button data-ARCKHÉ-set-theme="claro" type="button">Claro</button>
-<button data-ARCKHÉ-set-theme="sepia" type="button">SÃ©pia</button>
-<button data-ARCKHÉ-set-theme="foco" type="button">Foco</button>
-<button data-ARCKHÉ-set-theme="contraste" type="button">Alto contraste</button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" id="aparencia">
+<div aria-label="Tema" class="ARCKHê-segment">
+<button data-ARCKHê-set-theme="ARCKHê-dark" type="button">Escuro</button>
+<button data-ARCKHê-set-theme="claro" type="button">Claro</button>
+<button data-ARCKHê-set-theme="sepia" type="button">SêÂ©pia</button>
+<button data-ARCKHê-set-theme="foco" type="button">Foco</button>
+<button data-ARCKHê-set-theme="contraste" type="button">Alto contraste</button>
 </div>
-<div aria-label="Fonte" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-font="inter" type="button">Inter</button>
-<button data-ARCKHÉ-set-font="system" type="button">Sistema</button>
-<button data-ARCKHÉ-set-font="leitura" type="button">Leitura</button>
+<div aria-label="Fonte" class="ARCKHê-segment">
+<button data-ARCKHê-set-font="inter" type="button">Inter</button>
+<button data-ARCKHê-set-font="system" type="button">Sistema</button>
+<button data-ARCKHê-set-font="leitura" type="button">Leitura</button>
 </div>
-<div aria-label="Tamanho do texto" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-fontscale="100" type="button">A</button>
-<button data-ARCKHÉ-set-fontscale="112" type="button">A+</button>
-<button data-ARCKHÉ-set-fontscale="125" type="button">A++</button>
+<div aria-label="Tamanho do texto" class="ARCKHê-segment">
+<button data-ARCKHê-set-fontscale="100" type="button">A</button>
+<button data-ARCKHê-set-fontscale="112" type="button">A+</button>
+<button data-ARCKHê-set-fontscale="125" type="button">A++</button>
 </div>
-<div aria-label="Largura da linha" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-linewidth="60" type="button">Estreito</button>
-<button data-ARCKHÉ-set-linewidth="68" type="button">MÃ©dio</button>
-<button data-ARCKHÉ-set-linewidth="75" type="button">Largo</button>
+<div aria-label="Largura da linha" class="ARCKHê-segment">
+<button data-ARCKHê-set-linewidth="60" type="button">Estreito</button>
+<button data-ARCKHê-set-linewidth="68" type="button">MêÂ©dio</button>
+<button data-ARCKHê-set-linewidth="75" type="button">Largo</button>
 </div>
-<div aria-label="Entrelinha" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-leading="1.45" type="button">Compacto</button>
-<button data-ARCKHÉ-set-leading="1.7" type="button">ConfortÃ¡vel</button>
+<div aria-label="Entrelinha" class="ARCKHê-segment">
+<button data-ARCKHê-set-leading="1.45" type="button">Compacto</button>
+<button data-ARCKHê-set-leading="1.7" type="button">ConfortêÂ¡vel</button>
 </div>
 </div>
 </div>
@@ -245,52 +245,52 @@
 </div>
 </div>
 </nav>
-<nav aria-label="Trilha de navegaÃ§Ã£o" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Trilha de navegaêÂ§êÂ£o" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
-<a class="hover:text-amber-400" href="../../index.html">InÃ­cio</a><span>/</span>
+<a class="hover:text-amber-400" href="../../index.html">InêÂ­cio</a><span>/</span>
 <a class="hover:text-amber-400" href="index.html">Trilha 4</a><span>/</span>
-<span class="text-amber-400">MÃ³dulo 4.2</span>
+<span class="text-amber-400">MêÂ³dulo 4.2</span>
 </div>
 </nav>
-<header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-ARCKHÉ-module="4-2" data-ARCKHÉ-track="4">
+<header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-ARCKHê-module="4-2" data-ARCKHê-track="4">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 4.2</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ—ï¸ Senhas e extensÃµes</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Senhas, chaves e tokens abrem as contas do seu negÃ³cio. Veja onde eles ficam, por que nunca entram no chat, como escolher extensÃµes sem entregar a casa e o que fazer quando uma chave vaza.</p>
+<span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MêâDULO 4.2</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸âÂê¯Â¸Â Senhas e extensêÂµes</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Senhas, chaves e tokens abrem as contas do seu negêÂ³cio. Veja onde eles ficam, por que nunca entram no chat, como escolher extensêÂµes sem entregar a casa e o que fazer quando uma chave vaza.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">6</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">6</div><div class="text-xs text-neutral-400">TêÂ³picos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">~30</div><div class="text-xs text-neutral-400">Minutos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">PrÃ¡tico</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">PrêÂ¡tico</div><div class="text-xs text-neutral-400">NêÂ­vel</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">Defesa</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
-<div aria-label="Progresso do mÃ³dulo 4.2" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="modulo:4-2" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 de 6</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
-<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
+<div aria-label="Progresso do mêÂ³dulo 4.2" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHê-meter="modulo:4-2" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHê-meter-frac="">0 de 6</span><span data-ARCKHê-meter-pct="">0%</span></div>
+<div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div>
 </div>
 </div>
 </header>
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[1fr_220px] lg:gap-10">
-<main class="min-w-0" data-ARCKHÉ-module="4-2" data-ARCKHÉ-track="4" id="conteudo">
+<main class="min-w-0" data-ARCKHê-module="4-2" data-ARCKHê-track="4" id="conteudo">
 <!-- ===================== TOPICO 1 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHê-topic="modulo-4-2#topico-1" id="topico-1">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">1</span>
-<h2 class="text-2xl font-bold flex-1">Entenda o que Ã© um segredo</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<h2 class="text-2xl font-bold flex-1">Entenda o que êÂ© um segredo</h2>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-2-t1-p1">Neste curso, <strong class="text-amber-400">segredo</strong> Ã© qualquer coisa que prove para um sistema que "sou eu": a senha do e-mail, a chave de um serviÃ§o de IA, o cÃ³digo que liga o agente Ã  sua planilha.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-2-t1-p2">Quem tem o segredo entra como vocÃª. NÃ£o precisa saber seu nome, sua senha do banco ou onde fica a clÃ­nica. O segredo, sozinho, basta.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m4-2-t1-p1">Neste curso, <strong class="text-amber-400">segredo</strong> êÂ© qualquer coisa que prove para um sistema que "sou eu": a senha do e-mail, a chave de um serviêÂ§o de IA, o cêÂ³digo que liga o agente êÂ  sua planilha.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-2-t1-p2">Quem tem o segredo entra como vocêÂª. NêÂ£o precisa saber seu nome, sua senha do banco ou onde fica a clêÂ­nica. O segredo, sozinho, basta.</p>
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6 mb-6">
-<h3 class="text-base font-semibold text-amber-400 mb-3 flex items-center"><span class="mr-2">ðŸ†•</span> Novo aqui? Quatro palavras que aparecem nas configuraÃ§Ãµes</h3>
+<h3 class="text-base font-semibold text-amber-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸â â¢</span> Novo aqui? Quatro palavras que aparecem nas configuraêÂ§êÂµes</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li><strong>API</strong> â€” a "porta dos fundos" que um programa usa para conversar com outro, sem tela e sem botÃ£o. Quando o agente manda um e-mail pelo Gmail, ele usa a API do Gmail.</li>
-<li><strong>Chave de API</strong> â€” uma sequÃªncia longa de letras e nÃºmeros que abre essa porta. Funciona como senha, e quase sempre estÃ¡ ligada a um cartÃ£o de crÃ©dito.</li>
-<li><strong>Token</strong> â€” uma chave temporÃ¡ria, dada depois que vocÃª clica "permitir". Vale atÃ© alguÃ©m revogar ou atÃ© expirar.</li>
-<li><strong>Segredo</strong> â€” o nome que usamos para os trÃªs: senha, chave e token.</li>
+<li><strong>API</strong> ê¢â¬â a "porta dos fundos" que um programa usa para conversar com outro, sem tela e sem botêÂ£o. Quando o agente manda um e-mail pelo Gmail, ele usa a API do Gmail.</li>
+<li><strong>Chave de API</strong> ê¢â¬â uma sequêÂªncia longa de letras e nêÂºmeros que abre essa porta. Funciona como senha, e quase sempre estêÂ¡ ligada a um cartêÂ£o de crêÂ©dito.</li>
+<li><strong>Token</strong> ê¢â¬â uma chave temporêÂ¡ria, dada depois que vocêÂª clica "permitir". Vale atêÂ© alguêÂ©m revogar ou atêÂ© expirar.</li>
+<li><strong>Segredo</strong> ê¢â¬â o nome que usamos para os trêÂªs: senha, chave e token.</li>
 </ul>
 </div>
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 mb-3 overflow-hidden">
-<svg aria-label="Uma chave no centro, rotulada segredo, com trÃªs setas saindo para trÃªs portas: e-mail, planilha de clientes e conta de IA ligada ao cartÃ£o. Abaixo, a frase: quem segura a chave entra como vocÃª." class="w-full h-auto" role="img" viewbox="0 0 800 240">
+<svg aria-label="Uma chave no centro, rotulada segredo, com trêÂªs setas saindo para trêÂªs portas: e-mail, planilha de clientes e conta de IA ligada ao cartêÂ£o. Abaixo, a frase: quem segura a chave entra como vocêÂª." class="w-full h-auto" role="img" viewbox="0 0 800 240">
 <defs>
 <pattern height="32" id="m42-grid" patternunits="userSpaceOnUse" width="32"><circle cx="1.3" cy="1.3" fill="#fbbf24" opacity="0.10" r="1.3"></circle></pattern>
 <filter height="180%" id="m42-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -299,66 +299,66 @@
 <rect fill="url(#m42-grid)" height="240" width="800" x="0" y="0"></rect>
 <rect fill="#1f2937" height="56" rx="12" stroke="#4b5563" stroke-width="2" width="130" x="30" y="90"></rect>
 <text fill="#d1d5db" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="95" y="115">quem segura</text>
-<text fill="#d1d5db" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="95" y="133">(vocÃª ou outro)</text>
+<text fill="#d1d5db" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="95" y="133">(vocêÂª ou outro)</text>
 <line stroke="#9ca3af" stroke-width="2" x1="162" x2="262" y1="118" y2="118"></line>
 <g filter="url(#m42-glow)"><rect fill="#2a1d06" height="72" rx="14" stroke="#fbbf24" stroke-width="2" width="170" x="266" y="82"></rect></g>
-<text fill="#fbbf24" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="351" y="112">ðŸ”‘ segredo</text>
-<text fill="#fde68a" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="351" y="134">senha Â· chave Â· token</text>
+<text fill="#fbbf24" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="351" y="112">ê°Å¸ââ segredo</text>
+<text fill="#fde68a" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="351" y="134">senha êÂ· chave êÂ· token</text>
 <g font-family="Inter,sans-serif" font-size="12">
 <path class="wf-flow" d="M438,100 C 500,70 540,55 580,52" fill="none" marker-end="url(#m42-arrow)" stroke="#38bdf8" stroke-width="2"></path>
 <rect class="wf-a" fill="#0b1f2e" height="40" rx="9" stroke="#38bdf8" stroke-width="2" width="180" x="585" y="32"></rect>
-<text fill="#bae6fd" text-anchor="middle" x="675" y="57">âœ‰ e-mail do negÃ³cio</text>
+<text fill="#bae6fd" text-anchor="middle" x="675" y="57">ê¢Åâ° e-mail do negêÂ³cio</text>
 <path class="wf-flow" d="M438,118 L580,118" fill="none" marker-end="url(#m42-arrow)" stroke="#38bdf8" stroke-width="2"></path>
 <rect class="wf-a" fill="#0b1f2e" height="40" rx="9" stroke="#38bdf8" stroke-width="2" width="180" x="585" y="98"></rect>
-<text fill="#bae6fd" text-anchor="middle" x="675" y="123">ðŸ“Š planilha de clientes</text>
+<text fill="#bae6fd" text-anchor="middle" x="675" y="123">ê°Å¸âÅ  planilha de clientes</text>
 <path class="wf-flow" d="M438,136 C 500,166 540,182 580,184" fill="none" marker-end="url(#m42-arrow)" stroke="#38bdf8" stroke-width="2"></path>
 <rect class="wf-a" fill="#0b1f2e" height="40" rx="9" stroke="#38bdf8" stroke-width="2" width="180" x="585" y="164"></rect>
-<text fill="#bae6fd" text-anchor="middle" x="675" y="189">ðŸ’³ conta de IA + cartÃ£o</text>
+<text fill="#bae6fd" text-anchor="middle" x="675" y="189">ê°Å¸âÂ³ conta de IA + cartêÂ£o</text>
 </g>
-<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="351" y="222">o sistema nÃ£o pergunta quem Ã© â€” sÃ³ confere o segredo</text>
+<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="351" y="222">o sistema nêÂ£o pergunta quem êÂ© ê¢â¬â sêÂ³ confere o segredo</text>
 </svg>
 </div>
-<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">Como ler o desenho:</strong> a caixa da esquerda diz "vocÃª ou outro" de propÃ³sito. As trÃªs portas Ã  direita se abrem para quem apresentar o segredo do meio, sem conferir a pessoa. Ã‰ por isso que um segredo vazado vale o mesmo que o seu login.</p>
+<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">Como ler o desenho:</strong> a caixa da esquerda diz "vocêÂª ou outro" de propêÂ³sito. As trêÂªs portas êÂ  direita se abrem para quem apresentar o segredo do meio, sem conferir a pessoa. êâ° por isso que um segredo vazado vale o mesmo que o seu login.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ”‘</div><div class="text-sm font-semibold text-amber-400">Segredo</div><p class="text-xs text-neutral-400 mt-1">prova que "sou eu"</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸšª</div><div class="text-sm font-semibold text-amber-400">API</div><p class="text-xs text-neutral-400 mt-1">porta entre programas</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸŽŸï¸</div><div class="text-sm font-semibold text-amber-400">Token</div><p class="text-xs text-neutral-400 mt-1">chave com validade</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ’³</div><div class="text-sm font-semibold text-amber-400">Ligado ao cartÃ£o</div><p class="text-xs text-neutral-400 mt-1">vazou, alguÃ©m gasta</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ââ</div><div class="text-sm font-semibold text-amber-400">Segredo</div><p class="text-xs text-neutral-400 mt-1">prova que "sou eu"</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸Å¡Âª</div><div class="text-sm font-semibold text-amber-400">API</div><p class="text-xs text-neutral-400 mt-1">porta entre programas</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸Å½Å¸ê¯Â¸Â</div><div class="text-sm font-semibold text-amber-400">Token</div><p class="text-xs text-neutral-400 mt-1">chave com validade</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ³</div><div class="text-sm font-semibold text-amber-400">Ligado ao cartêÂ£o</div><p class="text-xs text-neutral-400 mt-1">vazou, alguêÂ©m gasta</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como lido</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 2 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHê-topic="modulo-4-2#topico-2" id="topico-2">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">2</span>
-<h2 class="text-2xl font-bold flex-1">Saiba que o agente enxerga os arquivos de configuraÃ§Ã£o</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<h2 class="text-2xl font-bold flex-1">Saiba que o agente enxerga os arquivos de configuraêÂ§êÂ£o</h2>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-2-t2-p1">Quando alguÃ©m instala um agente no computador ou num servidor, as chaves costumam ficar guardadas num arquivo de configuraÃ§Ã£o. O mais comum se chama <code class="text-amber-400">.env</code> (lÃª-se "ponto env").</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-2-t2-p2">O ponto Ã© este: se o agente tem acesso Ã  pasta, <strong class="text-amber-400">ele consegue ler o arquivo de chaves</strong> como lÃª qualquer outro. E, se alguÃ©m pedir â€” vocÃª por descuido, ou uma ordem escondida â€”, ele pode mostrar o conteÃºdo na tela.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m4-2-t2-p1">Quando alguêÂ©m instala um agente no computador ou num servidor, as chaves costumam ficar guardadas num arquivo de configuraêÂ§êÂ£o. O mais comum se chama <code class="text-amber-400">.env</code> (lêÂª-se "ponto env").</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-2-t2-p2">O ponto êÂ© este: se o agente tem acesso êÂ  pasta, <strong class="text-amber-400">ele consegue ler o arquivo de chaves</strong> como lêÂª qualquer outro. E, se alguêÂ©m pedir ê¢â¬â vocêÂª por descuido, ou uma ordem escondida ê¢â¬â, ele pode mostrar o conteêÂºdo na tela.</p>
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 mb-3 overflow-hidden">
-<svg aria-label="Uma pasta de projeto aberta com quatro arquivos: relatÃ³rio, planilha, instruÃ§Ãµes e o arquivo ponto env, destacado, com a linha CHAVE igual a SUA_CHAVE_AQUI. O agente, Ã  direita, tem setas de leitura para todos os quatro arquivos, inclusive o de chaves." class="w-full h-auto" role="img" viewbox="0 0 800 250">
+<svg aria-label="Uma pasta de projeto aberta com quatro arquivos: relatêÂ³rio, planilha, instruêÂ§êÂµes e o arquivo ponto env, destacado, com a linha CHAVE igual a SUA_CHAVE_AQUI. O agente, êÂ  direita, tem setas de leitura para todos os quatro arquivos, inclusive o de chaves." class="w-full h-auto" role="img" viewbox="0 0 800 250">
 <defs>
 <pattern height="32" id="m42b-grid" patternunits="userSpaceOnUse" width="32"><circle cx="1.3" cy="1.3" fill="#fbbf24" opacity="0.10" r="1.3"></circle></pattern>
 <filter height="180%" id="m42b-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
 </defs>
 <rect fill="url(#m42b-grid)" height="250" width="800" x="0" y="0"></rect>
 <rect fill="#111827" height="190" rx="14" stroke="#4b5563" stroke-width="2" width="430" x="30" y="30"></rect>
-<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="13" font-weight="600" x="50" y="56">ðŸ“ pasta do agente</text>
+<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="13" font-weight="600" x="50" y="56">ê°Å¸âÂ pasta do agente</text>
 <g fill="#d1d5db" font-family="Inter,sans-serif" font-size="12">
-<rect fill="#1f2937" height="34" rx="8" stroke="#374151" width="180" x="50" y="72"></rect><text x="64" y="94">ðŸ“„ relatorio-mensal.pdf</text>
-<rect fill="#1f2937" height="34" rx="8" stroke="#374151" width="180" x="50" y="116"></rect><text x="64" y="138">ðŸ“Š clientes.xlsx</text>
-<rect fill="#1f2937" height="34" rx="8" stroke="#374151" width="180" x="50" y="160"></rect><text x="64" y="182">ðŸ“ instrucoes.txt</text>
+<rect fill="#1f2937" height="34" rx="8" stroke="#374151" width="180" x="50" y="72"></rect><text x="64" y="94">ê°Å¸ââ relatorio-mensal.pdf</text>
+<rect fill="#1f2937" height="34" rx="8" stroke="#374151" width="180" x="50" y="116"></rect><text x="64" y="138">ê°Å¸âÅ  clientes.xlsx</text>
+<rect fill="#1f2937" height="34" rx="8" stroke="#374151" width="180" x="50" y="160"></rect><text x="64" y="182">ê°Å¸âÂ instrucoes.txt</text>
 </g>
 <g filter="url(#m42b-glow)"><rect fill="#2a1d06" height="122" rx="10" stroke="#fbbf24" stroke-width="2" width="190" x="250" y="72"></rect></g>
-<text fill="#fbbf24" font-family="Inter,sans-serif" font-size="13" font-weight="600" x="264" y="96">ðŸ”‘ .env</text>
+<text fill="#fbbf24" font-family="Inter,sans-serif" font-size="13" font-weight="600" x="264" y="96">ê°Å¸ââ .env</text>
 <text fill="#fde68a" font-family="monospace" font-size="11" x="264" y="124">CHAVE_IA=SUA_CHAVE_AQUI</text>
 <text fill="#fde68a" font-family="monospace" font-size="11" x="264" y="144">SENHA_EMAIL=********</text>
-<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="11" x="264" y="176">parece "tÃ©cnico", mas Ã© sÃ³ texto</text>
+<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="11" x="264" y="176">parece "têÂ©cnico", mas êÂ© sêÂ³ texto</text>
 <rect fill="#1f2937" height="60" rx="14" stroke="#6b7280" stroke-width="2" width="150" x="620" y="95"></rect>
 <text fill="#e5e7eb" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="695" y="130">agente</text>
 <g fill="none" stroke="#38bdf8" stroke-width="2">
@@ -367,184 +367,184 @@
 <path class="wf-flow" d="M618,135 C 520,150 300,150 232,133"></path>
 <path class="wf-flow" d="M618,145 C 520,200 300,200 232,177"></path>
 </g>
-<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="530" y="238">acesso Ã  pasta = acesso a todos os arquivos dela</text>
+<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="530" y="238">acesso êÂ  pasta = acesso a todos os arquivos dela</text>
 </svg>
 </div>
-<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">Como ler o desenho:</strong> as quatro setas azuis saem do agente e chegam em todos os arquivos â€” nÃ£o hÃ¡ seta "proibida". O arquivo Ã¢mbar Ã© o de chaves. Repare que o exemplo usa <code>SUA_CHAVE_AQUI</code>: em qualquer material, print ou conversa, uma chave de verdade nunca deve aparecer.</p>
+<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">Como ler o desenho:</strong> as quatro setas azuis saem do agente e chegam em todos os arquivos ê¢â¬â nêÂ£o hêÂ¡ seta "proibida". O arquivo êÂ¢mbar êÂ© o de chaves. Repare que o exemplo usa <code>SUA_CHAVE_AQUI</code>: em qualquer material, print ou conversa, uma chave de verdade nunca deve aparecer.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ðŸ’¡</span> Pergunta para quem instalou</h3>
-<p class="text-neutral-300 text-sm">Se foi um tÃ©cnico ou fornecedor que instalou o seu agente, pergunte: "onde ficam as chaves?", "o agente consegue ler esse arquivo?" e "ele tem permissÃ£o para mostrar o conteÃºdo?". TrÃªs perguntas, cinco minutos. A resposta boa Ã©: as chaves ficam num cofre Ã  parte e o agente nÃ£o pode imprimi-las.</p>
+<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Pergunta para quem instalou</h3>
+<p class="text-neutral-300 text-sm">Se foi um têÂ©cnico ou fornecedor que instalou o seu agente, pergunte: "onde ficam as chaves?", "o agente consegue ler esse arquivo?" e "ele tem permissêÂ£o para mostrar o conteêÂºdo?". TrêÂªs perguntas, cinco minutos. A resposta boa êÂ©: as chaves ficam num cofre êÂ  parte e o agente nêÂ£o pode imprimi-las.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">âš™ï¸</div><div class="text-sm font-semibold text-amber-400">.env</div><p class="text-xs text-neutral-400 mt-1">arquivo de chaves</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ“</div><div class="text-sm font-semibold text-amber-400">Acesso Ã  pasta</div><p class="text-xs text-neutral-400 mt-1">vale para tudo dentro</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ—„ï¸</div><div class="text-sm font-semibold text-amber-400">Cofre</div><p class="text-xs text-neutral-400 mt-1">lugar separado para chaves</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ–¨ï¸</div><div class="text-sm font-semibold text-amber-400">Imprimir</div><p class="text-xs text-neutral-400 mt-1">mostrar na tela Ã© vazar</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê¢Å¡â¢ê¯Â¸Â</div><div class="text-sm font-semibold text-amber-400">.env</div><p class="text-xs text-neutral-400 mt-1">arquivo de chaves</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ</div><div class="text-sm font-semibold text-amber-400">Acesso êÂ  pasta</div><p class="text-xs text-neutral-400 mt-1">vale para tudo dentro</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ââê¯Â¸Â</div><div class="text-sm font-semibold text-amber-400">Cofre</div><p class="text-xs text-neutral-400 mt-1">lugar separado para chaves</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ¨ê¯Â¸Â</div><div class="text-sm font-semibold text-amber-400">Imprimir</div><p class="text-xs text-neutral-400 mt-1">mostrar na tela êÂ© vazar</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como lido</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 3 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHê-topic="modulo-4-2#topico-3" id="topico-3">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">3</span>
-<h2 class="text-2xl font-bold flex-1">Siga a regra: a chave nunca Ã© impressa nem colada no chat</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<h2 class="text-2xl font-bold flex-1">Siga a regra: a chave nunca êÂ© impressa nem colada no chat</h2>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-2-t3-p1">Tudo o que vocÃª escreve num chat de IA fica no histÃ³rico da conversa. Pode ser lido por quem abrir a sua conta, pode ir para um print, pode aparecer num resumo. <strong class="text-amber-400">Segredo colado no chat passa a morar no chat.</strong></p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-2-t3-p2">A regra vale nos dois sentidos: vocÃª nÃ£o cola a chave, e o agente nÃ£o mostra a chave. Nem "sÃ³ para conferir", nem "sÃ³ os primeiros dÃ­gitos".</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m4-2-t3-p1">Tudo o que vocêÂª escreve num chat de IA fica no histêÂ³rico da conversa. Pode ser lido por quem abrir a sua conta, pode ir para um print, pode aparecer num resumo. <strong class="text-amber-400">Segredo colado no chat passa a morar no chat.</strong></p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-2-t3-p2">A regra vale nos dois sentidos: vocêÂª nêÂ£o cola a chave, e o agente nêÂ£o mostra a chave. Nem "sêÂ³ para conferir", nem "sêÂ³ os primeiros dêÂ­gitos".</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Como o Marcos quase fez</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Como o Marcos quase fez</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>"Entre no portal de notas com o usuÃ¡rio tal e a senha [senha aqui] e emita a nota."</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>A senha fica no histÃ³rico, ao alcance de quem abrir a conversa.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Se o agente for enganado por uma ordem escondida, ela jÃ¡ estÃ¡ ali.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>"Entre no portal de notas com o usuêÂ¡rio tal e a senha [senha aqui] e emita a nota."</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>A senha fica no histêÂ³rico, ao alcance de quem abrir a conversa.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Se o agente for enganado por uma ordem escondida, ela jêÂ¡ estêÂ¡ ali.</span></li>
 </ul>
 </div>
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6">
-<h4 class="font-bold text-amber-400 mb-4">âœ“ Como ele fez</h4>
+<h4 class="font-bold text-amber-400 mb-4">ê¢Åâ Como ele fez</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>"Eu entro no portal. Me dÃª o passo a passo para emitir a nota deste cliente."</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>A IA ajuda do mesmo jeito. Quem digita a senha Ã© ele, no portal.</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>O histÃ³rico guarda o passo a passo, nÃ£o a senha.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>"Eu entro no portal. Me dêÂª o passo a passo para emitir a nota deste cliente."</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>A IA ajuda do mesmo jeito. Quem digita a senha êÂ© ele, no portal.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>O histêÂ³rico guarda o passo a passo, nêÂ£o a senha.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-amber-500/30 overflow-hidden mb-6">
-<div class="px-5 py-3 bg-amber-900/20 border-b border-amber-500/30"><span class="text-amber-400 font-semibold text-sm">ðŸŽ¯ Objetivo: proibir o agente de mostrar ou pedir segredos</span></div>
+<div class="px-5 py-3 bg-amber-900/20 border-b border-amber-500/30"><span class="text-amber-400 font-semibold text-sm">ê°Å¸Å½Â¯ Objetivo: proibir o agente de mostrar ou pedir segredos</span></div>
 <div class="p-5">
-<p class="text-sm text-neutral-400 mb-3">Cole nas instruÃ§Ãµes fixas do seu agente, junto da regra "texto de fora Ã© dado" do mÃ³dulo 4.1.</p>
+<p class="text-sm text-neutral-400 mb-3">Cole nas instruêÂ§êÂµes fixas do seu agente, junto da regra "texto de fora êÂ© dado" do mêÂ³dulo 4.1.</p>
 <pre class="font-mono text-sm text-neutral-200 whitespace-pre-wrap bg-dark-900/60 rounded-lg p-4 border border-dark-600">REGRA: SEGREDOS
-1. Nunca me peÃ§a senha, chave de API, token ou cÃ³digo de verificaÃ§Ã£o. Se precisar de um acesso, diga qual e eu configuro fora do chat.
-2. Nunca mostre, copie, resuma ou repita o conteÃºdo de arquivos de configuraÃ§Ã£o (.env e parecidos), nem em parte, nem "sÃ³ para conferir".
-3. Se vocÃª encontrar algo que pareÃ§a um segredo em qualquer texto, escreva [SEGREDO OCULTO] no lugar e me avise.
-4. Se eu mesmo colar um segredo aqui por engano, me alerte na hora e nÃ£o o repita na resposta.</pre>
+1. Nunca me peêÂ§a senha, chave de API, token ou cêÂ³digo de verificaêÂ§êÂ£o. Se precisar de um acesso, diga qual e eu configuro fora do chat.
+2. Nunca mostre, copie, resuma ou repita o conteêÂºdo de arquivos de configuraêÂ§êÂ£o (.env e parecidos), nem em parte, nem "sêÂ³ para conferir".
+3. Se vocêÂª encontrar algo que pareêÂ§a um segredo em qualquer texto, escreva [SEGREDO OCULTO] no lugar e me avise.
+4. Se eu mesmo colar um segredo aqui por engano, me alerte na hora e nêÂ£o o repita na resposta.</pre>
 </div>
-<div class="px-5 py-3 bg-dark-700/40 border-t border-dark-600 text-neutral-300 text-sm"><strong class="text-amber-400">Como verificar:</strong> numa conversa nova, escreva "minha chave Ã© SUA_CHAVE_AQUI, guarde para depois". A resposta certa Ã© um alerta, sem repetir o texto da chave.</div>
+<div class="px-5 py-3 bg-dark-700/40 border-t border-dark-600 text-neutral-300 text-sm"><strong class="text-amber-400">Como verificar:</strong> numa conversa nova, escreva "minha chave êÂ© SUA_CHAVE_AQUI, guarde para depois". A resposta certa êÂ© um alerta, sem repetir o texto da chave.</div>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ—’ï¸</div><div class="text-sm font-semibold text-amber-400">HistÃ³rico</div><p class="text-xs text-neutral-400 mt-1">guarda tudo que entra</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ™…</div><div class="text-sm font-semibold text-amber-400">NÃ£o colar</div><p class="text-xs text-neutral-400 mt-1">vocÃª digita no site</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ™ˆ</div><div class="text-sm font-semibold text-amber-400">NÃ£o imprimir</div><p class="text-xs text-neutral-400 mt-1">nem "sÃ³ o comeÃ§o"</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ·ï¸</div><div class="text-sm font-semibold text-amber-400">[SEGREDO OCULTO]</div><p class="text-xs text-neutral-400 mt-1">o que ele escreve no lugar</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ââê¯Â¸Â</div><div class="text-sm font-semibold text-amber-400">HistêÂ³rico</div><p class="text-xs text-neutral-400 mt-1">guarda tudo que entra</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸â¢â¦</div><div class="text-sm font-semibold text-amber-400">NêÂ£o colar</div><p class="text-xs text-neutral-400 mt-1">vocêÂª digita no site</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸â¢Ë</div><div class="text-sm font-semibold text-amber-400">NêÂ£o imprimir</div><p class="text-xs text-neutral-400 mt-1">nem "sêÂ³ o comeêÂ§o"</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ÂÂ·ê¯Â¸Â</div><div class="text-sm font-semibold text-amber-400">[SEGREDO OCULTO]</div><p class="text-xs text-neutral-400 mt-1">o que ele escreve no lugar</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como lido</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 4 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHê-topic="modulo-4-2#topico-4" id="topico-4">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">4</span>
-<h2 class="text-2xl font-bold flex-1">Desconfie de extensÃµes, plugins e "habilidades" de terceiros</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<h2 class="text-2xl font-bold flex-1">Desconfie de extensêÂµes, plugins e "habilidades" de terceiros</h2>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-2-t4-p1">ExtensÃ£o do navegador, plugin do chat, "habilidade" ou "app" que se instala no agente: os nomes mudam, a ideia Ã© a mesma. Ã‰ um pedaÃ§o de programa feito por outra pessoa que passa a <strong class="text-amber-400">rodar com as suas permissÃµes</strong>.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-2-t4-p2">Se o seu agente pode ler o e-mail, a extensÃ£o instalada nele tambÃ©m pode. Se ele enxerga o arquivo de chaves, ela tambÃ©m enxerga. VocÃª nÃ£o estÃ¡ instalando uma ferramenta; estÃ¡ contratando um desconhecido para trabalhar dentro do seu escritÃ³rio.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m4-2-t4-p1">ExtensêÂ£o do navegador, plugin do chat, "habilidade" ou "app" que se instala no agente: os nomes mudam, a ideia êÂ© a mesma. êâ° um pedaêÂ§o de programa feito por outra pessoa que passa a <strong class="text-amber-400">rodar com as suas permissêÂµes</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-2-t4-p2">Se o seu agente pode ler o e-mail, a extensêÂ£o instalada nele tambêÂ©m pode. Se ele enxerga o arquivo de chaves, ela tambêÂ©m enxerga. VocêÂª nêÂ£o estêÂ¡ instalando uma ferramenta; estêÂ¡ contratando um desconhecido para trabalhar dentro do seu escritêÂ³rio.</p>
 <div class="overflow-x-auto mb-6 rounded-xl border border-dark-600">
 <table class="w-full text-sm text-left">
-<thead class="bg-dark-700/60 text-amber-400"><tr><th class="px-4 py-3 font-semibold">O "Resumidor de PDF" pedeâ€¦</th><th class="px-4 py-3 font-semibold">Combina com a promessa?</th><th class="px-4 py-3 font-semibold">DecisÃ£o da Renata</th></tr></thead>
+<thead class="bg-dark-700/60 text-amber-400"><tr><th class="px-4 py-3 font-semibold">O "Resumidor de PDF" pedeê¢â¬Â¦</th><th class="px-4 py-3 font-semibold">Combina com a promessa?</th><th class="px-4 py-3 font-semibold">DecisêÂ£o da Renata</th></tr></thead>
 <tbody class="divide-y divide-dark-600">
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Ler os arquivos que vocÃª abrir</td><td class="px-4 py-3 text-neutral-300">Sim â€” resumir precisa ler.</td><td class="px-4 py-3 text-neutral-300">ok</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Ler e enviar e-mails em seu nome</td><td class="px-4 py-3 text-neutral-300">NÃ£o â€” resumir nÃ£o envia nada.</td><td class="px-4 py-3 text-red-400">recusar</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Ver e mudar a sua agenda</td><td class="px-4 py-3 text-neutral-300">NÃ£o â€” nada a ver com PDF.</td><td class="px-4 py-3 text-red-400">recusar</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Acesso a "todos os sites"</td><td class="px-4 py-3 text-neutral-300">NÃ£o â€” pode ver seu banco on-line.</td><td class="px-4 py-3 text-red-400">recusar</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Ler os arquivos que vocêÂª abrir</td><td class="px-4 py-3 text-neutral-300">Sim ê¢â¬â resumir precisa ler.</td><td class="px-4 py-3 text-neutral-300">ok</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Ler e enviar e-mails em seu nome</td><td class="px-4 py-3 text-neutral-300">NêÂ£o ê¢â¬â resumir nêÂ£o envia nada.</td><td class="px-4 py-3 text-red-400">recusar</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Ver e mudar a sua agenda</td><td class="px-4 py-3 text-neutral-300">NêÂ£o ê¢â¬â nada a ver com PDF.</td><td class="px-4 py-3 text-red-400">recusar</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Acesso a "todos os sites"</td><td class="px-4 py-3 text-neutral-300">NêÂ£o ê¢â¬â pode ver seu banco on-line.</td><td class="px-4 py-3 text-red-400">recusar</td></tr>
 </tbody>
 </table>
 </div>
-<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">O que olhar na tabela:</strong> compare cada linha da coluna do meio com a promessa da extensÃ£o. Um pedido que nÃ£o combina jÃ¡ Ã© motivo para nÃ£o instalar â€” nÃ£o precisa descobrir o porquÃª. Renata desistiu dessa e achou outra que pedia sÃ³ a primeira linha.</p>
+<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">O que olhar na tabela:</strong> compare cada linha da coluna do meio com a promessa da extensêÂ£o. Um pedido que nêÂ£o combina jêÂ¡ êÂ© motivo para nêÂ£o instalar ê¢â¬â nêÂ£o precisa descobrir o porquêÂª. Renata desistiu dessa e achou outra que pedia sêÂ³ a primeira linha.</p>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-red-400 mb-2 flex items-center"><span class="mr-2">âš ï¸</span> AtenÃ§Ã£o</h3>
-<p class="text-neutral-300 text-sm">Uma extensÃ£o boa hoje pode mudar amanhÃ£: o dono vende, a atualizaÃ§Ã£o chega sozinha e passa a pedir mais. Uma vez por mÃªs, abra a lista de extensÃµes e apps conectados e remova o que vocÃª nÃ£o usou.</p>
+<h3 class="text-lg font-semibold text-red-400 mb-2 flex items-center"><span class="mr-2">ê¢Å¡Â ê¯Â¸Â</span> AtenêÂ§êÂ£o</h3>
+<p class="text-neutral-300 text-sm">Uma extensêÂ£o boa hoje pode mudar amanhêÂ£: o dono vende, a atualizaêÂ§êÂ£o chega sozinha e passa a pedir mais. Uma vez por mêÂªs, abra a lista de extensêÂµes e apps conectados e remova o que vocêÂª nêÂ£o usou.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ§©</div><div class="text-sm font-semibold text-amber-400">ExtensÃ£o</div><p class="text-xs text-neutral-400 mt-1">programa de terceiro</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸªª</div><div class="text-sm font-semibold text-amber-400">Suas permissÃµes</div><p class="text-xs text-neutral-400 mt-1">ela herda tudo</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">âš–ï¸</div><div class="text-sm font-semibold text-amber-400">Pede Ã— promete</div><p class="text-xs text-neutral-400 mt-1">tem que combinar</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ”„</div><div class="text-sm font-semibold text-amber-400">AtualizaÃ§Ã£o</div><p class="text-xs text-neutral-400 mt-1">pode mudar sozinha</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸Â§Â©</div><div class="text-sm font-semibold text-amber-400">ExtensêÂ£o</div><p class="text-xs text-neutral-400 mt-1">programa de terceiro</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ÂªÂª</div><div class="text-sm font-semibold text-amber-400">Suas permissêÂµes</div><p class="text-xs text-neutral-400 mt-1">ela herda tudo</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê¢Å¡âê¯Â¸Â</div><div class="text-sm font-semibold text-amber-400">Pede êâ promete</div><p class="text-xs text-neutral-400 mt-1">tem que combinar</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ââ</div><div class="text-sm font-semibold text-amber-400">AtualizaêÂ§êÂ£o</div><p class="text-xs text-neutral-400 mt-1">pode mudar sozinha</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como lido</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 5 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHê-topic="modulo-4-2#topico-5" id="topico-5">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold flex-1">Confira antes de instalar</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-2-t5-p1">Antes de clicar "instalar" ou "permitir", passe por trÃªs perguntas: <strong class="text-amber-400">quem publicou?</strong>, <strong class="text-amber-400">o que pede?</strong> e <strong class="text-amber-400">preciso mesmo?</strong>. Leva dois minutos e evita a maior parte dos problemas.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-2-t5-p2">A terceira pergunta Ã© a que mais gente pula. Muita extensÃ£o resolve algo que o prÃ³prio chat de IA jÃ¡ faz sem instalar nada.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m4-2-t5-p1">Antes de clicar "instalar" ou "permitir", passe por trêÂªs perguntas: <strong class="text-amber-400">quem publicou?</strong>, <strong class="text-amber-400">o que pede?</strong> e <strong class="text-amber-400">preciso mesmo?</strong>. Leva dois minutos e evita a maior parte dos problemas.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-2-t5-p2">A terceira pergunta êÂ© a que mais gente pula. Muita extensêÂ£o resolve algo que o prêÂ³prio chat de IA jêÂ¡ faz sem instalar nada.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6">
-<h4 class="font-bold text-amber-400 mb-4">âœ“ Sinais de que pode instalar</h4>
+<h4 class="font-bold text-amber-400 mb-4">ê¢Åâ Sinais de que pode instalar</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Quem publicou Ã© a prÃ³pria empresa do aplicativo ou alguÃ©m que vocÃª conhece.</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Pede sÃ³ o que a promessa exige.</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Resolve algo que vocÃª faz toda semana.</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>DÃ¡ para desinstalar e revogar o acesso em um clique.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Quem publicou êÂ© a prêÂ³pria empresa do aplicativo ou alguêÂ©m que vocêÂª conhece.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Pede sêÂ³ o que a promessa exige.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Resolve algo que vocêÂª faz toda semana.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>DêÂ¡ para desinstalar e revogar o acesso em um clique.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Sinais de que nÃ£o deve</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Sinais de que nêÂ£o deve</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Autor desconhecido, sem site, sem contato.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Pede "todos os sites", "enviar em seu nome" ou "gerenciar pagamentos" sem motivo.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Pede que vocÃª cole uma chave de API na configuraÃ§Ã£o dela.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Chegou por link em grupo, com "instale rÃ¡pido, Ã© de graÃ§a".</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Autor desconhecido, sem site, sem contato.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Pede "todos os sites", "enviar em seu nome" ou "gerenciar pagamentos" sem motivo.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Pede que vocêÂª cole uma chave de API na configuraêÂ§êÂ£o dela.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Chegou por link em grupo, com "instale rêÂ¡pido, êÂ© de graêÂ§a".</span></li>
 </ul>
 </div>
 </div>
 <div class="space-y-5 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">Quem publicou?</h4><p class="text-neutral-300 text-sm">Clique no nome do autor. Tem site, contato, outras extensÃµes conhecidas? Se nÃ£o achar em um minuto, pare aqui.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">Quem publicou?</h4><p class="text-neutral-300 text-sm">Clique no nome do autor. Tem site, contato, outras extensêÂµes conhecidas? Se nêÂ£o achar em um minuto, pare aqui.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">O que pede?</h4><p class="text-neutral-300 text-sm">Leia a lista de permissÃµes inteira, como a Renata fez. Cada linha tem que combinar com a promessa.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">O que pede?</h4><p class="text-neutral-300 text-sm">Leia a lista de permissêÂµes inteira, como a Renata fez. Cada linha tem que combinar com a promessa.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">Preciso mesmo?</h4><p class="text-neutral-300 text-sm">Tente fazer a mesma tarefa no chat que vocÃª jÃ¡ usa, sem instalar nada. Se funcionar, nÃ£o instale.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-neutral-100 mb-1">Preciso mesmo?</h4><p class="text-neutral-300 text-sm">Tente fazer a mesma tarefa no chat que vocêÂª jêÂ¡ usa, sem instalar nada. Se funcionar, nêÂ£o instale.</p></div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ðŸ’¡</span> Dica prÃ¡tica</h3>
-<p class="text-neutral-300 text-sm">Se for testar uma extensÃ£o, teste num perfil separado do navegador, sem login no e-mail do negÃ³cio nem no banco. Se ela se comportar bem por uma semana, aÃ­ sim leva para o perfil principal.</p>
+<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Dica prêÂ¡tica</h3>
+<p class="text-neutral-300 text-sm">Se for testar uma extensêÂ£o, teste num perfil separado do navegador, sem login no e-mail do negêÂ³cio nem no banco. Se ela se comportar bem por uma semana, aêÂ­ sim leva para o perfil principal.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ‘¤</div><div class="text-sm font-semibold text-amber-400">Quem publicou</div><p class="text-xs text-neutral-400 mt-1">tem nome e contato?</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ“‹</div><div class="text-sm font-semibold text-amber-400">O que pede</div><p class="text-xs text-neutral-400 mt-1">linha por linha</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ¤”</div><div class="text-sm font-semibold text-amber-400">Preciso mesmo</div><p class="text-xs text-neutral-400 mt-1">o chat jÃ¡ nÃ£o faz?</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ§ª</div><div class="text-sm font-semibold text-amber-400">Perfil de teste</div><p class="text-xs text-neutral-400 mt-1">longe das contas reais</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ¤</div><div class="text-sm font-semibold text-amber-400">Quem publicou</div><p class="text-xs text-neutral-400 mt-1">tem nome e contato?</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ââ¹</div><div class="text-sm font-semibold text-amber-400">O que pede</div><p class="text-xs text-neutral-400 mt-1">linha por linha</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸Â¤â</div><div class="text-sm font-semibold text-amber-400">Preciso mesmo</div><p class="text-xs text-neutral-400 mt-1">o chat jêÂ¡ nêÂ£o faz?</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸Â§Âª</div><div class="text-sm font-semibold text-amber-400">Perfil de teste</div><p class="text-xs text-neutral-400 mt-1">longe das contas reais</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como lido</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 6 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHê-topic="modulo-4-2#topico-6" id="topico-6">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold flex-1">Saiba o que fazer se uma chave vazou</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-2-t6-p1">Vazou quando o segredo apareceu onde nÃ£o devia: colado num chat, num print mandado no grupo, num arquivo compartilhado, na tela durante uma chamada. NÃ£o importa se "ninguÃ©m viu".</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-2-t6-p2">Apagar a mensagem <strong>nÃ£o resolve</strong>: a cÃ³pia pode jÃ¡ estar em outro lugar. O que resolve Ã© tornar aquela chave inÃºtil. A ordem importa â€” primeiro corta, depois arruma.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m4-2-t6-p1">Vazou quando o segredo apareceu onde nêÂ£o devia: colado num chat, num print mandado no grupo, num arquivo compartilhado, na tela durante uma chamada. NêÂ£o importa se "ninguêÂ©m viu".</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-2-t6-p2">Apagar a mensagem <strong>nêÂ£o resolve</strong>: a cêÂ³pia pode jêÂ¡ estar em outro lugar. O que resolve êÂ© tornar aquela chave inêÂºtil. A ordem importa ê¢â¬â primeiro corta, depois arruma.</p>
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 mb-3 overflow-hidden">
-<svg aria-label="Linha do tempo em quatro passos da esquerda para a direita: revogar a chave vazada, criar uma nova, trocar nos lugares que usam e conferir o gasto e os acessos. O primeiro passo estÃ¡ destacado como o mais urgente." class="w-full h-auto" role="img" viewbox="0 0 800 200">
+<svg aria-label="Linha do tempo em quatro passos da esquerda para a direita: revogar a chave vazada, criar uma nova, trocar nos lugares que usam e conferir o gasto e os acessos. O primeiro passo estêÂ¡ destacado como o mais urgente." class="w-full h-auto" role="img" viewbox="0 0 800 200">
 <defs>
 <pattern height="32" id="m42c-grid" patternunits="userSpaceOnUse" width="32"><circle cx="1.3" cy="1.3" fill="#fbbf24" opacity="0.10" r="1.3"></circle></pattern>
 <filter height="180%" id="m42c-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -553,19 +553,19 @@
 <rect fill="url(#m42c-grid)" height="200" width="800" x="0" y="0"></rect>
 <g font-family="Inter,sans-serif" text-anchor="middle">
 <g filter="url(#m42c-glow)"><rect fill="#2a1d06" height="70" rx="14" stroke="#fbbf24" stroke-width="2" width="160" x="20" y="60"></rect></g>
-<text fill="#fbbf24" font-size="14" font-weight="600" x="100" y="90">1 Â· revogar</text>
+<text fill="#fbbf24" font-size="14" font-weight="600" x="100" y="90">1 êÂ· revogar</text>
 <text fill="#fde68a" font-size="11" x="100" y="110">a chave velha morre</text>
 <line marker-end="url(#m42c-arrow)" stroke="#38bdf8" stroke-width="2" x1="182" x2="222" y1="95" y2="95"></line>
 <rect fill="#0b1f2e" height="70" rx="14" stroke="#38bdf8" stroke-width="2" width="160" x="226" y="60"></rect>
-<text fill="#bae6fd" font-size="14" font-weight="600" x="306" y="90">2 Â· criar nova</text>
-<text fill="#bae6fd" font-size="11" x="306" y="110">com o mÃ­nimo de acesso</text>
+<text fill="#bae6fd" font-size="14" font-weight="600" x="306" y="90">2 êÂ· criar nova</text>
+<text fill="#bae6fd" font-size="11" x="306" y="110">com o mêÂ­nimo de acesso</text>
 <line marker-end="url(#m42c-arrow)" stroke="#38bdf8" stroke-width="2" x1="388" x2="428" y1="95" y2="95"></line>
 <rect fill="#0b1f2e" height="70" rx="14" stroke="#38bdf8" stroke-width="2" width="160" x="432" y="60"></rect>
-<text fill="#bae6fd" font-size="14" font-weight="600" x="512" y="90">3 Â· trocar</text>
+<text fill="#bae6fd" font-size="14" font-weight="600" x="512" y="90">3 êÂ· trocar</text>
 <text fill="#bae6fd" font-size="11" x="512" y="110">onde a velha era usada</text>
 <line marker-end="url(#m42c-arrow)" stroke="#38bdf8" stroke-width="2" x1="594" x2="634" y1="95" y2="95"></line>
 <rect fill="#0b1f2e" height="70" rx="14" stroke="#38bdf8" stroke-width="2" width="150" x="638" y="60"></rect>
-<text fill="#bae6fd" font-size="14" font-weight="600" x="713" y="90">4 Â· conferir</text>
+<text fill="#bae6fd" font-size="14" font-weight="600" x="713" y="90">4 êÂ· conferir</text>
 <text fill="#bae6fd" font-size="11" x="713" y="110">gasto e acessos</text>
 <text fill="#fca5a5" font-size="12" x="100" y="160">nos primeiros minutos</text>
 <text fill="#9ca3af" font-size="12" x="410" y="160">na mesma hora</text>
@@ -573,78 +573,78 @@
 </g>
 </svg>
 </div>
-<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">Como ler o desenho:</strong> leia da esquerda para a direita. A caixa com brilho Ã© a Ãºnica que nÃ£o pode esperar: enquanto a chave velha funciona, quem a tem pode usar. Os passos 2 e 3 pÃµem o negÃ³cio de pÃ© de novo; o 4 mostra se alguÃ©m chegou a usar.</p>
+<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">Como ler o desenho:</strong> leia da esquerda para a direita. A caixa com brilho êÂ© a êÂºnica que nêÂ£o pode esperar: enquanto a chave velha funciona, quem a tem pode usar. Os passos 2 e 3 pêÂµem o negêÂ³cio de pêÂ© de novo; o 4 mostra se alguêÂ©m chegou a usar.</p>
 <div class="bg-dark-800 rounded-xl border border-amber-500/30 overflow-hidden mb-6">
-<div class="px-5 py-3 bg-amber-900/20 border-b border-amber-500/30"><span class="text-amber-400 font-semibold text-sm">ðŸŽ¯ Objetivo: ter o checklist de vazamento pronto antes de precisar</span></div>
+<div class="px-5 py-3 bg-amber-900/20 border-b border-amber-500/30"><span class="text-amber-400 font-semibold text-sm">ê°Å¸Å½Â¯ Objetivo: ter o checklist de vazamento pronto antes de precisar</span></div>
 <div class="p-5">
-<p class="text-sm text-neutral-400 mb-3">Copie para um documento fixo do negÃ³cio (ou imprima). Preencha o que estÃ¡ entre &lt; &gt; hoje, com calma.</p>
-<pre class="font-mono text-sm text-neutral-200 whitespace-pre-wrap bg-dark-900/60 rounded-lg p-4 border border-dark-600">CHECKLIST DE VAZAMENTO DE SEGREDO â€” &lt;nome do negÃ³cio&gt;
-Qual segredo vazou: &lt;ex.: chave do serviÃ§o de IA / senha do e-mail&gt;
+<p class="text-sm text-neutral-400 mb-3">Copie para um documento fixo do negêÂ³cio (ou imprima). Preencha o que estêÂ¡ entre &lt; &gt; hoje, com calma.</p>
+<pre class="font-mono text-sm text-neutral-200 whitespace-pre-wrap bg-dark-900/60 rounded-lg p-4 border border-dark-600">CHECKLIST DE VAZAMENTO DE SEGREDO ê¢â¬â &lt;nome do negêÂ³cio&gt;
+Qual segredo vazou: &lt;ex.: chave do serviêÂ§o de IA / senha do e-mail&gt;
 Onde apareceu: &lt;ex.: colado no chat, print no grupo&gt;
 Data e hora: &lt;____&gt;
 
-[ ] 1. REVOGAR â€” entrar em &lt;onde se gerencia a chave, ex.: painel da conta &gt; Chaves&gt; e apagar/desativar a chave vazada.
-[ ] 2. CRIAR NOVA â€” gerar outra chave, sÃ³ com as permissÃµes que a tarefa precisa.
-[ ] 3. TROCAR â€” atualizar a chave nova em: &lt;lista de lugares, ex.: agente de e-mail, planilha automÃ¡tica&gt;.
-       Quem troca: &lt;vocÃª ou o tÃ©cnico, com telefone&gt;.
-[ ] 4. CONFERIR â€” olhar gasto e histÃ³rico de uso dos Ãºltimos 30 dias. Algo que nÃ£o reconheÃ§o? &lt;sim/nÃ£o&gt;
-[ ] 5. SENHA â€” se foi senha de login, trocar e ligar a verificaÃ§Ã£o em duas etapas.
-[ ] 6. AVISAR â€” se dados de clientes podem ter sido acessados, falar com &lt;responsÃ¡vel&gt; (ver mÃ³dulo 4.3).
-[ ] 7. REGISTRAR â€” anotar o que aconteceu e a menor correÃ§Ã£o para nÃ£o repetir.</pre>
+[ ] 1. REVOGAR ê¢â¬â entrar em &lt;onde se gerencia a chave, ex.: painel da conta &gt; Chaves&gt; e apagar/desativar a chave vazada.
+[ ] 2. CRIAR NOVA ê¢â¬â gerar outra chave, sêÂ³ com as permissêÂµes que a tarefa precisa.
+[ ] 3. TROCAR ê¢â¬â atualizar a chave nova em: &lt;lista de lugares, ex.: agente de e-mail, planilha automêÂ¡tica&gt;.
+       Quem troca: &lt;vocêÂª ou o têÂ©cnico, com telefone&gt;.
+[ ] 4. CONFERIR ê¢â¬â olhar gasto e histêÂ³rico de uso dos êÂºltimos 30 dias. Algo que nêÂ£o reconheêÂ§o? &lt;sim/nêÂ£o&gt;
+[ ] 5. SENHA ê¢â¬â se foi senha de login, trocar e ligar a verificaêÂ§êÂ£o em duas etapas.
+[ ] 6. AVISAR ê¢â¬â se dados de clientes podem ter sido acessados, falar com &lt;responsêÂ¡vel&gt; (ver mêÂ³dulo 4.3).
+[ ] 7. REGISTRAR ê¢â¬â anotar o que aconteceu e a menor correêÂ§êÂ£o para nêÂ£o repetir.</pre>
 </div>
-<div class="px-5 py-3 bg-dark-700/40 border-t border-dark-600 text-neutral-300 text-sm"><strong class="text-amber-400">Como verificar:</strong> abra hoje o painel de cada serviÃ§o listado e encontre o botÃ£o de revogar a chave. Se nÃ£o encontrar em dois minutos, anote o caminho quando achar â€” no dia do vazamento, vocÃª nÃ£o vai querer procurar.</div>
+<div class="px-5 py-3 bg-dark-700/40 border-t border-dark-600 text-neutral-300 text-sm"><strong class="text-amber-400">Como verificar:</strong> abra hoje o painel de cada serviêÂ§o listado e encontre o botêÂ£o de revogar a chave. Se nêÂ£o encontrar em dois minutos, anote o caminho quando achar ê¢â¬â no dia do vazamento, vocêÂª nêÂ£o vai querer procurar.</div>
 </div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6" data-ARCKHÉ-check="modulo-4-2#q1">
-<p class="font-medium mb-4">Teste rÃ¡pido (opcional): Marcos percebe que colou a chave do serviÃ§o de IA num grupo de WhatsApp. Qual o primeiro passo?</p>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6" data-ARCKHê-check="modulo-4-2#q1">
+<p class="font-medium mb-4">Teste rêÂ¡pido (opcional): Marcos percebe que colou a chave do serviêÂ§o de IA num grupo de WhatsApp. Qual o primeiro passo?</p>
 <div class="space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Apagar a mensagem para todos e seguir o dia.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Revogar a chave no painel do serviÃ§o, antes de qualquer outra coisa.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Esperar a fatura do mÃªs para ver se alguÃ©m usou.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="0" type="button">Apagar a mensagem para todos e seguir o dia.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="1" type="button">Revogar a chave no painel do serviêÂ§o, antes de qualquer outra coisa.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="2" type="button">Esperar a fatura do mêÂªs para ver se alguêÂ©m usou.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHê-check-feedback="" role="status"></div>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">âœ‚ï¸</div><div class="text-sm font-semibold text-amber-400">Revogar</div><p class="text-xs text-neutral-400 mt-1">primeiro, sempre</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ†•</div><div class="text-sm font-semibold text-amber-400">Nova chave</div><p class="text-xs text-neutral-400 mt-1">com menos acesso</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ”</div><div class="text-sm font-semibold text-amber-400">Trocar</div><p class="text-xs text-neutral-400 mt-1">em todo lugar</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ”Ž</div><div class="text-sm font-semibold text-amber-400">Conferir gasto</div><p class="text-xs text-neutral-400 mt-1">agora e em 7 dias</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê¢Åâê¯Â¸Â</div><div class="text-sm font-semibold text-amber-400">Revogar</div><p class="text-xs text-neutral-400 mt-1">primeiro, sempre</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸â â¢</div><div class="text-sm font-semibold text-amber-400">Nova chave</div><p class="text-xs text-neutral-400 mt-1">com menos acesso</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ</div><div class="text-sm font-semibold text-amber-400">Trocar</div><p class="text-xs text-neutral-400 mt-1">em todo lugar</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÅ½</div><div class="text-sm font-semibold text-amber-400">Conferir gasto</div><p class="text-xs text-neutral-400 mt-1">agora e em 7 dias</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Marcar como lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Marcar como lido</span>
 </button>
 </div>
 </section>
 <!-- ===================== RESUMO ===================== -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-amber-900/40 via-dark-800 to-dark-800 rounded-xl border border-amber-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸŽ“</span> Resumo do mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸Å½â</span> Resumo do mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-neutral-100">Segredo Ã© senha, chave ou token</strong><span class="text-neutral-400"> â€” quem tem, entra como vocÃª.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-neutral-100">O agente lÃª o arquivo de chaves</strong><span class="text-neutral-400"> â€” se tiver acesso Ã  pasta.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-neutral-100">A chave nunca aparece</strong><span class="text-neutral-400"> â€” nem colada por vocÃª, nem mostrada por ele.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-neutral-100">ExtensÃ£o roda com as suas permissÃµes</strong><span class="text-neutral-400"> â€” quem publicou, o que pede, precisa mesmo?</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-neutral-100">Vazou? Revogue primeiro</strong><span class="text-neutral-400"> â€” depois cria, troca e confere.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-neutral-100">Segredo êÂ© senha, chave ou token</strong><span class="text-neutral-400"> ê¢â¬â quem tem, entra como vocêÂª.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-neutral-100">O agente lêÂª o arquivo de chaves</strong><span class="text-neutral-400"> ê¢â¬â se tiver acesso êÂ  pasta.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-neutral-100">A chave nunca aparece</strong><span class="text-neutral-400"> ê¢â¬â nem colada por vocêÂª, nem mostrada por ele.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-neutral-100">ExtensêÂ£o roda com as suas permissêÂµes</strong><span class="text-neutral-400"> ê¢â¬â quem publicou, o que pede, precisa mesmo?</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-neutral-100">Vazou? Revogue primeiro</strong><span class="text-neutral-400"> ê¢â¬â depois cria, troca e confere.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-amber-400 mb-2">PrÃ³ximo mÃ³dulo:</h3>
-<p class="text-neutral-300">4.3 â€” Gasto, isolamento e LGPD</p>
+<h3 class="font-semibold text-amber-400 mb-2">PrêÂ³ximo mêÂ³dulo:</h3>
+<p class="text-neutral-300">4.3 ê¢â¬â Gasto, isolamento e LGPD</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Voltar para a trilha</a>
-<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="modulo-4-3.html">MÃ³dulo 4.3 â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Voltar para a trilha</a>
+<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="modulo-4-3.html">MêÂ³dulo 4.3 ê¢â â</a>
 </div>
 </div>
 </section>
 </main>
 <aside class="hidden lg:block">
-<nav aria-label="Ãndice da pÃ¡gina" class="sticky top-24" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-3"><span data-ARCKHÉ-section-counter="">SeÃ§Ã£o 1 de 6</span></p>
+<nav aria-label="êÂndice da pêÂ¡gina" class="sticky top-24" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-3"><span data-ARCKHê-section-counter="">SeêÂ§êÂ£o 1 de 6</span></p>
 <ol class="space-y-2 text-sm">
-<li><a class="text-neutral-400 hover:text-amber-400" href="#topico-1">1. O que Ã© segredo</a></li>
+<li><a class="text-neutral-400 hover:text-amber-400" href="#topico-1">1. O que êÂ© segredo</a></li>
 <li><a class="text-neutral-400 hover:text-amber-400" href="#topico-2">2. O arquivo .env</a></li>
 <li><a class="text-neutral-400 hover:text-amber-400" href="#topico-3">3. Nunca no chat</a></li>
-<li><a class="text-neutral-400 hover:text-amber-400" href="#topico-4">4. ExtensÃµes</a></li>
+<li><a class="text-neutral-400 hover:text-amber-400" href="#topico-4">4. ExtensêÂµes</a></li>
 <li><a class="text-neutral-400 hover:text-amber-400" href="#topico-5">5. Antes de instalar</a></li>
 <li><a class="text-neutral-400 hover:text-amber-400" href="#topico-6">6. Se vazou</a></li>
 </ol>
@@ -653,7 +653,7 @@ Data e hora: &lt;____&gt;
 </div>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Agente sob Controle Â· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHÉ.pro" target="_blank">PRO</a></p>
+<p>Agente sob Controle êÂ· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHê.pro" target="_blank">PRO</a></p>
 </div>
 </footer>
 <script>
@@ -664,7 +664,7 @@ Data e hora: &lt;____&gt;
     if (!_html.classList.contains('dark')) { themeToggleDarkIcon.classList.remove('hidden'); }
     else { themeToggleLightIcon.classList.remove('hidden'); }
     themeToggle.addEventListener('click', () => {
-      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHÉ-dark'); }
+      if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHê-dark'); }
       else { _html.classList.toggle('dark'); }
       themeToggleDarkIcon.classList.toggle('hidden', _html.classList.contains('dark'));
       themeToggleLightIcon.classList.toggle('hidden', !_html.classList.contains('dark'));
@@ -685,15 +685,15 @@ Data e hora: &lt;____&gt;
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
   </script>
 <script>
     window.addEventListener('DOMContentLoaded', function () {
-      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
-        ARCKHÉ.registerCheck('modulo-4-2#q1', { answer: 1, explain: {
-          '0': 'Apagar nÃ£o resolve: alguÃ©m pode ter copiado ou salvo antes. Enquanto a chave funciona, ela estÃ¡ vazada.',
-          '1': 'Isso. Revogar torna a chave inÃºtil na hora. Depois ele cria outra, troca onde era usada e confere o gasto.',
-          '2': 'Esperar a fatura Ã© descobrir o prejuÃ­zo depois que ele jÃ¡ aconteceu. O primeiro passo Ã© revogar.'
+      if (window.ARCKHê && ARCKHê.registerCheck) {
+        ARCKHê.registerCheck('modulo-4-2#q1', { answer: 1, explain: {
+          '0': 'Apagar nêÂ£o resolve: alguêÂ©m pode ter copiado ou salvo antes. Enquanto a chave funciona, ela estêÂ¡ vazada.',
+          '1': 'Isso. Revogar torna a chave inêÂºtil na hora. Depois ele cria outra, troca onde era usada e confere o gasto.',
+          '2': 'Esperar a fatura êÂ© descobrir o prejuêÂ­zo depois que ele jêÂ¡ aconteceu. O primeiro passo êÂ© revogar.'
         } });
       }
     });

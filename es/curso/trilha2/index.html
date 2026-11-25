@@ -4,41 +4,41 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="agscv2" name="ARCKHÉ-course"/>
-<title>Ruta 2 Â· Encontrar el problema | Agente bajo control</title>
+<meta content="agscv2" name="ARCKHê-course"/>
+<title>Ruta 2 êÂ· Encontrar el problema | Agente bajo control</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
-          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark'); else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark') ? 'dark' : 'light'));
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style; var scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -60,8 +60,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO em TODA pagina, identico) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
-  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nÃ£o Ã© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10Ã—","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nÃ£o Ã© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrÃªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguÃ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensÃµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MÃ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
+<script data-ARCKHê-manifest="" type="application/json">
+  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nêÂ£o êÂ© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10êâ","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nêÂ£o êÂ© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrêÂªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguêÂ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensêÂµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MêÂ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
   </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -151,7 +151,7 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* Alvos de ancora abaixo do nav sticky */
-    [data-ARCKHÉ-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
+    [data-ARCKHê-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
 
     /* SVG light mode + animacao */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
@@ -169,24 +169,24 @@
     .topic-explanation.active { display: block; }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha2/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha2/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-primary focus:text-black focus:rounded-lg" href="#conteudo">Saltar al contenido</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-3">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">ðŸ›¡ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ¡ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden lg:inline">Agente bajo Control</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 <span class="text-neutral-600">-</span>
-<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHÉ.pro" target="_blank">PRO</a>
+<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHê.pro" target="_blank">PRO</a>
 </div>
 <div class="flex items-center space-x-1">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
-<span class="xl:hidden">T1</span><span class="hidden xl:inline">Por quÃ© ahora</span>
+<span class="xl:hidden">T1</span><span class="hidden xl:inline">Por quêÂ© ahora</span>
 </a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-blue-400 bg-blue-500/10" href="index.html">
 <span class="xl:hidden">T2</span><span class="hidden xl:inline">Identifica el problema</span>
@@ -200,40 +200,40 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html">
 <span class="xl:hidden">T5</span><span class="hidden xl:inline">Resultado</span>
 </a>
-<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-journey-open="" title="Mi recorrido" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden md:inline">Recorrido</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHê-journey-open="" title="Mi recorrido" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden md:inline">Recorrido</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <div class="relative">
-<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-appearance-toggle="#aparencia" title="Apariencia" type="button">
+<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHê-appearance-toggle="#aparencia" title="Apariencia" type="button">
 <span aria-hidden="true" class="text-sm font-semibold">Aa</span><span class="sr-only">Apariencia</span>
 </button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" id="aparencia">
-<div aria-label="Tema" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-theme="ARCKHÉ-dark" type="button">Oscuro</button>
-<button data-ARCKHÉ-set-theme="claro" type="button">Claro</button>
-<button data-ARCKHÉ-set-theme="sepia" type="button">Sepia</button>
-<button data-ARCKHÉ-set-theme="foco" type="button">Enfoque</button>
-<button data-ARCKHÉ-set-theme="contraste" type="button">Alto contraste</button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" id="aparencia">
+<div aria-label="Tema" class="ARCKHê-segment">
+<button data-ARCKHê-set-theme="ARCKHê-dark" type="button">Oscuro</button>
+<button data-ARCKHê-set-theme="claro" type="button">Claro</button>
+<button data-ARCKHê-set-theme="sepia" type="button">Sepia</button>
+<button data-ARCKHê-set-theme="foco" type="button">Enfoque</button>
+<button data-ARCKHê-set-theme="contraste" type="button">Alto contraste</button>
 </div>
-<div aria-label="Fuente" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-font="inter" type="button">Inter</button>
-<button data-ARCKHÉ-set-font="system" type="button">Sistema</button>
-<button data-ARCKHÉ-set-font="leitura" type="button">Lectura</button>
+<div aria-label="Fuente" class="ARCKHê-segment">
+<button data-ARCKHê-set-font="inter" type="button">Inter</button>
+<button data-ARCKHê-set-font="system" type="button">Sistema</button>
+<button data-ARCKHê-set-font="leitura" type="button">Lectura</button>
 </div>
-<div aria-label="TamaÃ±o del texto" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-fontscale="100" type="button">A</button>
-<button data-ARCKHÉ-set-fontscale="112" type="button">A+</button>
-<button data-ARCKHÉ-set-fontscale="125" type="button">A++</button>
+<div aria-label="TamaêÂ±o del texto" class="ARCKHê-segment">
+<button data-ARCKHê-set-fontscale="100" type="button">A</button>
+<button data-ARCKHê-set-fontscale="112" type="button">A+</button>
+<button data-ARCKHê-set-fontscale="125" type="button">A++</button>
 </div>
-<div aria-label="Ancho de lÃ­nea" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-linewidth="60" type="button">Estrecho</button>
-<button data-ARCKHÉ-set-linewidth="68" type="button">Medio</button>
-<button data-ARCKHÉ-set-linewidth="75" type="button">Ancho</button>
+<div aria-label="Ancho de lêÂ­nea" class="ARCKHê-segment">
+<button data-ARCKHê-set-linewidth="60" type="button">Estrecho</button>
+<button data-ARCKHê-set-linewidth="68" type="button">Medio</button>
+<button data-ARCKHê-set-linewidth="75" type="button">Ancho</button>
 </div>
-<div aria-label="Entre lÃ­neas" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-leading="1.45" type="button">Compacto</button>
-<button data-ARCKHÉ-set-leading="1.7" type="button">CÃ³modo</button>
+<div aria-label="Entre lêÂ­neas" class="ARCKHê-segment">
+<button data-ARCKHê-set-leading="1.45" type="button">Compacto</button>
+<button data-ARCKHê-set-leading="1.7" type="button">CêÂ³modo</button>
 </div>
 </div>
 </div>
@@ -245,25 +245,25 @@
 </div>
 </div>
 </nav>
-<header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-ARCKHÉ-track="2">
+<header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-ARCKHê-track="2">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-[1fr_380px] lg:gap-10 lg:items-center">
 <div>
 <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">RUTA 2</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ”Ž Encontrar el problema</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Antes de activar cualquier agente, averigua quÃ© deberÃ­a resolver. La pregunta del 10Ã—, la diferencia entre pedido y problema y la frase que le pone precio al dolor.</p>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸âÅ½ Encontrar el problema</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Antes de activar cualquier agente, averigua quêÂ© deberêÂ­a resolver. La pregunta del 10êâ, la diferencia entre pedido y problema y la frase que le pone precio al dolor.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">2</div><div class="text-xs text-neutral-400">MÃ³dulos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">2</div><div class="text-xs text-neutral-400">MêÂ³dulos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">12</div><div class="text-xs text-neutral-400">Temas</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">~1h</div><div class="text-xs text-neutral-400">DuraciÃ³n</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">PrÃ¡ctico</div><div class="text-xs text-neutral-400">Nivel</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">~1h</div><div class="text-xs text-neutral-400">DuraciêÂ³n</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">PrêÂ¡ctico</div><div class="text-xs text-neutral-400">Nivel</div></div>
 </div>
-<div aria-label="Progreso de la ruta 2" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="trilha:2" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 de 12</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
-<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
+<div aria-label="Progreso de la ruta 2" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHê-meter="trilha:2" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHê-meter-frac="">0 de 12</span><span data-ARCKHê-meter-pct="">0%</span></div>
+<div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div>
 </div>
 </div>
 <div class="mt-8 lg:mt-0 rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 overflow-hidden">
-<svg aria-label="Cuatro procesos del negocio en fila: mensajes, agenda, atenciÃ³n y cobros. Una lupa pasa sobre ellos y amplÃ­a la agenda, donde aparece una grieta con el nÃºmero R$ 1.080 por mes: el dolor encontrado." class="w-full h-auto" role="img" viewbox="0 0 380 240">
+<svg aria-label="Cuatro procesos del negocio en fila: mensajes, agenda, atenciêÂ³n y cobros. Una lupa pasa sobre ellos y amplêÂ­a la agenda, donde aparece una grieta con el nêÂºmero R$ 1.080 por mes: el dolor encontrado." class="w-full h-auto" role="img" viewbox="0 0 380 240">
 <defs>
 <pattern height="28" id="t2h-grid" patternunits="userSpaceOnUse" width="28"><circle cx="1.2" cy="1.2" fill="#60a5fa" opacity="0.12" r="1.2"></circle></pattern>
 <filter height="180%" id="t2h-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -287,64 +287,64 @@
 <text fill="#fca5a5" font-family="Inter,sans-serif" font-size="13" font-weight="700" text-anchor="middle" x="196" y="104">R$ 1.080</text>
 <text fill="#fca5a5" font-family="Inter,sans-serif" font-size="10" text-anchor="middle" x="196" y="120">por mes</text>
 <text fill="#bae6fd" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="310" y="60">lo que se rompe</text>
-<text fill="#bae6fd" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="310" y="76">Â¿primero?</text>
+<text fill="#bae6fd" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="310" y="76">êÂ¿primero?</text>
 </svg>
 </div>
 </div>
 </header>
-<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-ARCKHÉ-track="2" id="conteudo">
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-ARCKHê-track="2" id="conteudo">
 <section class="mb-12">
 <h2 class="text-2xl font-bold mb-6">Mapa de la ruta</h2>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all" href="#modulo-2-1">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.1</span><span class="text-xs text-neutral-500">~30 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">ðŸ’¥ La pregunta del 10Ã—</h3>
-<p class="text-xs text-neutral-400">Â¿QuÃ© falla primero?</p>
+<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">ê°Å¸âÂ¥ La pregunta del 10êâ</h3>
+<p class="text-xs text-neutral-400">êÂ¿QuêÂ© falla primero?</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all" href="#modulo-2-2">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.2</span><span class="text-xs text-neutral-500">~30 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">ðŸ¥ Una solicitud no es un problema</h3>
+<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">ê°Å¸ÂÂ¥ Una solicitud no es un problema</h3>
 <p class="text-xs text-neutral-400">No clientes, sino ausencias</p>
 </a>
 </div>
 </section>
 <h2 class="text-2xl font-bold mb-6">Contenido detallado</h2>
 <!-- ===== MODULO 2.1 ===== -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="2-1" data-ARCKHÉ-track="2" id="modulo-2-1">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHê-module="2-1" data-ARCKHê-track="2" id="modulo-2-1">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.1</span><span class="text-xs text-neutral-500">~30 min</span></div>
-<h3 class="text-2xl font-bold mb-2">ðŸ’¥ La pregunta del 10Ã—</h3>
-<p class="text-neutral-400 text-sm">Primero el problema, luego la herramienta: la pregunta que revela el cuello de botella, los nÃºmeros que lo demuestran y la elecciÃ³n de un solo proceso.</p>
-<div aria-label="Progreso del mÃ³dulo 2.1" aria-valuemax="100" aria-valuemin="0" class="mt-4" data-ARCKHÉ-meter="modulo:2-1" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 de 6</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
-<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
+<h3 class="text-2xl font-bold mb-2">ê°Å¸âÂ¥ La pregunta del 10êâ</h3>
+<p class="text-neutral-400 text-sm">Primero el problema, luego la herramienta: la pregunta que revela el cuello de botella, los nêÂºmeros que lo demuestran y la elecciêÂ³n de un solo proceso.</p>
+<div aria-label="Progreso del mêÂ³dulo 2.1" aria-valuemax="100" aria-valuemin="0" class="mt-4" data-ARCKHê-meter="modulo:2-1" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHê-meter-frac="">0 de 6</span><span data-ARCKHê-meter-pct="">0%</span></div>
+<div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div>
 </div>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-controls="t2-1-1" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">ðŸ’¥</span>
-<div><span class="font-medium">Haz la pregunta del 10Ã—</span><span class="text-neutral-500 text-sm ml-2">- Â¿quÃ© se rompe primero?</span></div>
+<span class="text-lg">ê°Å¸âÂ¥</span>
+<div><span class="font-medium">Haz la pregunta del 10êâ</span><span class="text-neutral-500 text-sm ml-2">- êÂ¿quêÂ© se rompe primero?</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-1-1">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">"Si el negocio creciera 10 veces maÃ±ana, Â¿quÃ© proceso fallarÃ­a primero?" La pregunta exagera el movimiento para que aparezca el punto dÃ©bil.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Un agente ejecuta el plan rÃ¡pido, bien o mal. Elegir el problema vale mÃ¡s que elegir la herramienta.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Proceso, cuello de botella, pregunta del 10Ã—, primero el problema, luego la herramienta.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">"Si el negocio creciera 10 veces maêÂ±ana, êÂ¿quêÂ© proceso fallarêÂ­a primero?" La pregunta exagera el movimiento para que aparezca el punto dêÂ©bil.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Un agente ejecuta el plan rêÂ¡pido, bien o mal. Elegir el problema vale mêÂ¡s que elegir la herramienta.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Proceso, cuello de botella, pregunta del 10êâ, primero el problema, luego la herramienta.</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t2-1-2" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">âš–ï¸</span>
+<span class="text-lg">ê¢Å¡âê¯Â¸Â</span>
 <div><span class="font-medium">Separa lo que se rompe de lo que solo molesta</span><span class="text-neutral-500 text-sm ml-2">- la prueba de la semana</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-1-2">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Un filtro: si nadie hace eso durante una semana, Â¿el negocio pierde un cliente, dinero o un plazo? Entonces sÃ­ es un problema. Si no, solo molesta.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">La lista de quejas mezcla las dos cosas. Automatizar molestias requiere esfuerzo y abre una puerta sin ofrecer nada a cambio.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Un filtro: si nadie hace eso durante una semana, êÂ¿el negocio pierde un cliente, dinero o un plazo? Entonces sêÂ­ es un problema. Si no, solo molesta.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">La lista de quejas mezcla las dos cosas. Automatizar molestias requiere esfuerzo y abre una puerta sin ofrecer nada a cambio.</p></div>
 <div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Falla, molestia, prueba de la semana, fila.</p></div>
 </div>
 </div>
@@ -352,56 +352,56 @@
 <div class="topic-item">
 <button aria-controls="t2-1-3" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">ðŸ“Š</span>
-<div><span class="font-medium">Encuentra el cuello de botella con nÃºmeros</span><span class="text-neutral-500 text-sm ml-2">- tiempo, dinero, error</span></div>
+<span class="text-lg">ê°Å¸âÅ </span>
+<div><span class="font-medium">Encuentra el cuello de botella con nêÂºmeros</span><span class="text-neutral-500 text-sm ml-2">- tiempo, dinero, error</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-1-3">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Contar, en una semana normal, cuÃ¡nto tiempo consume cada candidato, cuÃ¡nto dinero se pierde y cuÃ¡ntas veces falla.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">La suposiciÃ³n suele apuntar a lo que se ve. El nÃºmero apunta a lo que cuesta: en el caso de Marcos, 10 horas por semana.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Tiempo, dinero, error, estimaciÃ³n marcada.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Contar, en una semana normal, cuêÂ¡nto tiempo consume cada candidato, cuêÂ¡nto dinero se pierde y cuêÂ¡ntas veces falla.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">La suposiciêÂ³n suele apuntar a lo que se ve. El nêÂºmero apunta a lo que cuesta: en el caso de Marcos, 10 horas por semana.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Tiempo, dinero, error, estimaciêÂ³n marcada.</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t2-1-4" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">ðŸš«</span>
+<span class="text-lg">ê°Å¸Å¡Â«</span>
 <div><span class="font-medium">Evita automatizar lo que no duele</span><span class="text-neutral-500 text-sm ml-2">- la trampa de lo visible</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-1-4">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Los errores comunes al elegir: automatizar lo que es divertido o visible (publicaciÃ³n, video, bot) en lugar de lo que cuesta en silencio.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Cada agente es una puerta mÃ¡s que controlar. Y atraer mÃ¡s clientes a un proceso con fugas solo aumenta la fuga.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Matriz de costo Ã— visibilidad, seÃ±ales buenas y malas, filtraciÃ³n.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Los errores comunes al elegir: automatizar lo que es divertido o visible (publicaciêÂ³n, video, bot) en lugar de lo que cuesta en silencio.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Cada agente es una puerta mêÂ¡s que controlar. Y atraer mêÂ¡s clientes a un proceso con fugas solo aumenta la fuga.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Matriz de costo êâ visibilidad, seêÂ±ales buenas y malas, filtraciêÂ³n.</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t2-1-5" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">ðŸŽ™ï¸</span>
-<div><span class="font-medium">Haz la entrevista 10Ã— con un chat de IA</span><span class="text-neutral-500 text-sm ml-2">- una pregunta a la vez</span></div>
+<span class="text-lg">ê°Å¸Å½â¢ê¯Â¸Â</span>
+<div><span class="font-medium">Haz la entrevista 10êâ con un chat de IA</span><span class="text-neutral-500 text-sm ml-2">- una pregunta a la vez</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-1-5">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Una plantilla lista para pegar en el chat de IA: te entrevista, una pregunta a la vez, hasta encontrar el proceso que falla y el nÃºmero que lo demuestra.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">A solas es fÃ¡cil esquivar la pregunta. El chat mantiene el foco y tÃº hablas del proceso, nunca de los clientes.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Entrevista, una pregunta a la vez, no inventar nÃºmeros.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Una plantilla lista para pegar en el chat de IA: te entrevista, una pregunta a la vez, hasta encontrar el proceso que falla y el nêÂºmero que lo demuestra.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">A solas es fêÂ¡cil esquivar la pregunta. El chat mantiene el foco y têÂº hablas del proceso, nunca de los clientes.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Entrevista, una pregunta a la vez, no inventar nêÂºmeros.</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t2-1-6" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">â˜ï¸</span>
-<div><span class="font-medium">Elige un proceso, solo uno</span><span class="text-neutral-500 text-sm ml-2">- la frase de decisiÃ³n</span></div>
+<span class="text-lg">ê¢ËÂê¯Â¸Â</span>
+<div><span class="font-medium">Elige un proceso, solo uno</span><span class="text-neutral-500 text-sm ml-2">- la frase de decisiêÂ³n</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-1-6">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Cuatro pasos para decidir: hacer una lista, poner cifras, descartar lo que no afecta el dinero y escribir "voy a empezar por X porque cuesta Y".</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Un agente a la vez es la Ãºnica forma de saber si funcionÃ³ y si quedÃ³ bajo control.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Uno solo, lista de espera, error barato, frase de decisiÃ³n.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Cuatro pasos para decidir: hacer una lista, poner cifras, descartar lo que no afecta el dinero y escribir "voy a empezar por X porque cuesta Y".</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Un agente a la vez es la êÂºnica forma de saber si funcionêÂ³ y si quedêÂ³ bajo control.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Uno solo, lista de espera, error barato, frase de decisiêÂ³n.</p></div>
 </div>
 </div>
 </div>
@@ -412,41 +412,41 @@
 </div>
 </div>
 <!-- ===== MODULO 2.2 ===== -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="2-2" data-ARCKHÉ-track="2" id="modulo-2-2">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHê-module="2-2" data-ARCKHê-track="2" id="modulo-2-2">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.2</span><span class="text-xs text-neutral-500">~30 min</span></div>
-<h3 class="text-2xl font-bold mb-2">ðŸ¥ Una solicitud no es un problema</h3>
-<p class="text-neutral-400 text-sm">El caso de la clÃ­nica de Renata: detrÃ¡s de la solicitud Â«mÃ¡s clientesÂ», una agenda que perdÃ­a R$ 1.080 por mes. Desde el costo del problema hasta el primer proyecto pequeÃ±o.</p>
-<div aria-label="Progreso del mÃ³dulo 2.2" aria-valuemax="100" aria-valuemin="0" class="mt-4" data-ARCKHÉ-meter="modulo:2-2" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 de 6</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
-<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
+<h3 class="text-2xl font-bold mb-2">ê°Å¸ÂÂ¥ Una solicitud no es un problema</h3>
+<p class="text-neutral-400 text-sm">El caso de la clêÂ­nica de Renata: detrêÂ¡s de la solicitud êÂ«mêÂ¡s clientesêÂ», una agenda que perdêÂ­a R$ 1.080 por mes. Desde el costo del problema hasta el primer proyecto pequeêÂ±o.</p>
+<div aria-label="Progreso del mêÂ³dulo 2.2" aria-valuemax="100" aria-valuemin="0" class="mt-4" data-ARCKHê-meter="modulo:2-2" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHê-meter-frac="">0 de 6</span><span data-ARCKHê-meter-pct="">0%</span></div>
+<div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div>
 </div>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-controls="t2-2-1" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">ðŸ§Š</span>
+<span class="text-lg">ê°Å¸Â§Å </span>
 <div><span class="font-medium">Separa lo que se pide de lo que se quiere</span><span class="text-neutral-500 text-sm ml-2">- pedido, deseo, dolor</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-2-1">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">La solicitud es la soluciÃ³n que llega lista (Â«mÃ¡s clientesÂ»). El deseo es lo que hay detrÃ¡s (Â«mÃ¡s ingresosÂ»). El problema es la pÃ©rdida que se puede contar.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Atender el pedido al pie de la letra puede salir caro y no resolver el problema. Preguntar Â«Â¿para quÃ©?Â» lleva al nÃºmero.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Pedido, deseo, problema, "Â¿para quÃ©?".</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">La solicitud es la soluciêÂ³n que llega lista (êÂ«mêÂ¡s clientesêÂ»). El deseo es lo que hay detrêÂ¡s (êÂ«mêÂ¡s ingresosêÂ»). El problema es la pêÂ©rdida que se puede contar.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Atender el pedido al pie de la letra puede salir caro y no resolver el problema. Preguntar êÂ«êÂ¿para quêÂ©?êÂ» lleva al nêÂºmero.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Pedido, deseo, problema, "êÂ¿para quêÂ©?".</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t2-2-2" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">ðŸ¥</span>
-<div><span class="font-medium">Estudia el caso de la clÃ­nica</span><span class="text-neutral-500 text-sm ml-2">- el balde agujereado</span></div>
+<span class="text-lg">ê°Å¸ÂÂ¥</span>
+<div><span class="font-medium">Estudia el caso de la clêÂ­nica</span><span class="text-neutral-500 text-sm ml-2">- el balde agujereado</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-2-2">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Renata pedÃ­a mÃ¡s pacientes por Instagram. La agenda mostrÃ³ otra cosa: pacientes que reservaban y no asistÃ­an.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">MÃ¡s gente entrando a una agenda con un hueco solo aumenta las ausencias. Tapa el hueco antes de abrir la llave.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Renata pedêÂ­a mêÂ¡s pacientes por Instagram. La agenda mostrêÂ³ otra cosa: pacientes que reservaban y no asistêÂ­an.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">MêÂ¡s gente entrando a una agenda con un hueco solo aumenta las ausencias. Tapa el hueco antes de abrir la llave.</p></div>
 <div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Falta, horas pagadas sin ingresos, balde con fugas.</p></div>
 </div>
 </div>
@@ -454,56 +454,56 @@
 <div class="topic-item">
 <button aria-controls="t2-2-3" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">ðŸ§®</span>
-<div><span class="font-medium">Calcula cuÃ¡nto cuesta el dolor</span><span class="text-neutral-500 text-sm ml-2">- cÃ¡lculo aproximado</span></div>
+<span class="text-lg">ê°Å¸Â§Â®</span>
+<div><span class="font-medium">Calcula cuêÂ¡nto cuesta el dolor</span><span class="text-neutral-500 text-sm ml-2">- cêÂ¡lculo aproximado</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-2-3">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Faltas Ã— valor promedio Ã— semanas. En la clÃ­nica: 9 faltas Ã— R$ 120 = R$ 1.080 por mes, casi R$ 13 mil por aÃ±o.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Sin precio, el problema se vuelve una opiniÃ³n. Con precio, se vuelve una decisiÃ³n y despuÃ©s se vuelve la mÃ©trica de la ruta 5.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">CuÃ¡ntas veces, cuÃ¡ntos se equivocan, cuÃ¡nto se recupera, precio del dolor.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Faltas êâ valor promedio êâ semanas. En la clêÂ­nica: 9 faltas êâ R$ 120 = R$ 1.080 por mes, casi R$ 13 mil por aêÂ±o.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Sin precio, el problema se vuelve una opiniêÂ³n. Con precio, se vuelve una decisiêÂ³n y despuêÂ©s se vuelve la mêÂ©trica de la ruta 5.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">CuêÂ¡ntas veces, cuêÂ¡ntos se equivocan, cuêÂ¡nto se recupera, precio del dolor.</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t2-2-4" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">ðŸ£</span>
-<div><span class="font-medium">DiseÃ±a el primer proyecto pequeÃ±o</span><span class="text-neutral-500 text-sm ml-2">- recordatorio + confirmaciÃ³n</span></div>
+<span class="text-lg">ê°Å¸ÂÂ£</span>
+<div><span class="font-medium">DiseêÂ±a el primer proyecto pequeêÂ±o</span><span class="text-neutral-500 text-sm ml-2">- recordatorio + confirmaciêÂ³n</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-2-4">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Un agente que envÃ­a un recordatorio dos dÃ­as antes, pide confirmaciÃ³n y anota la respuesta. Renata se encarga de reprogramar y buscar espacios disponibles.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">El primer proyecto debe equivocarse con un costo bajo. En el peor de los casos, se envÃ­a un recordatorio de mÃ¡s.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Proyecto pequeÃ±o, cronograma, aprobaciÃ³n, error barato.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Un agente que envêÂ­a un recordatorio dos dêÂ­as antes, pide confirmaciêÂ³n y anota la respuesta. Renata se encarga de reprogramar y buscar espacios disponibles.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">El primer proyecto debe equivocarse con un costo bajo. En el peor de los casos, se envêÂ­a un recordatorio de mêÂ¡s.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Proyecto pequeêÂ±o, cronograma, aprobaciêÂ³n, error barato.</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t2-2-5" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">ðŸ§‘â€ðŸ’¼</span>
-<div><span class="font-medium">Aplica esto a otras profesiones</span><span class="text-neutral-500 text-sm ml-2">- salÃ³n, tienda, oficina</span></div>
+<span class="text-lg">ê°Å¸Â§âê¢â¬Âê°Å¸âÂ¼</span>
+<div><span class="font-medium">Aplica esto a otras profesiones</span><span class="text-neutral-500 text-sm ml-2">- salêÂ³n, tienda, oficina</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-2-5">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">El mismo patrÃ³n en otros negocios: la solicitud apunta hacia afuera, el problema estÃ¡ dentro. Marcos pedÃ­a rapidez; el problema eran los documentos atrasados que se convertÃ­an en multas.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Reconocer el patrÃ³n en los negocios de otras personas ayuda a verlo en el tuyo.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Suena a solicitud Ã— suena a problema, primer proyecto por profesiÃ³n.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">El mismo patrêÂ³n en otros negocios: la solicitud apunta hacia afuera, el problema estêÂ¡ dentro. Marcos pedêÂ­a rapidez; el problema eran los documentos atrasados que se convertêÂ­an en multas.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Reconocer el patrêÂ³n en los negocios de otras personas ayuda a verlo en el tuyo.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Suena a solicitud êâ suena a problema, primer proyecto por profesiêÂ³n.</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t2-2-6" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">âœï¸</span>
-<div><span class="font-medium">Escribe la frase del dolor</span><span class="text-neutral-500 text-sm ml-2">- cuÃ¡nto, para quÃ©, por quÃ©, va</span></div>
+<span class="text-lg">ê¢ÅÂê¯Â¸Â</span>
+<div><span class="font-medium">Escribe la frase del dolor</span><span class="text-neutral-500 text-sm ml-2">- cuêÂ¡nto, para quêÂ©, por quêÂ©, va</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-2-6">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">"Hoy perdemos ___ por ___ porque ___; el primer agente harÃ¡ ___." Una plantilla para revisar con un chat de IA.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es el primer campo de la ficha del agente y el punto de partida de los controles de la Trilha 3.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Frase del problema, nÃºmero, causa que se puede cambiar, acciÃ³n pequeÃ±a.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">"Hoy perdemos ___ por ___ porque ___; el primer agente harêÂ¡ ___." Una plantilla para revisar con un chat de IA.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Es el primer campo de la ficha del agente y el punto de partida de los controles de la Trilha 3.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Frase del problema, nêÂºmero, causa que se puede cambiar, acciêÂ³n pequeêÂ±a.</p></div>
 </div>
 </div>
 </div>
@@ -514,32 +514,32 @@
 </div>
 </div>
 <div class="flex flex-col sm:flex-row gap-4 mt-12">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../trilha1/index.html">â† Ruta anterior: Por quÃ© ahora</a>
-<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="../trilha3/index.html">Siguiente ruta: Controlar el sistema â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../trilha1/index.html">ê¢â Â Ruta anterior: Por quêÂ© ahora</a>
+<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="../trilha3/index.html">Siguiente ruta: Controlar el sistema ê¢â â</a>
 </div>
 </main>
 <!-- MODAIS (iframe carrega a pagina do modulo) -->
 <div aria-labelledby="modal-2-1-title" aria-modal="true" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-2-1" onclick="if(event.target === this) closeModal()" role="dialog">
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
 <div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
-<div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.1</span><span class="font-semibold" id="modal-2-1-title">La pregunta del 10Ã—</span></div>
-<button aria-label="Cerrar" class="text-neutral-400 hover:text-neutral-100 text-2xl leading-none" onclick="closeModal()">Ã—</button>
+<div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.1</span><span class="font-semibold" id="modal-2-1-title">La pregunta del 10êâ</span></div>
+<button aria-label="Cerrar" class="text-neutral-400 hover:text-neutral-100 text-2xl leading-none" onclick="closeModal()">êâ</button>
 </div>
-<iframe class="flex-1 w-full rounded-b-xl" loading="lazy" src="modulo-2-1.html" title="MÃ³dulo 2.1"></iframe>
+<iframe class="flex-1 w-full rounded-b-xl" loading="lazy" src="modulo-2-1.html" title="MêÂ³dulo 2.1"></iframe>
 </div>
 </div>
 <div aria-labelledby="modal-2-2-title" aria-modal="true" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-2-2" onclick="if(event.target === this) closeModal()" role="dialog">
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
 <div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
 <div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.2</span><span class="font-semibold" id="modal-2-2-title">Un pedido no es un problema</span></div>
-<button aria-label="Cerrar" class="text-neutral-400 hover:text-neutral-100 text-2xl leading-none" onclick="closeModal()">Ã—</button>
+<button aria-label="Cerrar" class="text-neutral-400 hover:text-neutral-100 text-2xl leading-none" onclick="closeModal()">êâ</button>
 </div>
-<iframe class="flex-1 w-full rounded-b-xl" loading="lazy" src="modulo-2-2.html" title="MÃ³dulo 2.2"></iframe>
+<iframe class="flex-1 w-full rounded-b-xl" loading="lazy" src="modulo-2-2.html" title="MêÂ³dulo 2.2"></iframe>
 </div>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Agente bajo Control Â· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHÉ.pro" target="_blank">PRO</a></p>
+<p>Agente bajo Control êÂ· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHê.pro" target="_blank">PRO</a></p>
 </div>
 </footer>
 <script>
@@ -550,7 +550,7 @@
     if (!_html.classList.contains('dark')) { themeToggleDarkIcon.classList.remove('hidden'); }
     else { themeToggleLightIcon.classList.remove('hidden'); }
     themeToggle.addEventListener('click', () => {
-      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHÉ-dark'); }
+      if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHê-dark'); }
       else { _html.classList.toggle('dark'); }
       themeToggleDarkIcon.classList.toggle('hidden', _html.classList.contains('dark'));
       themeToggleLightIcon.classList.toggle('hidden', !_html.classList.contains('dark'));
@@ -571,7 +571,7 @@
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
   </script>
 </body>
 </html>

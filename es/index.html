@@ -4,42 +4,42 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Curso gratuito de ARCKHÉ AI: usa agentes de IA en tu negocio sin meterte en problemas. Encuentra el problema adecuado, limita lo que el agente puede tocar, cierra las puertas de seguridad y mide el resultado." name="description"/>
-<meta content="agscv2" name="ARCKHÉ-course"/>
-<title>Agente bajo control Â· Usa agentes de IA sin meterte en problemas | ARCKHÉ AI</title>
+<meta content="Curso gratuito de ARCKHê AI: usa agentes de IA en tu negocio sin meterte en problemas. Encuentra el problema adecuado, limita lo que el agente puede tocar, cierra las puertas de seguridad y mide el resultado." name="description"/>
+<meta content="agscv2" name="ARCKHê-course"/>
+<title>Agente bajo control êÂ· Usa agentes de IA sin meterte en problemas | ARCKHê AI</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
-          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark'); else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark') ? 'dark' : 'light'));
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style; var scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -61,8 +61,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../assets/learn.css" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO em TODA pagina, identico) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
-  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nÃ£o Ã© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10Ã—","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nÃ£o Ã© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrÃªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguÃ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensÃµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MÃ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
+<script data-ARCKHê-manifest="" type="application/json">
+  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nêÂ£o êÂ© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10êâ","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nêÂ£o êÂ© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrêÂªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguêÂ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensêÂµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MêÂ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
   </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -152,7 +152,7 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* Alvos de ancora abaixo do nav sticky */
-    [data-ARCKHÉ-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
+    [data-ARCKHê-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
 
     /* SVG light mode + animacao */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
@@ -169,24 +169,24 @@
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
   </style>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../en/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../en/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-primary focus:text-black focus:rounded-lg" href="#conteudo">Saltar al contenido</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-3">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="index.html">
-<span class="text-2xl">ðŸ›¡ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ¡ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden lg:inline">Agente bajo Control</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 <span class="text-neutral-600">-</span>
-<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHÉ.pro" target="_blank">PRO</a>
+<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHê.pro" target="_blank">PRO</a>
 </div>
 <div class="flex items-center space-x-1">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="curso/trilha1/index.html">
-<span class="xl:hidden">T1</span><span class="hidden xl:inline">Por quÃ© ahora</span>
+<span class="xl:hidden">T1</span><span class="hidden xl:inline">Por quêÂ© ahora</span>
 </a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="curso/trilha2/index.html">
 <span class="xl:hidden">T2</span><span class="hidden xl:inline">Identifica el problema</span>
@@ -200,40 +200,40 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="curso/trilha5/index.html">
 <span class="xl:hidden">T5</span><span class="hidden xl:inline">Resultado</span>
 </a>
-<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-journey-open="" title="Mi recorrido" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden md:inline">Recorrido</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHê-journey-open="" title="Mi recorrido" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden md:inline">Recorrido</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <div class="relative">
-<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-appearance-toggle="#aparencia" title="Apariencia" type="button">
+<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHê-appearance-toggle="#aparencia" title="Apariencia" type="button">
 <span aria-hidden="true" class="text-sm font-semibold">Aa</span><span class="sr-only">Apariencia</span>
 </button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" id="aparencia">
-<div aria-label="Tema" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-theme="ARCKHÉ-dark" type="button">Oscuro</button>
-<button data-ARCKHÉ-set-theme="claro" type="button">Claro</button>
-<button data-ARCKHÉ-set-theme="sepia" type="button">Sepia</button>
-<button data-ARCKHÉ-set-theme="foco" type="button">Enfoque</button>
-<button data-ARCKHÉ-set-theme="contraste" type="button">Alto contraste</button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" id="aparencia">
+<div aria-label="Tema" class="ARCKHê-segment">
+<button data-ARCKHê-set-theme="ARCKHê-dark" type="button">Oscuro</button>
+<button data-ARCKHê-set-theme="claro" type="button">Claro</button>
+<button data-ARCKHê-set-theme="sepia" type="button">Sepia</button>
+<button data-ARCKHê-set-theme="foco" type="button">Enfoque</button>
+<button data-ARCKHê-set-theme="contraste" type="button">Alto contraste</button>
 </div>
-<div aria-label="Fuente" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-font="inter" type="button">Inter</button>
-<button data-ARCKHÉ-set-font="system" type="button">Sistema</button>
-<button data-ARCKHÉ-set-font="leitura" type="button">Lectura</button>
+<div aria-label="Fuente" class="ARCKHê-segment">
+<button data-ARCKHê-set-font="inter" type="button">Inter</button>
+<button data-ARCKHê-set-font="system" type="button">Sistema</button>
+<button data-ARCKHê-set-font="leitura" type="button">Lectura</button>
 </div>
-<div aria-label="TamaÃ±o del texto" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-fontscale="100" type="button">A</button>
-<button data-ARCKHÉ-set-fontscale="112" type="button">A+</button>
-<button data-ARCKHÉ-set-fontscale="125" type="button">A++</button>
+<div aria-label="TamaêÂ±o del texto" class="ARCKHê-segment">
+<button data-ARCKHê-set-fontscale="100" type="button">A</button>
+<button data-ARCKHê-set-fontscale="112" type="button">A+</button>
+<button data-ARCKHê-set-fontscale="125" type="button">A++</button>
 </div>
-<div aria-label="Ancho de lÃ­nea" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-linewidth="60" type="button">Estrecho</button>
-<button data-ARCKHÉ-set-linewidth="68" type="button">Medio</button>
-<button data-ARCKHÉ-set-linewidth="75" type="button">Ancho</button>
+<div aria-label="Ancho de lêÂ­nea" class="ARCKHê-segment">
+<button data-ARCKHê-set-linewidth="60" type="button">Estrecho</button>
+<button data-ARCKHê-set-linewidth="68" type="button">Medio</button>
+<button data-ARCKHê-set-linewidth="75" type="button">Ancho</button>
 </div>
-<div aria-label="Entre lÃ­neas" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-leading="1.45" type="button">Compacto</button>
-<button data-ARCKHÉ-set-leading="1.7" type="button">CÃ³modo</button>
+<div aria-label="Entre lêÂ­neas" class="ARCKHê-segment">
+<button data-ARCKHê-set-leading="1.45" type="button">Compacto</button>
+<button data-ARCKHê-set-leading="1.7" type="button">CêÂ³modo</button>
 </div>
 </div>
 </div>
@@ -249,21 +249,21 @@
 <header class="bg-gradient-to-br from-emerald-900/20 via-dark-800 to-dark-900 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:grid lg:grid-cols-[1.1fr_1fr] lg:gap-12 lg:items-center">
 <div>
-<span class="inline-block px-3 py-1 bg-primary/10 text-primary border border-primary/30 text-xs font-semibold rounded-full mb-5">CURSO GRATUITO Â· 5 TRILHAS Â· 11 MÃ“DULOS</span>
+<span class="inline-block px-3 py-1 bg-primary/10 text-primary border border-primary/30 text-xs font-semibold rounded-full mb-5">CURSO GRATUITO êÂ· 5 TRILHAS êÂ· 11 MêâDULOS</span>
 <h1 class="text-4xl sm:text-5xl font-bold mb-5 leading-tight">Agente de IA,<br/>pero <span class="text-primary">bajo control</span></h1>
-<p class="text-lg text-neutral-300 max-w-xl mb-8">Elige el problema adecuado, decide quÃ© puede tocar el agente, cierra las puertas que casi nadie ve y mide si saliÃ³ bien. Te llevarÃ¡s la ficha del agente lista para tu negocio.</p>
+<p class="text-lg text-neutral-300 max-w-xl mb-8">Elige el problema adecuado, decide quêÂ© puede tocar el agente, cierra las puertas que casi nadie ve y mide si saliêÂ³ bien. Te llevarêÂ¡s la ficha del agente lista para tu negocio.</p>
 <div class="flex flex-col sm:flex-row justify-start gap-3">
-<a class="inline-flex items-center justify-start px-6 py-3 bg-primary text-black rounded-lg font-semibold hover:bg-yellow-300 transition-colors" href="curso/trilha1/index.html">Comenzar por la Ruta 1 â†’</a>
-<a class="hidden items-center justify-start px-6 py-3 bg-dark-700 text-neutral-100 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="#" id="continuar">â†» Continuar desde donde lo dejÃ©</a>
-<button class="inline-flex items-center justify-start px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" data-ARCKHÉ-journey-open="" type="button">â—· Mi recorrido</button>
+<a class="inline-flex items-center justify-start px-6 py-3 bg-primary text-black rounded-lg font-semibold hover:bg-yellow-300 transition-colors" href="curso/trilha1/index.html">Comenzar por la Ruta 1 ê¢â â</a>
+<a class="hidden items-center justify-start px-6 py-3 bg-dark-700 text-neutral-100 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="#" id="continuar">ê¢â Â» Continuar desde donde lo dejêÂ©</a>
+<button class="inline-flex items-center justify-start px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" data-ARCKHê-journey-open="" type="button">ê¢âÂ· Mi recorrido</button>
 </div>
-<div aria-label="Progreso del curso" aria-valuemax="100" aria-valuemin="0" class="mt-8 max-w-md" data-ARCKHÉ-meter="curso" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 de 66</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
-<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
+<div aria-label="Progreso del curso" aria-valuemax="100" aria-valuemin="0" class="mt-8 max-w-md" data-ARCKHê-meter="curso" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHê-meter-frac="">0 de 66</span><span data-ARCKHê-meter-pct="">0%</span></div>
+<div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div>
 </div>
 </div>
 <div class="mt-10 lg:mt-0 rounded-2xl border border-primary/30 bg-dark-900/40 p-3 overflow-hidden">
-<svg aria-label="Un agente en el centro, conectado a cinco herramientas: correo electrÃ³nico, calendario, hoja de cÃ¡lculo, WhatsApp y pagos. A su alrededor, un anillo con cinco bloqueos: leer, cambiar, aprobar, registrar y apagar. Los pagos quedan fuera del anillo, con el bloqueo cerrado." class="w-full h-auto" role="img" viewbox="0 0 460 340">
+<svg aria-label="Un agente en el centro, conectado a cinco herramientas: correo electrêÂ³nico, calendario, hoja de cêÂ¡lculo, WhatsApp y pagos. A su alrededor, un anillo con cinco bloqueos: leer, cambiar, aprobar, registrar y apagar. Los pagos quedan fuera del anillo, con el bloqueo cerrado." class="w-full h-auto" role="img" viewbox="0 0 460 340">
 <defs>
 <pattern height="30" id="lp-grid" patternunits="userSpaceOnUse" width="30"><circle cx="1.3" cy="1.3" fill="#FACC15" opacity="0.10" r="1.3"></circle></pattern>
 <filter height="180%" id="lp-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -275,19 +275,19 @@
 <text fill="#fde68a" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="230" y="186">bajo control</text>
 <g font-family="Inter,sans-serif" font-size="11" text-anchor="middle">
 <line class="wf-flow" stroke="#38bdf8" stroke-width="2" x1="230" x2="230" y1="135" y2="88"></line>
-<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="80" x="190" y="62"></rect><text fill="#bae6fd" x="230" y="79">âœ‰ correo electrÃ³nico</text>
+<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="80" x="190" y="62"></rect><text fill="#bae6fd" x="230" y="79">ê¢Åâ° correo electrêÂ³nico</text>
 <line class="wf-flow" stroke="#38bdf8" stroke-width="2" x1="280" x2="318" y1="155" y2="130"></line>
-<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="80" x="300" y="106"></rect><text fill="#bae6fd" x="340" y="123">ðŸ“… agenda</text>
+<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="80" x="300" y="106"></rect><text fill="#bae6fd" x="340" y="123">ê°Å¸ââ¦ agenda</text>
 <line class="wf-flow" stroke="#38bdf8" stroke-width="2" x1="280" x2="318" y1="190" y2="222"></line>
-<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="80" x="300" y="212"></rect><text fill="#bae6fd" x="340" y="229">ðŸ“Š hoja de cÃ¡lculo</text>
+<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="80" x="300" y="212"></rect><text fill="#bae6fd" x="340" y="229">ê°Å¸âÅ  hoja de cêÂ¡lculo</text>
 <line class="wf-flow" stroke="#38bdf8" stroke-width="2" x1="180" x2="142" y1="190" y2="222"></line>
-<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="84" x="80" y="212"></rect><text fill="#bae6fd" x="122" y="229">ðŸ’¬ WhatsApp</text>
+<rect class="wf-a" fill="#0b1f2e" height="26" rx="8" stroke="#38bdf8" stroke-width="1.8" width="84" x="80" y="212"></rect><text fill="#bae6fd" x="122" y="229">ê°Å¸âÂ¬ WhatsApp</text>
 <line stroke="#f87171" stroke-dasharray="4 4" stroke-width="2" x1="180" x2="100" y1="155" y2="110"></line>
-<rect fill="#2a0f0f" height="26" rx="8" stroke="#f87171" stroke-width="1.8" width="96" x="26" y="86"></rect><text fill="#fca5a5" x="74" y="103">ðŸ’³ pago</text>
-<circle cx="142" cy="132" fill="#111827" r="11" stroke="#f87171" stroke-width="1.8"></circle><text font-size="10" x="142" y="136">ðŸ”’</text>
+<rect fill="#2a0f0f" height="26" rx="8" stroke="#f87171" stroke-width="1.8" width="96" x="26" y="86"></rect><text fill="#fca5a5" x="74" y="103">ê°Å¸âÂ³ pago</text>
+<circle cx="142" cy="132" fill="#111827" r="11" stroke="#f87171" stroke-width="1.8"></circle><text font-size="10" x="142" y="136">ê°Å¸ââ</text>
 </g>
 <g fill="#fde68a" font-family="Inter,sans-serif" font-size="11" text-anchor="middle">
-<text x="230" y="40">leer Â· cambiar Â· aprobar Â· registrar Â· apagar</text>
+<text x="230" y="40">leer êÂ· cambiar êÂ· aprobar êÂ· registrar êÂ· apagar</text>
 </g>
 <text fill="#9ca3af" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="230" y="312">el anillo son los cinco controles; lo que tiene que ver con dinero queda afuera</text>
 </svg>
@@ -297,59 +297,59 @@
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="conteudo">
 <!-- PARA QUEM -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">Para quiÃ©n es</h2>
+<h2 class="text-2xl font-bold mb-6">Para quiêÂ©n es</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<div class="text-3xl mb-3">ðŸ’†â€â™€ï¸</div>
-<h3 class="font-semibold text-lg mb-2">Renata, 44 â€” dueÃ±a de una clÃ­nica de estÃ©tica</h3>
-<p class="text-neutral-300 text-sm">Quieres un agente que confirme consultas por WhatsApp. Te preocupa que envÃ­e un mensaje equivocado a las pacientes o modifique algo que no debe.</p>
+<div class="text-3xl mb-3">ê°Å¸ââ ê¢â¬Âê¢â¢â¬ê¯Â¸Â</div>
+<h3 class="font-semibold text-lg mb-2">Renata, 44 ê¢â¬â dueêÂ±a de una clêÂ­nica de estêÂ©tica</h3>
+<p class="text-neutral-300 text-sm">Quieres un agente que confirme consultas por WhatsApp. Te preocupa que envêÂ­e un mensaje equivocado a las pacientes o modifique algo que no debe.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<div class="text-3xl mb-3">ðŸ§¾</div>
-<h3 class="font-semibold text-lg mb-2">Marcos, 52 â€” contador con una oficina pequeÃ±a</h3>
-<p class="text-neutral-300 text-sm">Quiere un agente que revise los documentos que envÃ­an los clientes. Maneja datos sensibles y no puede equivocarse con la Receita.</p>
+<div class="text-3xl mb-3">ê°Å¸Â§Â¾</div>
+<h3 class="font-semibold text-lg mb-2">Marcos, 52 ê¢â¬â contador con una oficina pequeêÂ±a</h3>
+<p class="text-neutral-300 text-sm">Quiere un agente que revise los documentos que envêÂ­an los clientes. Maneja datos sensibles y no puede equivocarse con la Receita.</p>
 </div>
 </div>
-<p class="text-neutral-400 text-sm mt-4">Si ya usas un chat de IA y empiezas a oÃ­r hablar de agentes que envÃ­an correos y modifican hojas de cÃ¡lculo, calendarios y pagos, este curso es para ti. No necesitas programar.</p>
+<p class="text-neutral-400 text-sm mt-4">Si ya usas un chat de IA y empiezas a oêÂ­r hablar de agentes que envêÂ­an correos y modifican hojas de cêÂ¡lculo, calendarios y pagos, este curso es para ti. No necesitas programar.</p>
 </section>
 <!-- TRILHAS -->
 <section class="mb-16">
 <h2 class="text-2xl font-bold mb-6">Las 5 rutas</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-6 transition-all" href="curso/trilha1/index.html">
-<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full">RUTA 1</span><span class="text-xs text-neutral-500">2 mÃ³dulos Â· ~1h</span></div>
-<h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400 transition-colors">ðŸš¦ Por quÃ© ahora</h3>
-<p class="text-neutral-400 text-sm mb-4">El asistente que respondÃ­a se convirtiÃ³ en un agente que actÃºa. El error cambia de tamaÃ±o.</p>
-<div aria-label="Progreso de la ruta 1" aria-valuemax="100" aria-valuemin="0" data-ARCKHÉ-meter="trilha:1" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHÉ-meter-frac="">0 de 12</span><span data-ARCKHÉ-meter-pct="">0%</span></div><div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div></div>
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full">RUTA 1</span><span class="text-xs text-neutral-500">2 mêÂ³dulos êÂ· ~1h</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400 transition-colors">ê°Å¸Å¡Â¦ Por quêÂ© ahora</h3>
+<p class="text-neutral-400 text-sm mb-4">El asistente que respondêÂ­a se convirtiêÂ³ en un agente que actêÂºa. El error cambia de tamaêÂ±o.</p>
+<div aria-label="Progreso de la ruta 1" aria-valuemax="100" aria-valuemin="0" data-ARCKHê-meter="trilha:1" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHê-meter-frac="">0 de 12</span><span data-ARCKHê-meter-pct="">0%</span></div><div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div></div>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-6 transition-all" href="curso/trilha2/index.html">
-<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full">RUTA 2</span><span class="text-xs text-neutral-500">2 mÃ³dulos Â· ~1h</span></div>
-<h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">ðŸ”Ž Encontrar el problema</h3>
-<p class="text-neutral-400 text-sm mb-4">La pregunta del 10Ã— y el caso de la clÃ­nica: automatizar lo que realmente cuesta dinero.</p>
-<div aria-label="Progreso de la ruta 2" aria-valuemax="100" aria-valuemin="0" data-ARCKHÉ-meter="trilha:2" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHÉ-meter-frac="">0 de 12</span><span data-ARCKHÉ-meter-pct="">0%</span></div><div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div></div>
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full">RUTA 2</span><span class="text-xs text-neutral-500">2 mêÂ³dulos êÂ· ~1h</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">ê°Å¸âÅ½ Encontrar el problema</h3>
+<p class="text-neutral-400 text-sm mb-4">La pregunta del 10êâ y el caso de la clêÂ­nica: automatizar lo que realmente cuesta dinero.</p>
+<div aria-label="Progreso de la ruta 2" aria-valuemax="100" aria-valuemin="0" data-ARCKHê-meter="trilha:2" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHê-meter-frac="">0 de 12</span><span data-ARCKHê-meter-pct="">0%</span></div><div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div></div>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-6 transition-all" href="curso/trilha3/index.html">
-<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full">RUTA 3</span><span class="text-xs text-neutral-500">2 mÃ³dulos Â· ~1h10</span></div>
-<h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">ðŸ” Controlar el sistema</h3>
-<p class="text-neutral-400 text-sm mb-4">Las cinco claves â€” leer, cambiar, aprobar, registrar, apagar â€” y casos reales de lo que pasÃ³ cuando faltaron.</p>
-<div aria-label="Progreso de la ruta 3" aria-valuemax="100" aria-valuemin="0" data-ARCKHÉ-meter="trilha:3" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHÉ-meter-frac="">0 de 12</span><span data-ARCKHÉ-meter-pct="">0%</span></div><div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div></div>
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full">RUTA 3</span><span class="text-xs text-neutral-500">2 mêÂ³dulos êÂ· ~1h10</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">ê°Å¸âÂ Controlar el sistema</h3>
+<p class="text-neutral-400 text-sm mb-4">Las cinco claves ê¢â¬â leer, cambiar, aprobar, registrar, apagar ê¢â¬â y casos reales de lo que pasêÂ³ cuando faltaron.</p>
+<div aria-label="Progreso de la ruta 3" aria-valuemax="100" aria-valuemin="0" data-ARCKHê-meter="trilha:3" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHê-meter-frac="">0 de 12</span><span data-ARCKHê-meter-pct="">0%</span></div><div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div></div>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-6 transition-all" href="curso/trilha4/index.html">
-<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full">RUTA 4</span><span class="text-xs text-neutral-500">3 mÃ³dulos Â· ~1h40</span></div>
-<h3 class="text-xl font-bold mb-2 group-hover:text-amber-400 transition-colors">ðŸ•³ï¸ Lo que casi nadie cuenta</h3>
-<p class="text-neutral-400 text-sm mb-4">Ã“rdenes ocultas, contraseÃ±as, extensiones de terceros, gastos sin lÃ­mite y datos de clientes.</p>
-<div aria-label="Progreso de la ruta 4" aria-valuemax="100" aria-valuemin="0" data-ARCKHÉ-meter="trilha:4" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHÉ-meter-frac="">0 de 18</span><span data-ARCKHÉ-meter-pct="">0%</span></div><div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div></div>
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full">RUTA 4</span><span class="text-xs text-neutral-500">3 mêÂ³dulos êÂ· ~1h40</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-amber-400 transition-colors">ê°Å¸â¢Â³ê¯Â¸Â Lo que casi nadie cuenta</h3>
+<p class="text-neutral-400 text-sm mb-4">êârdenes ocultas, contraseêÂ±as, extensiones de terceros, gastos sin lêÂ­mite y datos de clientes.</p>
+<div aria-label="Progreso de la ruta 4" aria-valuemax="100" aria-valuemin="0" data-ARCKHê-meter="trilha:4" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHê-meter-frac="">0 de 18</span><span data-ARCKHê-meter-pct="">0%</span></div><div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div></div>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-6 transition-all" href="curso/trilha5/index.html">
-<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-teal-500/20 text-teal-400 text-xs font-semibold rounded-full">RUTA 5</span><span class="text-xs text-neutral-500">2 mÃ³dulos Â· ~1h10</span></div>
-<h3 class="text-xl font-bold mb-2 group-hover:text-teal-400 transition-colors">ðŸ“Š Dar por hecho el resultado</h3>
-<p class="text-neutral-400 text-sm mb-4">MÃ©trica, responsable y la hoja de cÃ¡lculo en 4 bloques: Â¿funcionÃ³? Â¿Estaba bajo control?</p>
-<div aria-label="Progreso de la ruta 5" aria-valuemax="100" aria-valuemin="0" data-ARCKHÉ-meter="trilha:5" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHÉ-meter-frac="">0 de 12</span><span data-ARCKHÉ-meter-pct="">0%</span></div><div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div></div>
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 bg-teal-500/20 text-teal-400 text-xs font-semibold rounded-full">RUTA 5</span><span class="text-xs text-neutral-500">2 mêÂ³dulos êÂ· ~1h10</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-teal-400 transition-colors">ê°Å¸âÅ  Dar por hecho el resultado</h3>
+<p class="text-neutral-400 text-sm mb-4">MêÂ©trica, responsable y la hoja de cêÂ¡lculo en 4 bloques: êÂ¿funcionêÂ³? êÂ¿Estaba bajo control?</p>
+<div aria-label="Progreso de la ruta 5" aria-valuemax="100" aria-valuemin="0" data-ARCKHê-meter="trilha:5" role="progressbar"><div class="flex justify-between text-xs text-neutral-500 mb-1"><span data-ARCKHê-meter-frac="">0 de 12</span><span data-ARCKHê-meter-pct="">0%</span></div><div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div></div>
 </a>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6">
-<div class="text-3xl mb-3">ðŸ“‹</div>
-<h3 class="text-xl font-bold mb-2 text-primary">QuÃ© te llevas</h3>
-<p class="text-neutral-300 text-sm">La hoja de cÃ¡lculo Â«Agente bajo controlÂ» completada para un agente real de tu negocio: el dolor correcto, los cinco controles, las precauciones de seguridad y la mÃ©trica con una persona responsable.</p>
+<div class="text-3xl mb-3">ê°Å¸ââ¹</div>
+<h3 class="text-xl font-bold mb-2 text-primary">QuêÂ© te llevas</h3>
+<p class="text-neutral-300 text-sm">La hoja de cêÂ¡lculo êÂ«Agente bajo controlêÂ» completada para un agente real de tu negocio: el dolor correcto, los cinco controles, las precauciones de seguridad y la mêÂ©trica con una persona responsable.</p>
 </div>
 </div>
 </section>
@@ -357,28 +357,28 @@
 <section class="mb-16">
 <div class="bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
 <h2 class="text-2xl font-bold mb-4">La regla que atraviesa todo el curso</h2>
-<p class="text-xl text-neutral-100 mb-4">Cuanto mÃ¡s puede hacer el agente por sÃ­ solo, <strong class="text-emerald-400">mÃ¡s estrictos deben ser los lÃ­mites.</strong></p>
-<p class="text-neutral-300">Quien decide quÃ© automatizar, quÃ© puede hacer el agente y si funcionÃ³ eres tÃº: no el agente ni el proveedor de la aplicaciÃ³n.</p>
+<p class="text-xl text-neutral-100 mb-4">Cuanto mêÂ¡s puede hacer el agente por sêÂ­ solo, <strong class="text-emerald-400">mêÂ¡s estrictos deben ser los lêÂ­mites.</strong></p>
+<p class="text-neutral-300">Quien decide quêÂ© automatizar, quêÂ© puede hacer el agente y si funcionêÂ³ eres têÂº: no el agente ni el proveedor de la aplicaciêÂ³n.</p>
 </div>
 </section>
 <!-- COMO ESTUDAR -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">CÃ³mo estudiar aquÃ­</h2>
+<h2 class="text-2xl font-bold mb-6">CêÂ³mo estudiar aquêÂ­</h2>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">â—</div><div class="font-semibold mb-1">MÃ¡rcalo como leÃ­do</div><p class="text-xs text-neutral-400">Cada tema tiene un botÃ³n. El progreso aparece aquÃ­, en la ruta y en el mÃ³dulo.</p></div>
-<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">?</div><div class="font-semibold mb-1">Marca las dudas</div><p class="text-xs text-neutral-400">"Tengo una duda" guarda el tema para que lo revises despuÃ©s.</p></div>
-<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">ðŸ–ï¸</div><div class="font-semibold mb-1">Resalta y toma notas</div><p class="text-xs text-neutral-400">Selecciona un fragmento del texto para resaltarlo o escribir una nota.</p></div>
-<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">â—·</div><div class="font-semibold mb-1">Mi recorrido</div><p class="text-xs text-neutral-400">Progreso, dudas y notas en un solo lugar. ExpÃ³rtalo en un archivo para no perderlo.</p></div>
+<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">ê¢âÂ</div><div class="font-semibold mb-1">MêÂ¡rcalo como leêÂ­do</div><p class="text-xs text-neutral-400">Cada tema tiene un botêÂ³n. El progreso aparece aquêÂ­, en la ruta y en el mêÂ³dulo.</p></div>
+<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">?</div><div class="font-semibold mb-1">Marca las dudas</div><p class="text-xs text-neutral-400">"Tengo una duda" guarda el tema para que lo revises despuêÂ©s.</p></div>
+<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">ê°Å¸âÂê¯Â¸Â</div><div class="font-semibold mb-1">Resalta y toma notas</div><p class="text-xs text-neutral-400">Selecciona un fragmento del texto para resaltarlo o escribir una nota.</p></div>
+<div class="bg-dark-800 rounded-xl p-5 border border-dark-600"><div class="text-2xl mb-2">ê¢âÂ·</div><div class="font-semibold mb-1">Mi recorrido</div><p class="text-xs text-neutral-400">Progreso, dudas y notas en un solo lugar. ExpêÂ³rtalo en un archivo para no perderlo.</p></div>
 </div>
-<p class="text-neutral-500 text-xs mt-4">Todo queda guardado solo en tu navegador. No se envÃ­a nada a ningÃºn servidor.</p>
+<p class="text-neutral-500 text-xs mt-4">Todo queda guardado solo en tu navegador. No se envêÂ­a nada a ningêÂºn servidor.</p>
 </section>
 </main>
 <footer class="border-t border-dark-600 py-10 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm space-y-3">
-<p>Agente bajo Control Â· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHÉ.pro" target="_blank">PRO</a></p>
-<!-- ARCKHÉ-backlink:v1 -->
-<p style="display:block;width:100%;text-align:center;font-size:.85rem;margin:.75rem 0 0;opacity:.85"><a href="https://www.ARCKHÉ AI/cursos/305-agente-sob-controle-v2-use-agentes-de-ia-sem-se-queimar/" style="color:inherit;text-decoration:underline">Ficha completa de este curso en ARCKHÉ AI</a> Â· <a href="https://www.ARCKHÉ AI/aprender-inteligencia-artificial/" style="color:inherit;text-decoration:underline">GuÃ­a: cÃ³mo aprender inteligencia artificial</a> Â· <a href="https://www.ARCKHÉ AI/cursos/" style="color:inherit;text-decoration:underline">Todos los cursos</a></p>
-<!-- /ARCKHÉ-backlink:v1 -->
+<p>Agente bajo Control êÂ· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHê.pro" target="_blank">PRO</a></p>
+<!-- ARCKHê-backlink:v1 -->
+<p style="display:block;width:100%;text-align:center;font-size:.85rem;margin:.75rem 0 0;opacity:.85"><a href="https://www.ARCKHê AI/cursos/305-agente-sob-controle-v2-use-agentes-de-ia-sem-se-queimar/" style="color:inherit;text-decoration:underline">Ficha completa de este curso en ARCKHê AI</a> êÂ· <a href="https://www.ARCKHê AI/aprender-inteligencia-artificial/" style="color:inherit;text-decoration:underline">GuêÂ­a: cêÂ³mo aprender inteligencia artificial</a> êÂ· <a href="https://www.ARCKHê AI/cursos/" style="color:inherit;text-decoration:underline">Todos los cursos</a></p>
+<!-- /ARCKHê-backlink:v1 -->
 </div>
 </footer>
 <script>
@@ -389,7 +389,7 @@
     if (!_html.classList.contains('dark')) { themeToggleDarkIcon.classList.remove('hidden'); }
     else { themeToggleLightIcon.classList.remove('hidden'); }
     themeToggle.addEventListener('click', () => {
-      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHÉ-dark'); }
+      if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHê-dark'); }
       else { _html.classList.toggle('dark'); }
       themeToggleDarkIcon.classList.toggle('hidden', _html.classList.contains('dark'));
       themeToggleLightIcon.classList.toggle('hidden', !_html.classList.contains('dark'));
@@ -401,7 +401,7 @@
     // "Continuar de onde parei": le o ultimo modulo visitado (gravado pelo learn.js) e aponta para o topico
     (function () {
       try {
-        var meta = JSON.parse(localStorage.getItem('ARCKHÉ.agscv2.meta') || '{}');
+        var meta = JSON.parse(localStorage.getItem('ARCKHê.agscv2.meta') || '{}');
         var href = meta && meta.lastModuleHref;
         if (!href || !/modulo-\d+-\d+\.html/.test(href)) return;
         var m = href.match(/curso\/trilha\d+\/modulo-\d+-\d+\.html/);
@@ -415,7 +415,7 @@
   </script>
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
   </script>
 </body>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head></html>

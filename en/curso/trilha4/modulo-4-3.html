@@ -4,41 +4,41 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="agscv2" name="ARCKHÉ-course"/>
+<meta content="agscv2" name="ARCKHê-course"/>
 <title>Spending, isolation, and LGPD | Agent Under Control</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
-          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark'); else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark') ? 'dark' : 'light'));
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style; var scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -60,8 +60,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO em TODA pagina, identico) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
-  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nÃ£o Ã© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10Ã—","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nÃ£o Ã© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrÃªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguÃ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensÃµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MÃ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
+<script data-ARCKHê-manifest="" type="application/json">
+  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nêÂ£o êÂ© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10êâ","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nêÂ£o êÂ© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrêÂªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguêÂ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensêÂµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MêÂ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
   </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -151,7 +151,7 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* Alvos de ancora abaixo do nav sticky */
-    [data-ARCKHÉ-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
+    [data-ARCKHê-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
 
     /* SVG light mode + animacao */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
@@ -169,20 +169,20 @@
     .topic-explanation.active { display: block; }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha4/modulo-4-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-4-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha4/modulo-4-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha4/modulo-4-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-4-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha4/modulo-4-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-primary focus:text-black focus:rounded-lg" href="#conteudo">Skip to content</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-3">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">ðŸ›¡ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ¡ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden lg:inline">Agent under Control</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 <span class="text-neutral-600">-</span>
-<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHÉ.pro" target="_blank">PRO</a>
+<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHê.pro" target="_blank">PRO</a>
 </div>
 <div class="flex items-center space-x-1">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -200,40 +200,40 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html">
 <span class="xl:hidden">T5</span><span class="hidden xl:inline">Result</span>
 </a>
-<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-journey-open="" title="My journey" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden md:inline">Journey</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHê-journey-open="" title="My journey" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden md:inline">Journey</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <div class="relative">
-<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-appearance-toggle="#aparencia" title="Appearance" type="button">
+<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHê-appearance-toggle="#aparencia" title="Appearance" type="button">
 <span aria-hidden="true" class="text-sm font-semibold">Aa</span><span class="sr-only">Appearance</span>
 </button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" id="aparencia">
-<div aria-label="Topic" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-theme="ARCKHÉ-dark" type="button">Dark</button>
-<button data-ARCKHÉ-set-theme="claro" type="button">Clear</button>
-<button data-ARCKHÉ-set-theme="sepia" type="button">Sepia</button>
-<button data-ARCKHÉ-set-theme="foco" type="button">Focus</button>
-<button data-ARCKHÉ-set-theme="contraste" type="button">High contrast</button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" id="aparencia">
+<div aria-label="Topic" class="ARCKHê-segment">
+<button data-ARCKHê-set-theme="ARCKHê-dark" type="button">Dark</button>
+<button data-ARCKHê-set-theme="claro" type="button">Clear</button>
+<button data-ARCKHê-set-theme="sepia" type="button">Sepia</button>
+<button data-ARCKHê-set-theme="foco" type="button">Focus</button>
+<button data-ARCKHê-set-theme="contraste" type="button">High contrast</button>
 </div>
-<div aria-label="Source" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-font="inter" type="button">Inter</button>
-<button data-ARCKHÉ-set-font="system" type="button">System</button>
-<button data-ARCKHÉ-set-font="leitura" type="button">Reading</button>
+<div aria-label="Source" class="ARCKHê-segment">
+<button data-ARCKHê-set-font="inter" type="button">Inter</button>
+<button data-ARCKHê-set-font="system" type="button">System</button>
+<button data-ARCKHê-set-font="leitura" type="button">Reading</button>
 </div>
-<div aria-label="Text length" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-fontscale="100" type="button">A</button>
-<button data-ARCKHÉ-set-fontscale="112" type="button">A+</button>
-<button data-ARCKHÉ-set-fontscale="125" type="button">A++</button>
+<div aria-label="Text length" class="ARCKHê-segment">
+<button data-ARCKHê-set-fontscale="100" type="button">A</button>
+<button data-ARCKHê-set-fontscale="112" type="button">A+</button>
+<button data-ARCKHê-set-fontscale="125" type="button">A++</button>
 </div>
-<div aria-label="Line width" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-linewidth="60" type="button">Narrow</button>
-<button data-ARCKHÉ-set-linewidth="68" type="button">Medium</button>
-<button data-ARCKHÉ-set-linewidth="75" type="button">Wide</button>
+<div aria-label="Line width" class="ARCKHê-segment">
+<button data-ARCKHê-set-linewidth="60" type="button">Narrow</button>
+<button data-ARCKHê-set-linewidth="68" type="button">Medium</button>
+<button data-ARCKHê-set-linewidth="75" type="button">Wide</button>
 </div>
-<div aria-label="Subtext" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-leading="1.45" type="button">Compact</button>
-<button data-ARCKHÉ-set-leading="1.7" type="button">Comfortable</button>
+<div aria-label="Subtext" class="ARCKHê-segment">
+<button data-ARCKHê-set-leading="1.45" type="button">Compact</button>
+<button data-ARCKHê-set-leading="1.7" type="button">Comfortable</button>
 </div>
 </div>
 </div>
@@ -252,10 +252,10 @@
 <span class="text-amber-400">Module 4.3</span>
 </div>
 </nav>
-<header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-ARCKHÉ-module="4-3" data-ARCKHÉ-track="4">
+<header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-ARCKHê-module="4-3" data-ARCKHê-track="4">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MODULE 4.3</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ’¸ Spending, isolation, and LGPD</h1>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸âÂ¸ Spending, isolation, and LGPD</h1>
 <p class="text-lg text-neutral-400 max-w-3xl">A limit on spending, a limit on effort, a fenced area for the agent to work in, and only the minimum customer data. The last gates that almost nobody closes.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">6</div><div class="text-xs text-neutral-400">Topics</div></div>
@@ -263,23 +263,23 @@
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">Practical</div><div class="text-xs text-neutral-400">Level</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">Defense</div><div class="text-xs text-neutral-400">Type</div></div>
 </div>
-<div aria-label="Module 4.3 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="modulo:4-3" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 of 6</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
-<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
+<div aria-label="Module 4.3 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHê-meter="modulo:4-3" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHê-meter-frac="">0 of 6</span><span data-ARCKHê-meter-pct="">0%</span></div>
+<div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div>
 </div>
 </div>
 </header>
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[1fr_220px] lg:gap-10">
-<main class="min-w-0" data-ARCKHÉ-module="4-3" data-ARCKHÉ-track="4" id="conteudo">
+<main class="min-w-0" data-ARCKHê-module="4-3" data-ARCKHê-track="4" id="conteudo">
 <!-- ===================== TOPICO 1 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-3#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHê-topic="modulo-4-3#topico-1" id="topico-1">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold flex-1">Set a spending cap</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-3-t1-p1">Many AI services charge by usage: each question, each agent turn, each file it reads costs a little credit. An agent working on its own can make hundreds of turns in one night.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-3-t1-p2">Without a cap, you find out how much you spent when the bill arrives. <strong class="text-amber-400">With a cap, you know the worst case before it happens.</strong></p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m4-3-t1-p1">Many AI services charge by usage: each question, each agent turn, each file it reads costs a little credit. An agent working on its own can make hundreds of turns in one night.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-3-t1-p2">Without a cap, you find out how much you spent when the bill arrives. <strong class="text-amber-400">With a cap, you know the worst case before it happens.</strong></p>
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 mb-3 overflow-hidden">
 <svg aria-label="Chart of spending over the course of one night. The red line, with no cap, keeps rising until it goes off the chart. The amber line, with a cap, rises the same way until it reaches the dashed line marking the monthly limit, then stays flat. A bell marks the usage alert halfway to the cap." class="w-full h-auto" role="img" viewbox="0 0 800 260">
 <defs>
@@ -301,103 +301,103 @@
 <text fill="#fca5a5" font-family="Inter,sans-serif" font-size="12" x="570" y="30">no cap: it keeps rising until someone notices</text>
 <g filter="url(#m43-glow)"><path d="M80,215 C 200,210 280,190 330,160 S 400,110 430,100 L 760,100" fill="none" stroke="#fbbf24" stroke-width="3"></path></g>
 <circle cx="330" cy="160" fill="#0b1f2e" r="12" stroke="#38bdf8" stroke-width="2"></circle>
-<text font-size="12" text-anchor="middle" x="330" y="165">ðŸ””</text>
+<text font-size="12" text-anchor="middle" x="330" y="165">ê°Å¸ââ</text>
 <text fill="#fbbf24" font-family="Inter,sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="600" y="126">with a cap: stops at the limit</text>
 </svg>
 </div>
-<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">How to read the diagram:</strong> the two lines start out the sameâ€”the same agent is stuck repeating the task. The blue bell is the email alert at halfway to the limit: time to take a look. The amber line stays flat at the dashed line because the account stops accepting charges; the red one only stops when someone wakes up.</p>
+<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">How to read the diagram:</strong> the two lines start out the sameê¢â¬âthe same agent is stuck repeating the task. The blue bell is the email alert at halfway to the limit: time to take a look. The amber line stays flat at the dashed line because the account stops accepting charges; the red one only stops when someone wakes up.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— No ceiling</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ No ceiling</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>AI account linked to the main credit card, with no monthly limit.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>No usage alerts configured.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Marcos left an agent checking documents overnight; a faulty file made it try again, and again.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>AI account linked to the main credit card, with no monthly limit.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>No usage alerts configured.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Marcos left an agent checking documents overnight; a faulty file made it try again, and again.</span></li>
 </ul>
 </div>
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6">
-<h4 class="font-bold text-amber-400 mb-4">âœ“ With a limit</h4>
+<h4 class="font-bold text-amber-400 mb-4">ê¢Åâ With a limit</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Monthly limit set in the account dashboard ("spending limit," "budget").</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Email alert at 50% and 80% of the limit.</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>A virtual card just for AI, with a low limit. Marcos's loss stopped there.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Monthly limit set in the account dashboard ("spending limit," "budget").</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Email alert at 50% and 80% of the limit.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>A virtual card just for AI, with a low limit. Marcos's loss stopped there.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ðŸ’¡</span> Canâ€™t find where to set a limit?</h3>
+<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Canê¢â¬â¢t find where to set a limit?</h3>
 <p class="text-neutral-300 text-sm">Use a fixed monthly plan or create a virtual card in your bank's app just for AI services, with a limit of, for example, twice what you expect to spend. This solves the same problem without relying on the service dashboard.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ§¢</div><div class="text-sm font-semibold text-amber-400">Spending limit</div><p class="text-xs text-neutral-400 mt-1">monthly limit</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ””</div><div class="text-sm font-semibold text-amber-400">Alert</div><p class="text-xs text-neutral-400 mt-1">at 50% and 80%</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ’³</div><div class="text-sm font-semibold text-amber-400">Virtual card</div><p class="text-xs text-neutral-400 mt-1">only for AI</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ“‰</div><div class="text-sm font-semibold text-amber-400">Worst case</div><p class="text-xs text-neutral-400 mt-1">known in advance</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸Â§Â¢</div><div class="text-sm font-semibold text-amber-400">Spending limit</div><p class="text-xs text-neutral-400 mt-1">monthly limit</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ââ</div><div class="text-sm font-semibold text-amber-400">Alert</div><p class="text-xs text-neutral-400 mt-1">at 50% and 80%</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ³</div><div class="text-sm font-semibold text-amber-400">Virtual card</div><p class="text-xs text-neutral-400 mt-1">only for AI</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ââ°</div><div class="text-sm font-semibold text-amber-400">Worst case</div><p class="text-xs text-neutral-400 mt-1">known in advance</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Mark as read</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 2 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-3#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHê-topic="modulo-4-3#topico-2" id="topico-2">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold flex-1">Set a resource cap and stop the loop</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-3-t2-p1">Money isnâ€™t the only thing an agent uses up. It uses time, attempts, sent messages, and computer memory. A <strong class="text-amber-400">loop</strong> without an end, it consumes all of this at the same time.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-3-t2-p2">It happened on one of our projects: a tool running without a memory limit froze the entire serverâ€”and without a ceiling, it froze again on the next attempt. The fix was one line: a limit. Every agent needs its own.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m4-3-t2-p1">Money isnê¢â¬â¢t the only thing an agent uses up. It uses time, attempts, sent messages, and computer memory. A <strong class="text-amber-400">loop</strong> without an end, it consumes all of this at the same time.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-3-t2-p2">It happened on one of our projects: a tool running without a memory limit froze the entire serverê¢â¬âand without a ceiling, it froze again on the next attempt. The fix was one line: a limit. Every agent needs its own.</p>
 <div class="overflow-x-auto mb-6 rounded-xl border border-dark-600">
 <table class="w-full text-sm text-left">
-<thead class="bg-dark-700/60 text-amber-400"><tr><th class="px-4 py-3 font-semibold">Limit</th><th class="px-4 py-3 font-semibold">Example for Renataâ€™s clinic</th><th class="px-4 py-3 font-semibold">When it hits the limitâ€¦</th></tr></thead>
+<thead class="bg-dark-700/60 text-amber-400"><tr><th class="px-4 py-3 font-semibold">Limit</th><th class="px-4 py-3 font-semibold">Example for Renataê¢â¬â¢s clinic</th><th class="px-4 py-3 font-semibold">When it hits the limitê¢â¬Â¦</th></tr></thead>
 <tbody class="divide-y divide-dark-600">
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">â±ï¸ Maximum time</td><td class="px-4 py-3 text-neutral-300">confirming the appointment takes no more than 10 minutes</td><td class="px-4 py-3 text-neutral-300">stops and tells you what's missing</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ðŸ” Attempts</td><td class="px-4 py-3 text-neutral-300">no more than 3 attempts per patient</td><td class="px-4 py-3 text-neutral-300">mark it "not confirmed" and move on</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">âœ‰ Sends</td><td class="px-4 py-3 text-neutral-300">no more than 40 messages per day</td><td class="px-4 py-3 text-neutral-300">stops everything and asks for approval</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ðŸ’¾ Memory / machine</td><td class="px-4 py-3 text-neutral-300">limit set by whoever installed it</td><td class="px-4 py-3 text-neutral-300">the system stops only the agent, not the server</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ê¢ÂÂ±ê¯Â¸Â Maximum time</td><td class="px-4 py-3 text-neutral-300">confirming the appointment takes no more than 10 minutes</td><td class="px-4 py-3 text-neutral-300">stops and tells you what's missing</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ê°Å¸âÂ Attempts</td><td class="px-4 py-3 text-neutral-300">no more than 3 attempts per patient</td><td class="px-4 py-3 text-neutral-300">mark it "not confirmed" and move on</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ê¢Åâ° Sends</td><td class="px-4 py-3 text-neutral-300">no more than 40 messages per day</td><td class="px-4 py-3 text-neutral-300">stops everything and asks for approval</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">ê°Å¸âÂ¾ Memory / machine</td><td class="px-4 py-3 text-neutral-300">limit set by whoever installed it</td><td class="px-4 py-3 text-neutral-300">the system stops only the agent, not the server</td></tr>
 </tbody>
 </table>
 </div>
-<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">What to look for in the table:</strong> the last column. A good limit doesnâ€™t just stop the agent: it says what to do when it stopsâ€”notify you, mark the task as pending, ask for approval. Stopping silently is almost as bad as not stopping.</p>
+<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">What to look for in the table:</strong> the last column. A good limit doesnê¢â¬â¢t just stop the agent: it says what to do when it stopsê¢â¬ânotify you, mark the task as pending, ask for approval. Stopping silently is almost as bad as not stopping.</p>
 <div class="bg-dark-800 rounded-xl border border-amber-500/30 overflow-hidden mb-6">
-<div class="px-5 py-3 bg-amber-900/20 border-b border-amber-500/30"><span class="text-amber-400 font-semibold text-sm">ðŸŽ¯ Goal: give the agent written effort limits</span></div>
+<div class="px-5 py-3 bg-amber-900/20 border-b border-amber-500/30"><span class="text-amber-400 font-semibold text-sm">ê°Å¸Å½Â¯ Goal: give the agent written effort limits</span></div>
 <div class="p-5">
 <p class="text-sm text-neutral-400 mb-3">Paste into the agent's fixed instructions. Adjust the numbers inside &lt; &gt; for your task.</p>
-<pre class="font-mono text-sm text-neutral-200 whitespace-pre-wrap bg-dark-900/60 rounded-lg p-4 border border-dark-600">REGRA: LIMITES DE ESFORÃ‡O
-1. Cada tarefa tem no mÃ¡ximo &lt;10&gt; minutos. Passou disso, pare e me diga o que concluiu e o que falta.
-2. Se uma mesma aÃ§Ã£o falhar &lt;3&gt; vezes seguidas, nÃ£o tente de novo. Registre o erro e me avise.
-3. Nunca envie mais de &lt;40&gt; mensagens por dia. Chegou no limite, pare e peÃ§a aprovaÃ§Ã£o.
-4. Se perceber que estÃ¡ repetindo os mesmos passos sem avanÃ§ar, pare. RepetiÃ§Ã£o sem progresso Ã© sinal de loop.
+<pre class="font-mono text-sm text-neutral-200 whitespace-pre-wrap bg-dark-900/60 rounded-lg p-4 border border-dark-600">REGRA: LIMITES DE ESFORêâ¡O
+1. Cada tarefa tem no mêÂ¡ximo &lt;10&gt; minutos. Passou disso, pare e me diga o que concluiu e o que falta.
+2. Se uma mesma aêÂ§êÂ£o falhar &lt;3&gt; vezes seguidas, nêÂ£o tente de novo. Registre o erro e me avise.
+3. Nunca envie mais de &lt;40&gt; mensagens por dia. Chegou no limite, pare e peêÂ§a aprovaêÂ§êÂ£o.
+4. Se perceber que estêÂ¡ repetindo os mesmos passos sem avanêÂ§ar, pare. RepetiêÂ§êÂ£o sem progresso êÂ© sinal de loop.
 5. Ao parar por qualquer limite, escreva: qual limite, onde parou e o que sugere.</pre>
 </div>
 <div class="px-5 py-3 bg-dark-700/40 border-t border-dark-600 text-neutral-300 text-sm"><strong class="text-amber-400">How to verify:</strong> ask the agent to deliberately do an impossible task (e.g., "confirm the appointment of a patient who isn't on the calendar"). The expected behavior is for it to try a few times, stop, and explain which limit it reached.</div>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸŒ€</div><div class="text-sm font-semibold text-amber-400">Loop</div><p class="text-xs text-neutral-400 mt-1">repeat without making progress</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">â±ï¸</div><div class="text-sm font-semibold text-amber-400">Maximum time</div><p class="text-xs text-neutral-400 mt-1">per task</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">3ï¸âƒ£</div><div class="text-sm font-semibold text-amber-400">Attempts</div><p class="text-xs text-neutral-400 mt-1">few and limited</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ—£ï¸</div><div class="text-sm font-semibold text-amber-400">Stop with a notification</div><p class="text-xs text-neutral-400 mt-1">never silent</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸Åâ¬</div><div class="text-sm font-semibold text-amber-400">Loop</div><p class="text-xs text-neutral-400 mt-1">repeat without making progress</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê¢ÂÂ±ê¯Â¸Â</div><div class="text-sm font-semibold text-amber-400">Maximum time</div><p class="text-xs text-neutral-400 mt-1">per task</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">3ê¯Â¸Âê¢ÆÂ£</div><div class="text-sm font-semibold text-amber-400">Attempts</div><p class="text-xs text-neutral-400 mt-1">few and limited</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ£ê¯Â¸Â</div><div class="text-sm font-semibold text-amber-400">Stop with a notification</div><p class="text-xs text-neutral-400 mt-1">never silent</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Mark as read</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 3 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-3#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHê-topic="modulo-4-3#topico-3" id="topico-3">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold flex-1">Isolate the agent</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-3-t3-p1">Limiting what the agent can do is one part. The other is limiting <strong class="text-amber-400">where</strong> it can do. An isolated agent works in a walled-off space: if it makes a mistake or is tricked, the damage stays inside.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-3-t3-p2">You donâ€™t have to set this up alone. You need to know what to ask: "Does the agent run in isolation? In which folder? Whatâ€™s excluded?".</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m4-3-t3-p1">Limiting what the agent can do is one part. The other is limiting <strong class="text-amber-400">where</strong> it can do. An isolated agent works in a walled-off space: if it makes a mistake or is tricked, the damage stays inside.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-3-t3-p2">You donê¢â¬â¢t have to set this up alone. You need to know what to ask: "Does the agent run in isolation? In which folder? Whatê¢â¬â¢s excluded?".</p>
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6 mb-6">
-<h3 class="text-base font-semibold text-amber-400 mb-2 flex items-center"><span class="mr-2">ðŸ†•</span> New here? What is a â€œsandboxâ€?</h3>
-<p class="text-neutral-300 text-sm"><strong>Sandbox</strong> (in English, <em>sandbox</em>) is a closed-off space where the agent can make changes freely without reaching the rest of the computer â€” like a sandbox where a child can play without making a mess in the house. A common way to set this up is called <strong>container</strong> (<em>container</em>): a "box" with only the files and programs the agent needs. The simplest version is a <strong>limited folder</strong>: the agent can see only one folder, and nothing outside it.</p>
+<h3 class="text-base font-semibold text-amber-400 mb-2 flex items-center"><span class="mr-2">ê°Å¸â â¢</span> New here? What is a ê¢â¬Åsandboxê¢â¬Â?</h3>
+<p class="text-neutral-300 text-sm"><strong>Sandbox</strong> (in English, <em>sandbox</em>) is a closed-off space where the agent can make changes freely without reaching the rest of the computer ê¢â¬â like a sandbox where a child can play without making a mess in the house. A common way to set this up is called <strong>container</strong> (<em>container</em>): a "box" with only the files and programs the agent needs. The simplest version is a <strong>limited folder</strong>: the agent can see only one folder, and nothing outside it.</p>
 </div>
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 mb-3 overflow-hidden">
 <svg aria-label="A rectangular enclosure in the center with the agent and only two items inside: the work folder and the scheduling spreadsheet. Outside the enclosure are personal email, the bank, the key file, and family photos. An arrow showing the agent trying to leave hits the fence and stops." class="w-full h-auto" role="img" viewbox="0 0 800 260">
@@ -413,24 +413,24 @@
 <text fill="#fde68a" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="400" y="113">agent</text>
 <g font-family="Inter,sans-serif" font-size="12">
 <rect class="wf-a" fill="#0b1f2e" height="40" rx="9" stroke="#38bdf8" stroke-width="2" width="140" x="255" y="155"></rect>
-<text fill="#bae6fd" text-anchor="middle" x="325" y="180">ðŸ“ working folder</text>
+<text fill="#bae6fd" text-anchor="middle" x="325" y="180">ê°Å¸âÂ working folder</text>
 <rect class="wf-a" fill="#0b1f2e" height="40" rx="9" stroke="#38bdf8" stroke-width="2" width="145" x="405" y="155"></rect>
-<text fill="#bae6fd" text-anchor="middle" x="477" y="180">ðŸ“… calendar (copy)</text>
+<text fill="#bae6fd" text-anchor="middle" x="477" y="180">ê°Å¸ââ¦ calendar (copy)</text>
 </g>
 <line marker-end="url(#m43b-arrow)" stroke="#38bdf8" stroke-width="2" x1="370" x2="330" y1="133" y2="152"></line>
 <line marker-end="url(#m43b-arrow)" stroke="#38bdf8" stroke-width="2" x1="430" x2="470" y1="133" y2="152"></line>
 <g fill="#9ca3af" font-family="Inter,sans-serif" font-size="12">
-<rect fill="#111827" height="38" rx="9" stroke="#4b5563" width="160" x="30" y="50"></rect><text text-anchor="middle" x="110" y="74">âœ‰ personal email</text>
-<rect fill="#111827" height="38" rx="9" stroke="#4b5563" width="160" x="30" y="170"></rect><text text-anchor="middle" x="110" y="194">ðŸ¦ bank</text>
-<rect fill="#111827" height="38" rx="9" stroke="#4b5563" width="160" x="610" y="50"></rect><text text-anchor="middle" x="690" y="74">ðŸ”‘ key file</text>
-<rect fill="#111827" height="38" rx="9" stroke="#4b5563" width="160" x="610" y="170"></rect><text text-anchor="middle" x="690" y="194">ðŸ–¼ï¸ family photos</text>
+<rect fill="#111827" height="38" rx="9" stroke="#4b5563" width="160" x="30" y="50"></rect><text text-anchor="middle" x="110" y="74">ê¢Åâ° personal email</text>
+<rect fill="#111827" height="38" rx="9" stroke="#4b5563" width="160" x="30" y="170"></rect><text text-anchor="middle" x="110" y="194">ê°Å¸ÂÂ¦ bank</text>
+<rect fill="#111827" height="38" rx="9" stroke="#4b5563" width="160" x="610" y="50"></rect><text text-anchor="middle" x="690" y="74">ê°Å¸ââ key file</text>
+<rect fill="#111827" height="38" rx="9" stroke="#4b5563" width="160" x="610" y="170"></rect><text text-anchor="middle" x="690" y="194">ê°Å¸âÂ¼ê¯Â¸Â family photos</text>
 </g>
 <line class="wf-flow" stroke="#f87171" stroke-width="2" x1="457" x2="565" y1="100" y2="80"></line>
-<text fill="#fca5a5" font-family="Inter,sans-serif" font-size="16" font-weight="700" text-anchor="middle" x="585" y="36">âœ•</text>
+<text fill="#fca5a5" font-family="Inter,sans-serif" font-size="16" font-weight="700" text-anchor="middle" x="585" y="36">ê¢Åâ¢</text>
 <text fill="#9ca3af" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="400" y="246">if it is deceived, the damage stays inside the fence</text>
 </svg>
 </div>
-<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">How to read the diagram:</strong> The dashed amber fence is the agentâ€™s limit. Inside is only what the task requiresâ€”notice that the schedule is a <em>copy</em>. The red line shows the agent trying to reach the key file: it hits the fence. The four gray boxes outside are on the same computer, but the agent canâ€™t see them.</p>
+<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">How to read the diagram:</strong> The dashed amber fence is the agentê¢â¬â¢s limit. Inside is only what the task requiresê¢â¬ânotice that the schedule is a <em>copy</em>. The red line shows the agent trying to reach the key file: it hits the fence. The four gray boxes outside are on the same computer, but the agent canê¢â¬â¢t see them.</p>
 <div class="space-y-5 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">1</span></div>
@@ -446,198 +446,198 @@
 </div>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ–ï¸</div><div class="text-sm font-semibold text-amber-400">Sandbox</div><p class="text-xs text-neutral-400 mt-1">walled-off space</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ“¦</div><div class="text-sm font-semibold text-amber-400">Container</div><p class="text-xs text-neutral-400 mt-1">box with the minimum</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ“</div><div class="text-sm font-semibold text-amber-400">Restricted folder</div><p class="text-xs text-neutral-400 mt-1">the simplest isolation</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ“‹</div><div class="text-sm font-semibold text-amber-400">Copy</div><p class="text-xs text-neutral-400 mt-1">instead of the original</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸Ââê¯Â¸Â</div><div class="text-sm font-semibold text-amber-400">Sandbox</div><p class="text-xs text-neutral-400 mt-1">walled-off space</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ¦</div><div class="text-sm font-semibold text-amber-400">Container</div><p class="text-xs text-neutral-400 mt-1">box with the minimum</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ</div><div class="text-sm font-semibold text-amber-400">Restricted folder</div><p class="text-xs text-neutral-400 mt-1">the simplest isolation</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ââ¹</div><div class="text-sm font-semibold text-amber-400">Copy</div><p class="text-xs text-neutral-400 mt-1">instead of the original</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Mark as read</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 4 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-3#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHê-topic="modulo-4-3#topico-4" id="topico-4">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold flex-1">Understand the LGPD in one page</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-3-t4-p1">The LGPD (General Data Protection Law) explains how a company can use peopleâ€™s data. It applies equally whether a customer spreadsheet is read by an employee or an AI agent. <strong class="text-amber-400">Youâ€™re still responsible.</strong></p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-3-t4-p2">This is not legal advice. Itâ€™s the minimum a business owner needs to keep in mind before connecting an agent to customer data.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m4-3-t4-p1">The LGPD (General Data Protection Law) explains how a company can use peopleê¢â¬â¢s data. It applies equally whether a customer spreadsheet is read by an employee or an AI agent. <strong class="text-amber-400">Youê¢â¬â¢re still responsible.</strong></p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-3-t4-p2">This is not legal advice. Itê¢â¬â¢s the minimum a business owner needs to keep in mind before connecting an agent to customer data.</p>
 <div class="overflow-x-auto mb-6 rounded-xl border border-dark-600">
 <table class="w-full text-sm text-left">
 <thead class="bg-dark-700/60 text-amber-400"><tr><th class="px-4 py-3 font-semibold">The idea behind the law</th><th class="px-4 py-3 font-semibold">In plain language</th><th class="px-4 py-3 font-semibold">In practice, with the agent</th></tr></thead>
 <tbody class="divide-y divide-dark-600">
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Personal data</td><td class="px-4 py-3 text-neutral-300">everything that identifies someone: name, phone number, CPF, email</td><td class="px-4 py-3 text-neutral-300">Renataâ€™s entire schedule is personal data</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Sensitive data</td><td class="px-4 py-3 text-neutral-300">health, religion, biometrics, racial origin, among others â€” extra care required</td><td class="px-4 py-3 text-neutral-300">"had this procedure" is health data</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Legal basis</td><td class="px-4 py-3 text-neutral-300">an accepted reason to use the data: consent, contract, legal obligationâ€¦</td><td class="px-4 py-3 text-neutral-300">a reminder about a scheduled appointment fits into service; sending a promotion requires consent</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Purpose</td><td class="px-4 py-3 text-neutral-300">use only for what was agreed</td><td class="px-4 py-3 text-neutral-300">a phone number given to confirm an appointment doesnâ€™t become a marketing list</td></tr>
-<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Need</td><td class="px-4 py-3 text-neutral-300">use as little as possible</td><td class="px-4 py-3 text-neutral-300">the reminder agent doesnâ€™t need the CPF (topic 5)</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Personal data</td><td class="px-4 py-3 text-neutral-300">everything that identifies someone: name, phone number, CPF, email</td><td class="px-4 py-3 text-neutral-300">Renataê¢â¬â¢s entire schedule is personal data</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Sensitive data</td><td class="px-4 py-3 text-neutral-300">health, religion, biometrics, racial origin, among others ê¢â¬â extra care required</td><td class="px-4 py-3 text-neutral-300">"had this procedure" is health data</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Legal basis</td><td class="px-4 py-3 text-neutral-300">an accepted reason to use the data: consent, contract, legal obligationê¢â¬Â¦</td><td class="px-4 py-3 text-neutral-300">a reminder about a scheduled appointment fits into service; sending a promotion requires consent</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Purpose</td><td class="px-4 py-3 text-neutral-300">use only for what was agreed</td><td class="px-4 py-3 text-neutral-300">a phone number given to confirm an appointment doesnê¢â¬â¢t become a marketing list</td></tr>
+<tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Need</td><td class="px-4 py-3 text-neutral-300">use as little as possible</td><td class="px-4 py-3 text-neutral-300">the reminder agent doesnê¢â¬â¢t need the CPF (topic 5)</td></tr>
 <tr class="bg-dark-800"><td class="px-4 py-3 font-medium text-neutral-100">Data subject rights</td><td class="px-4 py-3 text-neutral-300">the person can ask to see, correct, or delete their data</td><td class="px-4 py-3 text-neutral-300">you need to know where the agent stored copies</td></tr>
 </tbody>
 </table>
 </div>
-<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">What to look for in the table:</strong> the right-hand column. Almost every safeguard comes down to a simple question: "Why does the agent need this?" and "Where does it store it?" If you canâ€™t answer, itâ€™s not time to turn it on yet.</p>
+<p class="text-sm text-neutral-400 mb-6"><strong class="text-neutral-300">What to look for in the table:</strong> the right-hand column. Almost every safeguard comes down to a simple question: "Why does the agent need this?" and "Where does it store it?" If you canê¢â¬â¢t answer, itê¢â¬â¢s not time to turn it on yet.</p>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-red-400 mb-2 flex items-center"><span class="mr-2">âš ï¸</span> Attention: health is sensitive data</h3>
+<h3 class="text-lg font-semibold text-red-400 mb-2 flex items-center"><span class="mr-2">ê¢Å¡Â ê¯Â¸Â</span> Attention: health is sensitive data</h3>
 <p class="text-neutral-300 text-sm">Clinics, medical offices, gyms, and salons that record allergies or treatments handle sensitive data. Pasting that history into any AI chat "just to summarize it" is the kind of carelessness the law penalizes. When in doubt, talk to whoever handles the legal side of your business before turning on the agent.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸªª</div><div class="text-sm font-semibold text-amber-400">Personal data</div><p class="text-xs text-neutral-400 mt-1">identifies someone</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ©º</div><div class="text-sm font-semibold text-amber-400">Sensitive data</div><p class="text-xs text-neutral-400 mt-1">health and related matters</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ“œ</div><div class="text-sm font-semibold text-amber-400">Legal basis</div><p class="text-xs text-neutral-400 mt-1">accepted reason</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸŽ¯</div><div class="text-sm font-semibold text-amber-400">Purpose</div><p class="text-xs text-neutral-400 mt-1">only what was agreed</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸ÂªÂª</div><div class="text-sm font-semibold text-amber-400">Personal data</div><p class="text-xs text-neutral-400 mt-1">identifies someone</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸Â©Âº</div><div class="text-sm font-semibold text-amber-400">Sensitive data</div><p class="text-xs text-neutral-400 mt-1">health and related matters</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÅ</div><div class="text-sm font-semibold text-amber-400">Legal basis</div><p class="text-xs text-neutral-400 mt-1">accepted reason</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸Å½Â¯</div><div class="text-sm font-semibold text-amber-400">Purpose</div><p class="text-xs text-neutral-400 mt-1">only what was agreed</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Mark as read</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 5 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-3#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHê-topic="modulo-4-3#topico-5" id="topico-5">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold flex-1">Show the agent only what it needs</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-3-t5-p1">Two techniques solve most of it: <strong class="text-amber-400">minimize</strong> (remove the columns the task doesn't use) and <strong class="text-amber-400">anonymize</strong> (replace the name with a code). The agent does the same work; anything leaked is worth much less.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-3-t5-p2">Do this <em>before</em> before the data reaches the agent, in your spreadsheet. Asking the AI to "anonymize" data you already pasted into the chat wonâ€™t help: theyâ€™re already there.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m4-3-t5-p1">Two techniques solve most of it: <strong class="text-amber-400">minimize</strong> (remove the columns the task doesn't use) and <strong class="text-amber-400">anonymize</strong> (replace the name with a code). The agent does the same work; anything leaked is worth much less.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-3-t5-p2">Do this <em>before</em> before the data reaches the agent, in your spreadsheet. Asking the AI to "anonymize" data you already pasted into the chat wonê¢â¬â¢t help: theyê¢â¬â¢re already there.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— What Renata was going to send</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ What Renata was going to send</h4>
 <pre class="font-mono text-xs text-neutral-300 whitespace-pre-wrap">Nome: Ana Paula Souza
 CPF: 000.000.000-00
 Telefone: (00) 90000-0000
-Procedimento: peeling quÃ­mico
-Alergia: Ã¡cido salicÃ­lico
+Procedimento: peeling quêÂ­mico
+Alergia: êÂ¡cido salicêÂ­lico
 Faltou: 3 vezes</pre>
 </div>
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6">
-<h4 class="font-bold text-amber-400 mb-4">âœ“ What she sent</h4>
-<pre class="font-mono text-xs text-neutral-300 whitespace-pre-wrap">CÃ³digo: P-014
-Tipo de sessÃ£o: facial
+<h4 class="font-bold text-amber-400 mb-4">ê¢Åâ What she sent</h4>
+<pre class="font-mono text-xs text-neutral-300 whitespace-pre-wrap">CêÂ³digo: P-014
+Tipo de sessêÂ£o: facial
 Faltou: 3 vezes</pre>
-<p class="text-xs text-neutral-400 mt-3">The question was â€œwhich patients miss appointments most often?â€ The code is enough to answer it. Only she has the table that links P-014 to a name.</p>
+<p class="text-xs text-neutral-400 mt-3">The question was ê¢â¬Åwhich patients miss appointments most often?ê¢â¬Â The code is enough to answer it. Only she has the table that links P-014 to a name.</p>
 </div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-amber-500/30 overflow-hidden mb-6">
-<div class="px-5 py-3 bg-amber-900/20 border-b border-amber-500/30"><span class="text-amber-400 font-semibold text-sm">ðŸŽ¯ Goal: decide, column by column, what the agent can see</span></div>
+<div class="px-5 py-3 bg-amber-900/20 border-b border-amber-500/30"><span class="text-amber-400 font-semibold text-sm">ê°Å¸Å½Â¯ Goal: decide, column by column, what the agent can see</span></div>
 <div class="p-5">
-<p class="text-sm text-neutral-400 mb-3">Paste into the AI chat. Send <strong>only the column names</strong> from your spreadsheet â€” never the data. Replace whatâ€™s between &lt; &gt;.</p>
-<pre class="font-mono text-sm text-neutral-200 whitespace-pre-wrap bg-dark-900/60 rounded-lg p-4 border border-dark-600">Vou ligar um agente de IA a uma planilha de clientes e quero dar a ele o mÃ­nimo de dados.
-Tarefa do agente: &lt;ex.: identificar quem mais falta Ã s consultas e sugerir horÃ¡rios de lembrete&gt;.
-Colunas da planilha (sÃ³ os nomes, sem dados): &lt;ex.: nome, CPF, telefone, e-mail, data de nascimento, procedimento, alergias, faltas, valor pago&gt;.
+<p class="text-sm text-neutral-400 mb-3">Paste into the AI chat. Send <strong>only the column names</strong> from your spreadsheet ê¢â¬â never the data. Replace whatê¢â¬â¢s between &lt; &gt;.</p>
+<pre class="font-mono text-sm text-neutral-200 whitespace-pre-wrap bg-dark-900/60 rounded-lg p-4 border border-dark-600">Vou ligar um agente de IA a uma planilha de clientes e quero dar a ele o mêÂ­nimo de dados.
+Tarefa do agente: &lt;ex.: identificar quem mais falta êÂ s consultas e sugerir horêÂ¡rios de lembrete&gt;.
+Colunas da planilha (sêÂ³ os nomes, sem dados): &lt;ex.: nome, CPF, telefone, e-mail, data de nascimento, procedimento, alergias, faltas, valor pago&gt;.
 
 Para cada coluna, responda em uma tabela:
-coluna | a tarefa precisa? (sim/nÃ£o) | se sim, dÃ¡ para trocar por cÃ³digo ou faixa? | Ã© dado sensÃ­vel pela LGPD?
-Depois, me diga qual seria a planilha mÃ­nima para essa tarefa.</pre>
+coluna | a tarefa precisa? (sim/nêÂ£o) | se sim, dêÂ¡ para trocar por cêÂ³digo ou faixa? | êÂ© dado sensêÂ­vel pela LGPD?
+Depois, me diga qual seria a planilha mêÂ­nima para essa tarefa.</pre>
 </div>
-<div class="px-5 py-3 bg-dark-700/40 border-t border-dark-600 text-neutral-300 text-sm"><strong class="text-amber-400">How to verify:</strong> The minimal spreadsheet should have less than half the original columns and no health, ID, or contact columnsâ€”unless the task is specifically to contact someone. In that case, keep the phone number and remove the rest.</div>
+<div class="px-5 py-3 bg-dark-700/40 border-t border-dark-600 text-neutral-300 text-sm"><strong class="text-amber-400">How to verify:</strong> The minimal spreadsheet should have less than half the original columns and no health, ID, or contact columnsê¢â¬âunless the task is specifically to contact someone. In that case, keep the phone number and remove the rest.</div>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">âœ‚ï¸</div><div class="text-sm font-semibold text-amber-400">Minimize</div><p class="text-xs text-neutral-400 mt-1">only the useful columns</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ”¢</div><div class="text-sm font-semibold text-amber-400">Anonymize</div><p class="text-xs text-neutral-400 mt-1">name becomes code</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ—ï¸</div><div class="text-sm font-semibold text-amber-400">Key table</div><p class="text-xs text-neutral-400 mt-1">stays with you</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">â®ï¸</div><div class="text-sm font-semibold text-amber-400">Before</div><p class="text-xs text-neutral-400 mt-1">in the spreadsheet, not in chat</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê¢Åâê¯Â¸Â</div><div class="text-sm font-semibold text-amber-400">Minimize</div><p class="text-xs text-neutral-400 mt-1">only the useful columns</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ¢</div><div class="text-sm font-semibold text-amber-400">Anonymize</div><p class="text-xs text-neutral-400 mt-1">name becomes code</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂê¯Â¸Â</div><div class="text-sm font-semibold text-amber-400">Key table</div><p class="text-xs text-neutral-400 mt-1">stays with you</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê¢ÂÂ®ê¯Â¸Â</div><div class="text-sm font-semibold text-amber-400">Before</div><p class="text-xs text-neutral-400 mt-1">in the spreadsheet, not in chat</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Mark as read</span>
 </button>
 </div>
 </section>
 <!-- ===================== TOPICO 6 ===================== -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-3#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHê-topic="modulo-4-3#topico-6" id="topico-6">
 <div class="flex flex-wrap items-center gap-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold flex-1">Close the four doors</h2>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHÉ-block="m4-3-t6-p1">Most problems with agents donâ€™t come from a sophisticated attack. They come from <strong class="text-amber-400">four doors open</strong>: a secret in chat, an extension accepted without reading, an account without a limit, and too much customer data.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-3-t6-p2">This checklist brings together what you saw in modules 4.2 and 4.3. Go through it for the agent you chose at the beginning of the courseâ€”it goes straight to the â€œsecurityâ€ section of the Trail 5 spreadsheet.</p>
+<p class="text-neutral-300 mb-4 leading-relaxed" data-ARCKHê-block="m4-3-t6-p1">Most problems with agents donê¢â¬â¢t come from a sophisticated attack. They come from <strong class="text-amber-400">four doors open</strong>: a secret in chat, an extension accepted without reading, an account without a limit, and too much customer data.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m4-3-t6-p2">This checklist brings together what you saw in modules 4.2 and 4.3. Go through it for the agent you chose at the beginning of the courseê¢â¬âit goes straight to the ê¢â¬Åsecurityê¢â¬Â section of the Trail 5 spreadsheet.</p>
 <div class="bg-dark-800 rounded-xl border border-amber-500/30 overflow-hidden mb-6">
-<div class="px-5 py-3 bg-amber-900/20 border-b border-amber-500/30"><span class="text-amber-400 font-semibold text-sm">ðŸŽ¯ Goal: leave with all four gates checked for your agent</span></div>
+<div class="px-5 py-3 bg-amber-900/20 border-b border-amber-500/30"><span class="text-amber-400 font-semibold text-sm">ê°Å¸Å½Â¯ Goal: leave with all four gates checked for your agent</span></div>
 <div class="p-5">
 <p class="text-sm text-neutral-400 mb-3">Copy this into a document. Mark [x] for what's already done and write the expected date for anything that's left.</p>
-<pre class="font-mono text-sm text-neutral-200 whitespace-pre-wrap bg-dark-900/60 rounded-lg p-4 border border-dark-600">AS QUATRO PORTAS â€” agente: &lt;nome/tarefa do seu agente&gt;   data: &lt;____&gt;
+<pre class="font-mono text-sm text-neutral-200 whitespace-pre-wrap bg-dark-900/60 rounded-lg p-4 border border-dark-600">AS QUATRO PORTAS ê¢â¬â agente: &lt;nome/tarefa do seu agente&gt;   data: &lt;____&gt;
 
-PORTA 1 Â· SEGREDOS
+PORTA 1 êÂ· SEGREDOS
 [ ] Nenhuma senha, chave ou token colado em chat ou documento compartilhado.
-[ ] Regra "segredos" nas instruÃ§Ãµes do agente (mÃ³dulo 4.2).
+[ ] Regra "segredos" nas instruêÂ§êÂµes do agente (mêÂ³dulo 4.2).
 [ ] Sei onde revogar cada chave: &lt;lista&gt;.
 
-PORTA 2 Â· EXTENSÃ•ES
-[ ] Revisei extensÃµes, plugins e apps conectados; removi o que nÃ£o uso.
+PORTA 2 êÂ· EXTENSêâ¢ES
+[ ] Revisei extensêÂµes, plugins e apps conectados; removi o que nêÂ£o uso.
 [ ] Cada um que ficou: sei quem publicou e o que pede combina com o que faz.
 
-PORTA 3 Â· GASTO E ESFORÃ‡O
+PORTA 3 êÂ· GASTO E ESFORêâ¡O
 [ ] Teto mensal na conta: R$ &lt;____&gt;. Alerta em 50%: [ ]
-[ ] CartÃ£o sÃ³ para IA ou plano fixo: [ ]
-[ ] Regra "limites de esforÃ§o" nas instruÃ§Ãµes (tempo, tentativas, envios).
-[ ] O agente roda isolado: pasta/conta/contÃªiner &lt;qual&gt;.
+[ ] CartêÂ£o sêÂ³ para IA ou plano fixo: [ ]
+[ ] Regra "limites de esforêÂ§o" nas instruêÂ§êÂµes (tempo, tentativas, envios).
+[ ] O agente roda isolado: pasta/conta/contêÂªiner &lt;qual&gt;.
 
-PORTA 4 Â· DADOS DE CLIENTES
-[ ] O agente toca dados de clientes? &lt;sim/nÃ£o&gt;. Dado sensÃ­vel? &lt;sim/nÃ£o&gt;
-[ ] Planilha mÃ­nima: sÃ³ as colunas que a tarefa usa; nomes trocados por cÃ³digo quando der.
-[ ] Sei onde o agente guarda cÃ³pias, para atender quem pedir para apagar.
+PORTA 4 êÂ· DADOS DE CLIENTES
+[ ] O agente toca dados de clientes? &lt;sim/nêÂ£o&gt;. Dado sensêÂ­vel? &lt;sim/nêÂ£o&gt;
+[ ] Planilha mêÂ­nima: sêÂ³ as colunas que a tarefa usa; nomes trocados por cêÂ³digo quando der.
+[ ] Sei onde o agente guarda cêÂ³pias, para atender quem pedir para apagar.
 
-Porta que ainda estÃ¡ aberta: &lt;____&gt;. Quem fecha: &lt;____&gt;. AtÃ©: &lt;____&gt;.</pre>
+Porta que ainda estêÂ¡ aberta: &lt;____&gt;. Quem fecha: &lt;____&gt;. AtêÂ©: &lt;____&gt;.</pre>
 </div>
 <div class="px-5 py-3 bg-dark-700/40 border-t border-dark-600 text-neutral-300 text-sm"><strong class="text-amber-400">How to verify:</strong> no blank lines. An item without [x] is acceptable if it has an owner and a date on the last line. A gate with no [x] means the agent should not be turned on yet.</div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ðŸ’¡</span> How Marcos used it</h3>
-<p class="text-neutral-300 text-sm">Marcos went through the checklist with JÃºlia, the office assistant, on a Friday afternoon. It took 25 minutes. They found two open doors: an AI account with no spending cap and a spreadsheet containing every clientâ€™s CPF that the agent didnâ€™t even use. They closed both before leaving.</p>
+<h3 class="text-lg font-semibold text-primary mb-2 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> How Marcos used it</h3>
+<p class="text-neutral-300 text-sm">Marcos went through the checklist with JêÂºlia, the office assistant, on a Friday afternoon. It took 25 minutes. They found two open doors: an AI account with no spending cap and a spreadsheet containing every clientê¢â¬â¢s CPF that the agent didnê¢â¬â¢t even use. They closed both before leaving.</p>
 </div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6" data-ARCKHÉ-check="modulo-4-3#q1">
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6" data-ARCKHê-check="modulo-4-3#q1">
 <p class="font-medium mb-4">Quick test (optional): Renata wants an agent to find out which patients miss the most appointments. What should she give it?</p>
 <div class="space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">The complete spreadsheet, with names, CPF numbers, phone numbers, and procedure history.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Only each patientâ€™s code and number of absences, with the name table kept by her.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">The complete spreadsheet, asking the agent to delete the data afterward.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="0" type="button">The complete spreadsheet, with names, CPF numbers, phone numbers, and procedure history.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="1" type="button">Only each patientê¢â¬â¢s code and number of absences, with the name table kept by her.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="2" type="button">The complete spreadsheet, asking the agent to delete the data afterward.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHê-check-feedback="" role="status"></div>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ—ï¸</div><div class="text-sm font-semibold text-amber-400">Secrets</div><p class="text-xs text-neutral-400 mt-1">outside the chat</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ§©</div><div class="text-sm font-semibold text-amber-400">Extensions</div><p class="text-xs text-neutral-400 mt-1">only the verified ones</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ’¸</div><div class="text-sm font-semibold text-amber-400">Ad spend</div><p class="text-xs text-neutral-400 mt-1">with a cap and guardrails</p></div>
-<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ðŸ‘¥</div><div class="text-sm font-semibold text-amber-400">Customer data</div><p class="text-xs text-neutral-400 mt-1">only the minimum</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂê¯Â¸Â</div><div class="text-sm font-semibold text-amber-400">Secrets</div><p class="text-xs text-neutral-400 mt-1">outside the chat</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸Â§Â©</div><div class="text-sm font-semibold text-amber-400">Extensions</div><p class="text-xs text-neutral-400 mt-1">only the verified ones</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ¸</div><div class="text-sm font-semibold text-amber-400">Ad spend</div><p class="text-xs text-neutral-400 mt-1">with a cap and guardrails</p></div>
+<div class="bg-dark-800 rounded-xl p-4 border border-dark-600 text-center"><div class="text-2xl mb-1">ê°Å¸âÂ¥</div><div class="text-sm font-semibold text-amber-400">Customer data</div><p class="text-xs text-neutral-400 mt-1">only the minimum</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-read-icon">â—‹</span><span class="ARCKHÉ-read-label">Mark as read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-read-icon">ê¢ââ¹</span><span class="ARCKHê-read-label">Mark as read</span>
 </button>
 </div>
 </section>
 <!-- ===================== RESUMO ===================== -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-amber-900/40 via-dark-800 to-dark-800 rounded-xl border border-amber-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸŽ“</span> Module summary</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸Å½â</span> Module summary</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-neutral-100">Every expense has a cap</strong><span class="text-neutral-400"> â€” limit, alert, and a card just for AI.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-neutral-100">Every effort has a cap</strong><span class="text-neutral-400"> â€” time, attempts, and sends; stop with a notification.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-neutral-100">An isolated agent makes mistakes within the fence</strong><span class="text-neutral-400"> â€” folder, account, or container.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-neutral-100">The LGPD applies to the agent</strong><span class="text-neutral-400"> â€” and youâ€™re responsible.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-neutral-100">Only the minimum, with codes</strong><span class="text-neutral-400"> â€” and all four doors checked.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-neutral-100">Every expense has a cap</strong><span class="text-neutral-400"> ê¢â¬â limit, alert, and a card just for AI.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-neutral-100">Every effort has a cap</strong><span class="text-neutral-400"> ê¢â¬â time, attempts, and sends; stop with a notification.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-neutral-100">An isolated agent makes mistakes within the fence</strong><span class="text-neutral-400"> ê¢â¬â folder, account, or container.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-neutral-100">The LGPD applies to the agent</strong><span class="text-neutral-400"> ê¢â¬â and youê¢â¬â¢re responsible.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-neutral-100">Only the minimum, with codes</strong><span class="text-neutral-400"> ê¢â¬â and all four doors checked.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-amber-400 mb-2">Next track:</h3>
-<p class="text-neutral-300">Track 5 â€” Own the outcome</p>
+<p class="text-neutral-300">Track 5 ê¢â¬â Own the outcome</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Back to the trail</a>
-<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="../trilha5/index.html">Track 5: Own the outcome â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Back to the trail</a>
+<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="../trilha5/index.html">Track 5: Own the outcome ê¢â â</a>
 </div>
 </div>
 </section>
 </main>
 <aside class="hidden lg:block">
-<nav aria-label="Page index" class="sticky top-24" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-3"><span data-ARCKHÉ-section-counter="">Section 1 of 6</span></p>
+<nav aria-label="Page index" class="sticky top-24" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-3"><span data-ARCKHê-section-counter="">Section 1 of 6</span></p>
 <ol class="space-y-2 text-sm">
 <li><a class="text-neutral-400 hover:text-amber-400" href="#topico-1">1. Spending limit</a></li>
 <li><a class="text-neutral-400 hover:text-amber-400" href="#topico-2">2. Stop the loop</a></li>
@@ -651,7 +651,7 @@ Porta que ainda estÃ¡ aberta: &lt;____&gt;. Quem fecha: &lt;____&gt;. AtÃ©: 
 </div>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Agent under Control Â· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHÉ.pro" target="_blank">PRO</a></p>
+<p>Agent under Control êÂ· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHê.pro" target="_blank">PRO</a></p>
 </div>
 </footer>
 <script>
@@ -662,7 +662,7 @@ Porta que ainda estÃ¡ aberta: &lt;____&gt;. Quem fecha: &lt;____&gt;. AtÃ©: 
     if (!_html.classList.contains('dark')) { themeToggleDarkIcon.classList.remove('hidden'); }
     else { themeToggleLightIcon.classList.remove('hidden'); }
     themeToggle.addEventListener('click', () => {
-      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHÉ-dark'); }
+      if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHê-dark'); }
       else { _html.classList.toggle('dark'); }
       themeToggleDarkIcon.classList.toggle('hidden', _html.classList.contains('dark'));
       themeToggleLightIcon.classList.toggle('hidden', !_html.classList.contains('dark'));
@@ -683,15 +683,15 @@ Porta que ainda estÃ¡ aberta: &lt;____&gt;. Quem fecha: &lt;____&gt;. AtÃ©: 
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
   </script>
 <script>
     window.addEventListener('DOMContentLoaded', function () {
-      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
-        ARCKHÉ.registerCheck('modulo-4-3#q1', { answer: 1, explain: {
-          '0': 'A tarefa sÃ³ precisa saber quem falta. CPF, telefone e procedimentos (dado de saÃºde) sÃ£o exposiÃ§Ã£o sem motivo.',
-          '1': 'Isso. Minimizar e anonimizar: cÃ³digo e nÃºmero de faltas bastam, e a tabela que liga cÃ³digo a nome fica sÃ³ com ela.',
-          '2': 'Depois que o dado chegou ao agente, pedir para apagar nÃ£o garante nada. O mÃ­nimo tem que ser escolhido antes.'
+      if (window.ARCKHê && ARCKHê.registerCheck) {
+        ARCKHê.registerCheck('modulo-4-3#q1', { answer: 1, explain: {
+          '0': 'A tarefa sêÂ³ precisa saber quem falta. CPF, telefone e procedimentos (dado de saêÂºde) sêÂ£o exposiêÂ§êÂ£o sem motivo.',
+          '1': 'Isso. Minimizar e anonimizar: cêÂ³digo e nêÂºmero de faltas bastam, e a tabela que liga cêÂ³digo a nome fica sêÂ³ com ela.',
+          '2': 'Depois que o dado chegou ao agente, pedir para apagar nêÂ£o garante nada. O mêÂ­nimo tem que ser escolhido antes.'
         } });
       }
     });

@@ -4,41 +4,41 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="agscv2" name="ARCKHÉ-course"/>
-<title>Track 2 Â· Find the pain point | Agent Under Control</title>
+<meta content="agscv2" name="ARCKHê-course"/>
+<title>Track 2 êÂ· Find the pain point | Agent Under Control</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
-          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark'); else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark') ? 'dark' : 'light'));
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style; var scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -60,8 +60,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO em TODA pagina, identico) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
-  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nÃ£o Ã© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10Ã—","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nÃ£o Ã© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrÃªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguÃ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensÃµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MÃ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
+<script data-ARCKHê-manifest="" type="application/json">
+  {"course":"agscv2","tracks":[{"n":"1","title":"Por que agora","modules":[{"id":"1-1","title":"Responder nêÂ£o êÂ© agir","topics":6,"href":"curso/trilha1/modulo-1-1.html"},{"id":"1-2","title":"Mais capaz, mais limites","topics":6,"href":"curso/trilha1/modulo-1-2.html"}]},{"n":"2","title":"Achar a dor","modules":[{"id":"2-1","title":"A pergunta do 10êâ","topics":6,"href":"curso/trilha2/modulo-2-1.html"},{"id":"2-2","title":"Pedido nêÂ£o êÂ© problema","topics":6,"href":"curso/trilha2/modulo-2-2.html"}]},{"n":"3","title":"Controlar o sistema","modules":[{"id":"3-1","title":"As cinco chaves","topics":6,"href":"curso/trilha3/modulo-3-1.html"},{"id":"3-2","title":"TrêÂªs regras e casos reais","topics":6,"href":"curso/trilha3/modulo-3-2.html"}]},{"n":"4","title":"O que quase ninguêÂ©m conta","modules":[{"id":"4-1","title":"Ordens escondidas","topics":6,"href":"curso/trilha4/modulo-4-1.html"},{"id":"4-2","title":"Senhas e extensêÂµes","topics":6,"href":"curso/trilha4/modulo-4-2.html"},{"id":"4-3","title":"Gasto, isolamento e LGPD","topics":6,"href":"curso/trilha4/modulo-4-3.html"}]},{"n":"5","title":"Assumir o resultado","modules":[{"id":"5-1","title":"MêÂ©trica com dono","topics":6,"href":"curso/trilha5/modulo-5-1.html"},{"id":"5-2","title":"A planilha em 4 blocos","topics":6,"href":"curso/trilha5/modulo-5-2.html"}]}]}
   </script>
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -151,7 +151,7 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
 
     /* Alvos de ancora abaixo do nav sticky */
-    [data-ARCKHÉ-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
+    [data-ARCKHê-topic], [id^="modulo-"], [id^="topico-"] { scroll-margin-top: 72px; }
 
     /* SVG light mode + animacao */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
@@ -169,20 +169,20 @@
     .topic-explanation.active { display: block; }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha2/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha2/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:bg-primary focus:text-black focus:rounded-lg" href="#conteudo">Skip to content</a>
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-3">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">ðŸ›¡ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ¡ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden lg:inline">Agent under Control</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 <span class="text-neutral-600">-</span>
-<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHÉ.pro" target="_blank">PRO</a>
+<a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200 text-sm font-medium" href="https://ARCKHê.pro" target="_blank">PRO</a>
 </div>
 <div class="flex items-center space-x-1">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -200,40 +200,40 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html">
 <span class="xl:hidden">T5</span><span class="hidden xl:inline">Result</span>
 </a>
-<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-journey-open="" title="My journey" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden md:inline">Journey</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHê-journey-open="" title="My journey" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden md:inline">Journey</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <div class="relative">
-<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHÉ-appearance-toggle="#aparencia" title="Appearance" type="button">
+<button aria-controls="aparencia" aria-expanded="false" class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors" data-ARCKHê-appearance-toggle="#aparencia" title="Appearance" type="button">
 <span aria-hidden="true" class="text-sm font-semibold">Aa</span><span class="sr-only">Appearance</span>
 </button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" id="aparencia">
-<div aria-label="Topic" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-theme="ARCKHÉ-dark" type="button">Dark</button>
-<button data-ARCKHÉ-set-theme="claro" type="button">Clear</button>
-<button data-ARCKHÉ-set-theme="sepia" type="button">Sepia</button>
-<button data-ARCKHÉ-set-theme="foco" type="button">Focus</button>
-<button data-ARCKHÉ-set-theme="contraste" type="button">High contrast</button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" id="aparencia">
+<div aria-label="Topic" class="ARCKHê-segment">
+<button data-ARCKHê-set-theme="ARCKHê-dark" type="button">Dark</button>
+<button data-ARCKHê-set-theme="claro" type="button">Clear</button>
+<button data-ARCKHê-set-theme="sepia" type="button">Sepia</button>
+<button data-ARCKHê-set-theme="foco" type="button">Focus</button>
+<button data-ARCKHê-set-theme="contraste" type="button">High contrast</button>
 </div>
-<div aria-label="Source" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-font="inter" type="button">Inter</button>
-<button data-ARCKHÉ-set-font="system" type="button">System</button>
-<button data-ARCKHÉ-set-font="leitura" type="button">Reading</button>
+<div aria-label="Source" class="ARCKHê-segment">
+<button data-ARCKHê-set-font="inter" type="button">Inter</button>
+<button data-ARCKHê-set-font="system" type="button">System</button>
+<button data-ARCKHê-set-font="leitura" type="button">Reading</button>
 </div>
-<div aria-label="Text length" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-fontscale="100" type="button">A</button>
-<button data-ARCKHÉ-set-fontscale="112" type="button">A+</button>
-<button data-ARCKHÉ-set-fontscale="125" type="button">A++</button>
+<div aria-label="Text length" class="ARCKHê-segment">
+<button data-ARCKHê-set-fontscale="100" type="button">A</button>
+<button data-ARCKHê-set-fontscale="112" type="button">A+</button>
+<button data-ARCKHê-set-fontscale="125" type="button">A++</button>
 </div>
-<div aria-label="Line width" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-linewidth="60" type="button">Narrow</button>
-<button data-ARCKHÉ-set-linewidth="68" type="button">Medium</button>
-<button data-ARCKHÉ-set-linewidth="75" type="button">Wide</button>
+<div aria-label="Line width" class="ARCKHê-segment">
+<button data-ARCKHê-set-linewidth="60" type="button">Narrow</button>
+<button data-ARCKHê-set-linewidth="68" type="button">Medium</button>
+<button data-ARCKHê-set-linewidth="75" type="button">Wide</button>
 </div>
-<div aria-label="Subtext" class="ARCKHÉ-segment">
-<button data-ARCKHÉ-set-leading="1.45" type="button">Compact</button>
-<button data-ARCKHÉ-set-leading="1.7" type="button">Comfortable</button>
+<div aria-label="Subtext" class="ARCKHê-segment">
+<button data-ARCKHê-set-leading="1.45" type="button">Compact</button>
+<button data-ARCKHê-set-leading="1.7" type="button">Comfortable</button>
 </div>
 </div>
 </div>
@@ -245,21 +245,21 @@
 </div>
 </div>
 </nav>
-<header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-ARCKHÉ-track="2">
+<header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600" data-ARCKHê-track="2">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-[1fr_380px] lg:gap-10 lg:items-center">
 <div>
 <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">TRACK 2</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ”Ž Find the pain point</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Before turning on any agent, find out what it should solve. The 10Ã— question, the difference between a request and a problem, and the sentence that puts a price on the pain.</p>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸âÅ½ Find the pain point</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Before turning on any agent, find out what it should solve. The 10êâ question, the difference between a request and a problem, and the sentence that puts a price on the pain.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">2</div><div class="text-xs text-neutral-400">Modules</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">12</div><div class="text-xs text-neutral-400">Topics</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">~1h</div><div class="text-xs text-neutral-400">Duration</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Practical</div><div class="text-xs text-neutral-400">Level</div></div>
 </div>
-<div aria-label="Track 2 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHÉ-meter="trilha:2" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 of 12</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
-<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
+<div aria-label="Track 2 progress" aria-valuemax="100" aria-valuemin="0" class="mt-6 max-w-2xl" data-ARCKHê-meter="trilha:2" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHê-meter-frac="">0 of 12</span><span data-ARCKHê-meter-pct="">0%</span></div>
+<div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div>
 </div>
 </div>
 <div class="mt-8 lg:mt-0 rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 overflow-hidden">
@@ -292,54 +292,54 @@
 </div>
 </div>
 </header>
-<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-ARCKHÉ-track="2" id="conteudo">
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-ARCKHê-track="2" id="conteudo">
 <section class="mb-12">
 <h2 class="text-2xl font-bold mb-6">Trail map</h2>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all" href="#modulo-2-1">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.1</span><span class="text-xs text-neutral-500">~30 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">ðŸ’¥ The 10Ã— question</h3>
+<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">ê°Å¸âÂ¥ The 10êâ question</h3>
 <p class="text-xs text-neutral-400">What breaks first?</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all" href="#modulo-2-2">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.2</span><span class="text-xs text-neutral-500">~30 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">ðŸ¥ A request isn't a problem</h3>
+<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">ê°Å¸ÂÂ¥ A request isn't a problem</h3>
 <p class="text-xs text-neutral-400">Not clients, missed appointments</p>
 </a>
 </div>
 </section>
 <h2 class="text-2xl font-bold mb-6">Detailed content</h2>
 <!-- ===== MODULO 2.1 ===== -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="2-1" data-ARCKHÉ-track="2" id="modulo-2-1">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHê-module="2-1" data-ARCKHê-track="2" id="modulo-2-1">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.1</span><span class="text-xs text-neutral-500">~30 min</span></div>
-<h3 class="text-2xl font-bold mb-2">ðŸ’¥ The 10Ã— question</h3>
+<h3 class="text-2xl font-bold mb-2">ê°Å¸âÂ¥ The 10êâ question</h3>
 <p class="text-neutral-400 text-sm">Problem before the tool: the question that reveals the bottleneck, the numbers that prove it, and the choice of a single process.</p>
-<div aria-label="Module 2.1 progress" aria-valuemax="100" aria-valuemin="0" class="mt-4" data-ARCKHÉ-meter="modulo:2-1" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 of 6</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
-<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
+<div aria-label="Module 2.1 progress" aria-valuemax="100" aria-valuemin="0" class="mt-4" data-ARCKHê-meter="modulo:2-1" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHê-meter-frac="">0 of 6</span><span data-ARCKHê-meter-pct="">0%</span></div>
+<div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div>
 </div>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-controls="t2-1-1" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">ðŸ’¥</span>
-<div><span class="font-medium">Ask the 10Ã— question</span><span class="text-neutral-500 text-sm ml-2">- what breaks first?</span></div>
+<span class="text-lg">ê°Å¸âÂ¥</span>
+<div><span class="font-medium">Ask the 10êâ question</span><span class="text-neutral-500 text-sm ml-2">- what breaks first?</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-1-1">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">â€œIf the business grew 10 times tomorrow, which process would break first?â€ The question exaggerates the workload so the weak point becomes visible.</p></div>
+<div><span class="text-blue-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">ê¢â¬ÅIf the business grew 10 times tomorrow, which process would break first?ê¢â¬Â The question exaggerates the workload so the weak point becomes visible.</p></div>
 <div><span class="text-blue-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">An agent executes the plan quickly, whether it's right or wrong. Choosing the problem matters more than choosing the tool.</p></div>
-<div><span class="text-blue-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Process, bottleneck, the 10Ã— question, problem before the tool.</p></div>
+<div><span class="text-blue-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Process, bottleneck, the 10êâ question, problem before the tool.</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t2-1-2" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">âš–ï¸</span>
-<div><span class="font-medium">Separate what breaks from whatâ€™s merely annoying</span><span class="text-neutral-500 text-sm ml-2">- the test of the week</span></div>
+<span class="text-lg">ê¢Å¡âê¯Â¸Â</span>
+<div><span class="font-medium">Separate what breaks from whatê¢â¬â¢s merely annoying</span><span class="text-neutral-500 text-sm ml-2">- the test of the week</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-1-2">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
@@ -352,13 +352,13 @@
 <div class="topic-item">
 <button aria-controls="t2-1-3" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">ðŸ“Š</span>
+<span class="text-lg">ê°Å¸âÅ </span>
 <div><span class="font-medium">Find the bottleneck with numbers</span><span class="text-neutral-500 text-sm ml-2">- time, money, error</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-1-3">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-blue-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">During a typical week, track how much time each candidate takes, how much money is lost, and how often things go wrong.</p></div>
-<div><span class="text-blue-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Your guess usually points to whatâ€™s visible. The number points to what costs youâ€”in Marcosâ€™s case, 10 hours per week.</p></div>
+<div><span class="text-blue-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Your guess usually points to whatê¢â¬â¢s visible. The number points to what costs youê¢â¬âin Marcosê¢â¬â¢s case, 10 hours per week.</p></div>
 <div><span class="text-blue-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Time, money, error, estimate labeled.</p></div>
 </div>
 </div>
@@ -366,35 +366,35 @@
 <div class="topic-item">
 <button aria-controls="t2-1-4" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">ðŸš«</span>
-<div><span class="font-medium">Avoid automating what doesnâ€™t hurt</span><span class="text-neutral-500 text-sm ml-2">- the visibility trap</span></div>
+<span class="text-lg">ê°Å¸Å¡Â«</span>
+<div><span class="font-medium">Avoid automating what doesnê¢â¬â¢t hurt</span><span class="text-neutral-500 text-sm ml-2">- the visibility trap</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-1-4">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Common selection mistakes: automating whatâ€™s fun or visible (posts, videos, little bots) instead of what quietly costs you.</p></div>
+<div><span class="text-blue-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Common selection mistakes: automating whatê¢â¬â¢s fun or visible (posts, videos, little bots) instead of what quietly costs you.</p></div>
 <div><span class="text-blue-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Every agent is another door to control. And bringing in more customers for a process that leaks only makes the leak worse.</p></div>
-<div><span class="text-blue-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Cost Ã— visibility matrix, good and bad signs, data leak.</p></div>
+<div><span class="text-blue-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Cost êâ visibility matrix, good and bad signs, data leak.</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t2-1-5" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">ðŸŽ™ï¸</span>
-<div><span class="font-medium">Run the 10Ã— interview with an AI chat</span><span class="text-neutral-500 text-sm ml-2">- one question at a time</span></div>
+<span class="text-lg">ê°Å¸Å½â¢ê¯Â¸Â</span>
+<div><span class="font-medium">Run the 10êâ interview with an AI chat</span><span class="text-neutral-500 text-sm ml-2">- one question at a time</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-1-5">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-blue-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">A ready-to-use template to paste into an AI chat: it interviews you, one question at a time, until it finds the process that's breaking and the number that proves it.</p></div>
-<div><span class="text-blue-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Itâ€™s easy to dodge the question on your own. The chat keeps you focusedâ€”and you talk about the process, never the customers.</p></div>
-<div><span class="text-blue-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Interview, one question at a time, donâ€™t make up numbers.</p></div>
+<div><span class="text-blue-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Itê¢â¬â¢s easy to dodge the question on your own. The chat keeps you focusedê¢â¬âand you talk about the process, never the customers.</p></div>
+<div><span class="text-blue-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Interview, one question at a time, donê¢â¬â¢t make up numbers.</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t2-1-6" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">â˜ï¸</span>
+<span class="text-lg">ê¢ËÂê¯Â¸Â</span>
 <div><span class="font-medium">Choose one process, just one</span><span class="text-neutral-500 text-sm ml-2">- the decision sentence</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-1-6">
@@ -412,27 +412,27 @@
 </div>
 </div>
 <!-- ===== MODULO 2.2 ===== -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="2-2" data-ARCKHÉ-track="2" id="modulo-2-2">
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHê-module="2-2" data-ARCKHê-track="2" id="modulo-2-2">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.2</span><span class="text-xs text-neutral-500">~30 min</span></div>
-<h3 class="text-2xl font-bold mb-2">ðŸ¥ A request isn't a problem</h3>
-<p class="text-neutral-400 text-sm">Renataâ€™s clinic case: behind the request for â€œmore clientsâ€ was a schedule that was losing R$ 1.080 per month. From pricing the pain to the first small project.</p>
-<div aria-label="Module 2.2 progress" aria-valuemax="100" aria-valuemin="0" class="mt-4" data-ARCKHÉ-meter="modulo:2-2" role="progressbar">
-<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac="">0 of 6</span><span data-ARCKHÉ-meter-pct="">0%</span></div>
-<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
+<h3 class="text-2xl font-bold mb-2">ê°Å¸ÂÂ¥ A request isn't a problem</h3>
+<p class="text-neutral-400 text-sm">Renataê¢â¬â¢s clinic case: behind the request for ê¢â¬Åmore clientsê¢â¬Â was a schedule that was losing R$ 1.080 per month. From pricing the pain to the first small project.</p>
+<div aria-label="Module 2.2 progress" aria-valuemax="100" aria-valuemin="0" class="mt-4" data-ARCKHê-meter="modulo:2-2" role="progressbar">
+<div class="flex justify-between text-xs text-neutral-400 mb-1"><span data-ARCKHê-meter-frac="">0 of 6</span><span data-ARCKHê-meter-pct="">0%</span></div>
+<div class="ARCKHê-bar"><div class="ARCKHê-bar__fill" data-ARCKHê-meter-fill=""></div></div>
 </div>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-controls="t2-2-1" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">ðŸ§Š</span>
-<div><span class="font-medium">Separate whatâ€™s requested from whatâ€™s wanted</span><span class="text-neutral-500 text-sm ml-2">- request, desire, pain point</span></div>
+<span class="text-lg">ê°Å¸Â§Å </span>
+<div><span class="font-medium">Separate whatê¢â¬â¢s requested from whatê¢â¬â¢s wanted</span><span class="text-neutral-500 text-sm ml-2">- request, desire, pain point</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-2-1">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">The request is the ready-made solution youâ€™re given (â€œmore clientsâ€). The desire is whatâ€™s behind it (â€œmore revenueâ€). The pain is the loss you can count.</p></div>
-<div><span class="text-blue-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Following the request to the letter can be costly and still not solve the problem. Asking â€œwhat for?â€ leads to the number.</p></div>
+<div><span class="text-blue-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">The request is the ready-made solution youê¢â¬â¢re given (ê¢â¬Åmore clientsê¢â¬Â). The desire is whatê¢â¬â¢s behind it (ê¢â¬Åmore revenueê¢â¬Â). The pain is the loss you can count.</p></div>
+<div><span class="text-blue-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Following the request to the letter can be costly and still not solve the problem. Asking ê¢â¬Åwhat for?ê¢â¬Â leads to the number.</p></div>
 <div><span class="text-blue-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Request, desire, pain point, "what for?".</p></div>
 </div>
 </div>
@@ -440,12 +440,12 @@
 <div class="topic-item">
 <button aria-controls="t2-2-2" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">ðŸ¥</span>
+<span class="text-lg">ê°Å¸ÂÂ¥</span>
 <div><span class="font-medium">Study the clinic case</span><span class="text-neutral-500 text-sm ml-2">- the leaky bucket</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-2-2">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Renata wanted more patients through Instagram. The schedule showed something else: patients who booked and didnâ€™t show up.</p></div>
+<div><span class="text-blue-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Renata wanted more patients through Instagram. The schedule showed something else: patients who booked and didnê¢â¬â¢t show up.</p></div>
 <div><span class="text-blue-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">More people joining a broken schedule only increases no-shows. Fix the leak before opening the faucet.</p></div>
 <div><span class="text-blue-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Absences, paid hours without revenue, a leaky bucket.</p></div>
 </div>
@@ -454,13 +454,13 @@
 <div class="topic-item">
 <button aria-controls="t2-2-3" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">ðŸ§®</span>
+<span class="text-lg">ê°Å¸Â§Â®</span>
 <div><span class="font-medium">Calculate how much the pain costs</span><span class="text-neutral-500 text-sm ml-2">- back-of-the-envelope math</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-2-3">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Absences Ã— average value Ã— weeks. At the clinic: 9 absences Ã— R$ 120 = R$ 1,080 per month, almost R$ 13,000 per year.</p></div>
-<div><span class="text-blue-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Without a price, the pain is just an opinion. With a price, it becomes a decisionâ€”and later, the metric for track 5.</p></div>
+<div><span class="text-blue-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Absences êâ average value êâ weeks. At the clinic: 9 absences êâ R$ 120 = R$ 1,080 per month, almost R$ 13,000 per year.</p></div>
+<div><span class="text-blue-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Without a price, the pain is just an opinion. With a price, it becomes a decisionê¢â¬âand later, the metric for track 5.</p></div>
 <div><span class="text-blue-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">How many times, how many fail, how much can be recovered, the cost of the pain.</p></div>
 </div>
 </div>
@@ -468,7 +468,7 @@
 <div class="topic-item">
 <button aria-controls="t2-2-4" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">ðŸ£</span>
+<span class="text-lg">ê°Å¸ÂÂ£</span>
 <div><span class="font-medium">Design the first small project</span><span class="text-neutral-500 text-sm ml-2">- reminder + confirmation</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-2-4">
@@ -482,26 +482,26 @@
 <div class="topic-item">
 <button aria-controls="t2-2-5" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">ðŸ§‘â€ðŸ’¼</span>
+<span class="text-lg">ê°Å¸Â§âê¢â¬Âê°Å¸âÂ¼</span>
 <div><span class="font-medium">Apply this to other professions</span><span class="text-neutral-500 text-sm ml-2">- salon, shop, office</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-2-5">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
 <div><span class="text-blue-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">The same pattern in other businesses: the request points outward, while the pain is inside. Marcos asked for speed; the pain was overdue documents turning into fines.</p></div>
-<div><span class="text-blue-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Recognizing the pattern in other peopleâ€™s businesses helps you see it in your own.</p></div>
-<div><span class="text-blue-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Sounds like a request Ã— sounds like a pain point, first project by profession.</p></div>
+<div><span class="text-blue-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Recognizing the pattern in other peopleê¢â¬â¢s businesses helps you see it in your own.</p></div>
+<div><span class="text-blue-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Sounds like a request êâ sounds like a pain point, first project by profession.</p></div>
 </div>
 </div>
 </div>
 <div class="topic-item">
 <button aria-controls="t2-2-6" aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">âœï¸</span>
+<span class="text-lg">ê¢ÅÂê¯Â¸Â</span>
 <div><span class="font-medium">Write the pain point</span><span class="text-neutral-500 text-sm ml-2">- how much, for what, why, what's next</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4" id="t2-2-6">
 <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">â€œToday we lose ___ because of ___ because ___; the first agent will ___.â€ A template to review with an AI chat.</p></div>
+<div><span class="text-blue-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">ê¢â¬ÅToday we lose ___ because of ___ because ___; the first agent will ___.ê¢â¬Â A template to review with an AI chat.</p></div>
 <div><span class="text-blue-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">It's the first field in the agent's profile and the starting point for the Track 3 controls.</p></div>
 <div><span class="text-blue-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Pain statement, number, cause you can change, small action.</p></div>
 </div>
@@ -514,16 +514,16 @@
 </div>
 </div>
 <div class="flex flex-col sm:flex-row gap-4 mt-12">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../trilha1/index.html">â† Previous trail: Why now</a>
-<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="../trilha3/index.html">Next track: Control the system â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../trilha1/index.html">ê¢â Â Previous trail: Why now</a>
+<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="../trilha3/index.html">Next track: Control the system ê¢â â</a>
 </div>
 </main>
 <!-- MODAIS (iframe carrega a pagina do modulo) -->
 <div aria-labelledby="modal-2-1-title" aria-modal="true" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-2-1" onclick="if(event.target === this) closeModal()" role="dialog">
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
 <div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
-<div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.1</span><span class="font-semibold" id="modal-2-1-title">The 10Ã— question</span></div>
-<button aria-label="Close" class="text-neutral-400 hover:text-neutral-100 text-2xl leading-none" onclick="closeModal()">Ã—</button>
+<div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.1</span><span class="font-semibold" id="modal-2-1-title">The 10êâ question</span></div>
+<button aria-label="Close" class="text-neutral-400 hover:text-neutral-100 text-2xl leading-none" onclick="closeModal()">êâ</button>
 </div>
 <iframe class="flex-1 w-full rounded-b-xl" loading="lazy" src="modulo-2-1.html" title="Module 2.1"></iframe>
 </div>
@@ -532,14 +532,14 @@
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
 <div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
 <div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.2</span><span class="font-semibold" id="modal-2-2-title">A request isn't a problem</span></div>
-<button aria-label="Close" class="text-neutral-400 hover:text-neutral-100 text-2xl leading-none" onclick="closeModal()">Ã—</button>
+<button aria-label="Close" class="text-neutral-400 hover:text-neutral-100 text-2xl leading-none" onclick="closeModal()">êâ</button>
 </div>
 <iframe class="flex-1 w-full rounded-b-xl" loading="lazy" src="modulo-2-2.html" title="Module 2.2"></iframe>
 </div>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Agent under Control Â· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHÉ.pro" target="_blank">PRO</a></p>
+<p>Agent under Control êÂ· 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> - <a class="text-amber-700 hover:text-amber-600 dark:text-slate-300 dark:hover:text-slate-200" href="https://ARCKHê.pro" target="_blank">PRO</a></p>
 </div>
 </footer>
 <script>
@@ -550,7 +550,7 @@
     if (!_html.classList.contains('dark')) { themeToggleDarkIcon.classList.remove('hidden'); }
     else { themeToggleLightIcon.classList.remove('hidden'); }
     themeToggle.addEventListener('click', () => {
-      if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHÉ-dark'); }
+      if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', _html.classList.contains('dark') ? 'claro' : 'ARCKHê-dark'); }
       else { _html.classList.toggle('dark'); }
       themeToggleDarkIcon.classList.toggle('hidden', _html.classList.contains('dark'));
       themeToggleLightIcon.classList.toggle('hidden', !_html.classList.contains('dark'));
@@ -571,7 +571,7 @@
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
   </script>
 </body>
 </html>
