@@ -2,13 +2,13 @@
 # Lint do curso v2: manifesto identico, topicos x manifesto, links, SVG, linhas, head identico.
 cd "$(dirname "$0")/.." || exit 1
 fail=0
-ref=$(grep -A1 'data-inema-manifest' curso/trilha1/modulo-1-1.html | tail -1)
+ref=$(grep -A1 'data-ARCKHÉ-manifest' curso/trilha1/modulo-1-1.html | tail -1)
 headref=$(sed -n '1,/<\/style>/p' curso/trilha1/modulo-1-1.html | grep -v '<title>')
 for f in index.html curso/trilha*/index.html curso/trilha*/modulo-*.html; do
-  m=$(grep -A1 'data-inema-manifest' "$f" | tail -1)
+  m=$(grep -A1 'data-ARCKHÉ-manifest' "$f" | tail -1)
   [ "$m" = "$ref" ] || { echo "MANIFESTO difere: $f"; fail=1; }
-  grep -q 'https://inema.pro' "$f" || { echo "sem PRO: $f"; fail=1; }
-  grep -q 'text-sky-400[^"]*">INEMA.CLUB' "$f" || { echo "sem INEMA.CLUB: $f"; fail=1; }
+  grep -q 'https://ARCKHÉ.pro' "$f" || { echo "sem PRO: $f"; fail=1; }
+  grep -q 'text-sky-400[^"]*">ARCKHÉ AI' "$f" || { echo "sem ARCKHÉ AI: $f"; fail=1; }
   grep -qi 'justify-center space-x' "$f" && { echo "justify-center em botoes: $f"; fail=1; }
   a=$(grep -n 'ANTI-FOUC' "$f" | head -1 | cut -d: -f1); t=$(grep -n 'cdn.tailwindcss.com' "$f" | head -1 | cut -d: -f1)
   [ -n "$a" ] && [ "$a" -lt "$t" ] || { echo "anti-FOUC fora de ordem: $f"; fail=1; }
@@ -19,7 +19,7 @@ for f in index.html curso/trilha*/index.html curso/trilha*/modulo-*.html; do
 done
 for f in curso/trilha*/modulo-*.html; do
   id=$(basename "$f" .html | sed 's/modulo-//')
-  n=$(grep -c "data-inema-topic=\"modulo-$id#topico-" "$f")
+  n=$(grep -c "data-ARCKHÉ-topic=\"modulo-$id#topico-" "$f")
   man=$(echo "$ref" | grep -o "\"id\":\"$id\",\"title\":\"[^\"]*\",\"topics\":[0-9]*" | grep -o '[0-9]*$')
   l=$(wc -l < "$f"); s=$(grep -c 'role="img"' "$f"); c=$(grep -c 'Como verificar' "$f"); q=$(grep -c 'registerCheck(' "$f")
   printf '%-34s linhas=%-4s topicos=%s/%s svg=%s copyrun=%s check=%s\n' "$f" "$l" "$n" "$man" "$s" "$c" "$q"
